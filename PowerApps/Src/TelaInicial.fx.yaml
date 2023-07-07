@@ -1,9 +1,13 @@
 TelaInicial As screen:
 
-    Marcos As rectangle:
-        Height: =247
-        Width: =460
-        X: =556
-        Y: =208
-        ZIndex: =1
+    Button2 As button:
+        Height: =85
+        OnSelect: =Navigate('Apontamento de Producao',ScreenTransition.Fade)
+        Text: |-
+            ="Apontamento de Produção
+            "
+        Width: =247
+        X: =96
+        Y: =574
+        ZIndex: =2
 

@@ -132,6 +132,7 @@
   },
   "ScreenOrder": [
     "TelaInicial",
-    "Apontamento de Producao"
+    "Apontamento de Producao",
+    "IndentificadorPallet"
   ]
 }

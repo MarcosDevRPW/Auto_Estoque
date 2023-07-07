@@ -5,13 +5,19 @@
     "Apontamento de Producao": 6,
     "App": 1,
     "Button1": 7,
+    "Button2": 9,
+    "Button3": 12,
+    "Dropdown1": 8,
+    "Dropdown1_1": 10,
+    "Dropdown1_2": 11,
     "Host": 3,
-    "Marcos": 5,
+    "IndentificadorPallet": 15,
+    "PrintButton1": 16,
     "TelaInicial": 4
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "07/07/2023 17:52:09",
+  "HeaderLastSavedDateTimeUTC": "07/07/2023 17:59:09",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {},
   "LocalDatabaseReferencesAsEmpty": false,
@@ -19,20 +25,29 @@
   "LocalResourceRootPaths": {},
   "OrderComponentMetadata": {},
   "OrderComponentTemplate": {},
-  "OrderDataSource": {},
+  "OrderDataSource": {
+    "DropDownSample": 0
+  },
   "OrderGroupControls": {},
   "OrderPcfTemplate": {},
   "OrderTemplate": {},
   "OrderXMLTemplate": {
-    "button": 1,
-    "rectangle": 0
+    "button": 0,
+    "dropdown": 1,
+    "label": 2
   },
   "OverridablePropertiesEntry": {
     "Apontamento de Producao": {},
     "App": {},
     "Button1": {},
+    "Button2": {},
+    "Button3": {},
+    "Dropdown1": {},
+    "Dropdown1_1": {},
+    "Dropdown1_2": {},
     "Host": {},
-    "Marcos": {},
+    "IndentificadorPallet": {},
+    "PrintButton1": {},
     "TelaInicial": {}
   },
   "PCFDynamicSchemaForIRRetrievalEntry": {},
@@ -40,9 +55,15 @@
   "PublishOrderIndices": {
     "Apontamento de Producao": 0,
     "App": 0,
-    "Button1": 0,
+    "Button1": 1,
+    "Button2": 0,
+    "Button3": 5,
+    "Dropdown1": 2,
+    "Dropdown1_1": 3,
+    "Dropdown1_2": 4,
     "Host": 0,
-    "Marcos": 0,
+    "IndentificadorPallet": 0,
+    "PrintButton1": 0,
     "TelaInicial": 0
   },
   "ResourcesJsonIndices": {},
@@ -50,7 +71,9 @@
   "TemplateVersions": {},
   "VolatileProperties": {
     "AnalysisLoadTime": 0.0170624,
-    "ControlCount": {}
+    "ControlCount": {
+      "dropdown": 2
+    }
   },
   "WasLocalDatabaseReferencesEmpty": true
 }

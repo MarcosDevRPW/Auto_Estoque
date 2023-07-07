@@ -1,0 +1,17 @@
+"IndentificadorPallet As screen.'printableLayout_A4Landscape_ver1.0'":
+    Height: =794
+    Width: =1123
+
+    PrintButton1 As label:
+        Align: =Align.Center
+        Height: =32
+        OnSelect: =Print()
+        Size: =13
+        TabIndex: =0
+        Text: ="Imprimir"
+        Visible: =Not(Parent.Printing)
+        Width: =96
+        X: =Parent.Width - Self.Width - 25
+        Y: =25
+        ZIndex: =2
+

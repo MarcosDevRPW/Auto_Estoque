@@ -1,13 +1,40 @@
 "'Apontamento de Producao' As screen":
 
+    LotePalete_1 As text:
+        BorderColor: =RGBA(166, 166, 166, 1)
+        Color: =RGBA(51, 51, 51, 1)
+        Default: =""
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisplayMode: =DisplayMode.Disabled
+        Font: =Font.'Segoe UI'
+        Height: =158
+        HintText: =""
+        HoverBorderColor: =ColorFade(RGBA(73, 130, 5, 1), -30%)
+        HoverColor: =RGBA(51, 51, 51, 1)
+        HoverFill: =RGBA(255, 255, 255, 1)
+        PaddingRight: =3.79
+        PaddingTop: =3.79
+        PressedBorderColor: =RGBA(73, 130, 5, 1)
+        PressedColor: =RGBA(51, 51, 51, 1)
+        PressedFill: =RGBA(255, 255, 255, 1)
+        RadiusBottomLeft: =0
+        RadiusBottomRight: =0
+        RadiusTopLeft: =0
+        RadiusTopRight: =0
+        Size: =16
+        Width: =257
+        X: =1079
+        Y: =96
+        ZIndex: =1
+
     Button1 As button:
         OnSelect: =Navigate(TelaInicial,ScreenTransition.Fade)
         Text: ="VOLTAR"
         X: =40
         Y: =40
-        ZIndex: =1
+        ZIndex: =2
 
-    Dropdown1 As dropdown:
+    DropdownTurnoProd As dropdown:
         Height: =77
         Items: |-
             =[
@@ -16,9 +43,9 @@
                 "TURNO 3"
             ]
         Width: =168
-        X: =328
-        Y: =135
-        ZIndex: =2
+        X: =273
+        Y: =137
+        ZIndex: =3
 
     Dropdown1_1 As dropdown:
         Height: =77
@@ -30,9 +57,9 @@
                 "TURMA D"
             ]
         Width: =168
-        X: =601
-        Y: =135
-        ZIndex: =3
+        X: =472
+        Y: =137
+        ZIndex: =4
 
     Dropdown1_2 As dropdown:
         Height: =77
@@ -43,9 +70,9 @@
                 "G JUMBINHO"
             ]
         Width: =168
-        X: =874
-        Y: =135
-        ZIndex: =4
+        X: =669
+        Y: =137
+        ZIndex: =5
 
     Button3 As button:
         Height: =167
@@ -53,5 +80,96 @@
         Width: =172
         X: =1164
         Y: =564
-        ZIndex: =5
+        ZIndex: =6
+
+    Loteproducao As label:
+        Align: =Align.Center
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        Color: =RGBA(51, 51, 51, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        FocusedBorderThickness: =4
+        Font: =Font.'Segoe UI'
+        FontWeight: =FontWeight.Bold
+        Height: =158
+        Size: =25
+        Text: =Text(Labelcodigodata.Text&If(DropdownTurnoProd.Selected.Value = "Turno 1","01") & If(DropdownTurnoProd.Selected.Value = "Turno 2","02")& If(DropdownTurnoProd.Selected.Value = "Turno 3","03")) & Pallet.Text
+        Width: =259
+        X: =1077
+        Y: =96
+        ZIndex: =7
+
+    Labelcodigodate As label:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        Color: =RGBA(51, 51, 51, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        FocusedBorderThickness: =4
+        Font: =Font.'Segoe UI'
+        Text: =Replace(Text(DateProd.SelectedDate),3,1,"")
+        Visible: =false
+        Width: =114
+        Y: =271
+        ZIndex: =8
+
+    Labelcodigodate2 As label:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        Color: =RGBA(51, 51, 51, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        FocusedBorderThickness: =4
+        Font: =Font.'Segoe UI'
+        Text: =Replace(Text(Labelcodigodate),5,1,"")
+        Visible: =false
+        X: =13
+        Y: =271
+        ZIndex: =9
+
+    Labelcodigodate3 As label:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        Color: =RGBA(51, 51, 51, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        FocusedBorderThickness: =4
+        Font: =Font.'Segoe UI'
+        Text: =Replace(Text(Labelcodigodate2),5,1,"")
+        Visible: =false
+        X: =13
+        Y: =271
+        ZIndex: =10
+
+    Labelcodigodata As label:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        Color: =RGBA(51, 51, 51, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        FocusedBorderThickness: =4
+        Font: =Font.'Segoe UI'
+        Text: =Replace(Text(Labelcodigodate3),5,1,"")
+        Visible: =false
+        X: =13
+        Y: =271
+        ZIndex: =11
+
+    DateProd As datepicker:
+        Height: =110
+        Width: =238
+        X: =1
+        Y: =120
+        ZIndex: =12
+
+    Pallet As text:
+        Default: =""
+        Format: =TextFormat.Number
+        Height: =117
+        HintText: ="Número Pallet"
+        Width: =192
+        X: =861
+        Y: =117
+        ZIndex: =13
 

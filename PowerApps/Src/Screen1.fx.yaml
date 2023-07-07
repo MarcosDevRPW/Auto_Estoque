@@ -1,2 +1,7 @@
 Screen1 As screen:
 
+    Francisco As rectangle:
+        X: =338
+        Y: =242
+        ZIndex: =1
+

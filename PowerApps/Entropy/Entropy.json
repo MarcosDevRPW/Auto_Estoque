@@ -2,7 +2,7 @@
   "ComponentIndexes": {},
   "ControlUniqueGuids": {},
   "ControlUniqueIds": {
-    "Apontamento de Produção": 6,
+    "Apontamento de Producao": 6,
     "App": 1,
     "Button1": 7,
     "Host": 3,
@@ -11,7 +11,7 @@
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "07/07/2023 17:51:50",
+  "HeaderLastSavedDateTimeUTC": "07/07/2023 17:52:09",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {},
   "LocalDatabaseReferencesAsEmpty": false,
@@ -28,7 +28,7 @@
     "rectangle": 0
   },
   "OverridablePropertiesEntry": {
-    "Apontamento de Produção": {},
+    "Apontamento de Producao": {},
     "App": {},
     "Button1": {},
     "Host": {},
@@ -38,7 +38,7 @@
   "PCFDynamicSchemaForIRRetrievalEntry": {},
   "PCFTemplateEntry": {},
   "PublishOrderIndices": {
-    "Apontamento de Produção": 0,
+    "Apontamento de Producao": 0,
     "App": 0,
     "Button1": 0,
     "Host": 0,

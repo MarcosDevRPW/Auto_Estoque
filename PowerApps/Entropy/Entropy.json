@@ -2,14 +2,16 @@
   "ComponentIndexes": {},
   "ControlUniqueGuids": {},
   "ControlUniqueIds": {
+    "Apontamento de Produção": 6,
     "App": 1,
+    "Button1": 7,
     "Host": 3,
-    "Jackson": 4,
-    "Marcos": 5
+    "Marcos": 5,
+    "TelaInicial": 4
   },
   "FunctionParamsInvariantScripts": {},
   "FunctionParamsInvariantScriptsOnInstances": {},
-  "HeaderLastSavedDateTimeUTC": "07/07/2023 17:45:27",
+  "HeaderLastSavedDateTimeUTC": "07/07/2023 17:51:50",
   "IsLegacyComponentAllowGlobalScopeCase": false,
   "LocalConnectionIDReferences": {},
   "LocalDatabaseReferencesAsEmpty": false,
@@ -22,21 +24,26 @@
   "OrderPcfTemplate": {},
   "OrderTemplate": {},
   "OrderXMLTemplate": {
+    "button": 1,
     "rectangle": 0
   },
   "OverridablePropertiesEntry": {
+    "Apontamento de Produção": {},
     "App": {},
+    "Button1": {},
     "Host": {},
-    "Jackson": {},
-    "Marcos": {}
+    "Marcos": {},
+    "TelaInicial": {}
   },
   "PCFDynamicSchemaForIRRetrievalEntry": {},
   "PCFTemplateEntry": {},
   "PublishOrderIndices": {
+    "Apontamento de Produção": 0,
     "App": 0,
+    "Button1": 0,
     "Host": 0,
-    "Jackson": 0,
-    "Marcos": 0
+    "Marcos": 0,
+    "TelaInicial": 0
   },
   "ResourcesJsonIndices": {},
   "RuleScreenIdWithoutScreen": {},

@@ -131,6 +131,7 @@
     "UserLocale": "pt-BR"
   },
   "ScreenOrder": [
-    "Jackson"
+    "TelaInicial",
+    "Apontamento de Produção"
   ]
 }

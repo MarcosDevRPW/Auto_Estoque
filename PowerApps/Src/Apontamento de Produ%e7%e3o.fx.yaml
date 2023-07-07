@@ -1,0 +1,8 @@
+"'Apontamento de Produção' As screen":
+
+    Button1 As button:
+        Text: ="Botão"
+        X: =40
+        Y: =40
+        ZIndex: =1
+

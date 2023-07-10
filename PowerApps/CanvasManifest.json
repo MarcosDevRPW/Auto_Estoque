@@ -95,7 +95,7 @@
       "useguiddatatypes": true,
       "usenonblockingonstartrule": true,
       "webbarcodescanner": false,
-      "zeroalltabindexes": true
+      "zeroalltabindexes": false
     },
     "Author": "",
     "BindingErrorCount": 0,
@@ -114,7 +114,7 @@
     "Id": "6418288a-2d43-4b41-b13f-b023fcfbf917",
     "InstrumentationKey": "",
     "LocalDatabaseReferences": "{}",
-    "ManualOfflineProfileId": null,
+    "ManualOfflineProfileId": "",
     "Name": "Identificação - Jumbos",
     "OriginatingVersion": "1.332",
     "ParserErrorCount": 0

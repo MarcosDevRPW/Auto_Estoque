@@ -1,17 +1,100 @@
 "IndentificadorPallet As screen.'printableLayout_A4Landscape_ver1.0'":
-    Height: =794
-    Width: =1123
+    Height: =784
+    Width: =1400
+
+    Image1 As image:
+        Height: =120
+        Image: =Marca_Suzano_Horizontal_sem_Tagline_Verde_RGB
+        Width: =1400
+        ZIndex: =1
 
     PrintButton1 As label:
         Align: =Align.Center
-        Height: =32
+        Height: =57
         OnSelect: =Print()
         Size: =13
         TabIndex: =0
         Text: ="Imprimir"
         Visible: =Not(Parent.Printing)
         Width: =96
-        X: =Parent.Width - Self.Width - 25
-        Y: =25
+        X: =1282
+        Y: =31
         ZIndex: =2
+
+    Label1 As label:
+        Height: =109
+        Size: =20
+        Text: |-
+            ="COLABORADOR: "& User().FullName
+        Width: =695
+        Y: =120
+        ZIndex: =3
+
+    Rectangle1 As rectangle:
+        Height: =230
+        Width: =1400
+        Y: =553
+        ZIndex: =4
+
+    Label1_1 As label:
+        Height: =56
+        Size: =20
+        Text: |-
+            ="DATA DO PALLET: "& DateProd.SelectedDate
+        Width: =422
+        Y: =484
+        ZIndex: =5
+
+    Label1_2 As label:
+        Height: =62
+        Size: =20
+        Text: |-
+            ="PRODUTO DO PALLET: "& Dropdown1_2.Selected.Value
+        Width: =495
+        Y: =255
+        ZIndex: =6
+
+    Button5 As button:
+        OnSelect: =Navigate('Apontamento de Producao',ScreenTransition.Fade)
+        Text: ="VOLTAR"
+        X: =25
+        Y: =31
+        ZIndex: =7
+
+    Label1_3 As label:
+        Height: =62
+        Size: =20
+        Text: =Dropdown1_1.Selected.Value
+        Width: =170
+        X: =792
+        Y: =167
+        ZIndex: =8
+
+    Label1_4 As label:
+        Height: =62
+        Size: =20
+        Text: =DropdownTurnoProd.Selected.Value
+        Width: =170
+        X: =792
+        Y: =229
+        ZIndex: =9
+
+    Label2 As label:
+        FontWeight: =FontWeight.Bold
+        Height: =67
+        Size: =25
+        Text: |-
+            ="LOTE DO PALLET: " & Loteproducao.Text
+        Width: =295
+        Y: =377
+        ZIndex: =10
+
+    Rectangle2 As rectangle:
+        BorderThickness: =8
+        Fill: =RGBA(0, 0, 0, 0)
+        Height: =277
+        Width: =322
+        X: =990
+        Y: =167
+        ZIndex: =11
 

@@ -76,6 +76,7 @@
 
     Button3 As button:
         Height: =167
+        OnSelect: =Navigate(IndentificadorPallet,ScreenTransition.Fade)
         Text: ="GERAR PALLET COM INFORMAÇÕES"
         Width: =172
         X: =1164

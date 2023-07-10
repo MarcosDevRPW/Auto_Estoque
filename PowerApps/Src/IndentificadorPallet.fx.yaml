@@ -98,3 +98,12 @@
         Y: =167
         ZIndex: =11
 
+    Image2 As image:
+        Height: =277
+        Image: |-
+            ="https://chart.googleapis.com/chart?chs=150x150&cht=qr&ch1=" & Label2.Text
+        Width: =322
+        X: =990
+        Y: =167
+        ZIndex: =12
+

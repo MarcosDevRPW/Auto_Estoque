@@ -102,6 +102,7 @@
         Height: =255
         Image: |-
             ="https://chart.googleapis.com/chart?chs=150x150&cht=qr&ch1=" & Loteproducao.Text
+        ImagePosition: =ImagePosition.Fill
         Width: =296
         X: =1002
         Y: =177

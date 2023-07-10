@@ -1,5 +1,5 @@
 "IndentificadorPallet As screen.'printableLayout_A4Landscape_ver1.0'":
-    Height: =784
+    Height: =655
     Width: =1400
 
     Image1 As image:
@@ -17,7 +17,7 @@
         Text: ="Imprimir"
         Visible: =Not(Parent.Printing)
         Width: =96
-        X: =1282
+        X: =1269
         Y: =31
         ZIndex: =2
 
@@ -27,22 +27,24 @@
         Text: |-
             ="COLABORADOR: "& User().FullName
         Width: =695
+        X: =55
         Y: =120
         ZIndex: =3
 
     Rectangle1 As rectangle:
-        Height: =230
-        Width: =1400
-        Y: =553
+        Height: =655
+        Width: =22
+        X: =1378
         ZIndex: =4
 
     Label1_1 As label:
-        Height: =56
-        Size: =20
+        Height: =50
+        Size: =25
         Text: |-
             ="DATA DO PALLET: "& DateProd.SelectedDate
-        Width: =422
-        Y: =484
+        Width: =527
+        X: =860
+        Y: =580
         ZIndex: =5
 
     Label1_2 As label:
@@ -51,12 +53,14 @@
         Text: |-
             ="PRODUTO DO PALLET: "& Dropdown1_2.Selected.Value
         Width: =495
-        Y: =255
+        X: =55
+        Y: =274
         ZIndex: =6
 
     Button5 As button:
         OnSelect: =Navigate('Apontamento de Producao',ScreenTransition.Fade)
         Text: ="VOLTAR"
+        Visible: =Not(Parent.Printing)
         X: =25
         Y: =31
         ZIndex: =7
@@ -66,8 +70,8 @@
         Size: =20
         Text: =Dropdown1_1.Selected.Value
         Width: =170
-        X: =792
-        Y: =167
+        X: =42
+        Y: =563
         ZIndex: =8
 
     Label1_4 As label:
@@ -75,17 +79,18 @@
         Size: =20
         Text: =DropdownTurnoProd.Selected.Value
         Width: =170
-        X: =792
-        Y: =229
+        X: =185
+        Y: =563
         ZIndex: =9
 
     Label2 As label:
         FontWeight: =FontWeight.Bold
-        Height: =67
+        Height: =79
         Size: =25
         Text: |-
             ="LOTE DO PALLET: " & Loteproducao.Text
-        Width: =295
+        Width: =495
+        X: =55
         Y: =377
         ZIndex: =10
 
@@ -101,10 +106,16 @@
     Image2 As image:
         Height: =255
         Image: |-
-            ="https://chart.googleapis.com/chart?chs=150x150&cht=qr&ch1=" & Loteproducao.Text
+            ="https://chart.googleapis.com/chart?chs=150x150&cht=qr&chl=" & Loteproducao.Text
         ImagePosition: =ImagePosition.Fill
         Width: =296
         X: =1002
         Y: =177
         ZIndex: =12
+
+    Rectangle1_1 As rectangle:
+        Height: =30
+        Width: =1400
+        Y: =625
+        ZIndex: =13
 

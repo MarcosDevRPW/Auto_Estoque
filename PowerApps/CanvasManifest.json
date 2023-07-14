@@ -134,6 +134,7 @@
     "TelaInicial",
     "Apontamento de Producao",
     "IndentificadorPallet",
-    "CONSULTARPALLET"
+    "CONSULTARPALLET",
+    "TELACONSULTA"
   ]
 }

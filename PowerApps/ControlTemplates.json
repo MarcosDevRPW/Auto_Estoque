@@ -108,6 +108,50 @@
     "OverridableProperties": {},
     "Version": "2.5.1"
   },
+  "Leitor de Código de Barras": {
+    "CustomGroupControlTemplateName": "",
+    "FirstParty": true,
+    "Id": "http://microsoft.com/appmagic/powercontrol/BarcodeReader",
+    "IsComponentTemplate": false,
+    "IsCustomGroupControlTemplate": false,
+    "IsPcfControl": true,
+    "IsPremiumPcfControl": false,
+    "IsWidgetTemplate": false,
+    "LastModifiedTimestamp": "0",
+    "Name": "BarcodeReader",
+    "OverridableProperties": {
+      "Barcodes": {
+        "Type": {
+          "EnumString": "",
+          "Kind": "Table",
+          "Name": "Root",
+          "Type": [
+            {
+              "EnumString": "",
+              "Kind": "String",
+              "Name": "Type",
+              "Type": []
+            },
+            {
+              "EnumString": "",
+              "Kind": "String",
+              "Name": "Value",
+              "Type": []
+            }
+          ]
+        },
+        "Version": "1.333"
+      }
+    },
+    "PCFDynamicSchemaForIRRetrieval": {
+      "Barcodes": {
+        "DynamicSchema": "{\"type\":\"array\",\"items\":{\"type\":\"object\",\"properties\":{\"Value\":{\"type\":\"string\"},\"Type\":{\"type\":\"string\"}}}}",
+        "PCFSkipValidation": false
+      }
+    },
+    "TemplateDisplayName": "Leitor de Código de Barras",
+    "Version": "1.0.19"
+  },
   "rectangle": {
     "CustomGroupControlTemplateName": "",
     "FirstParty": true,

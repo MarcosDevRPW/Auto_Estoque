@@ -1,0 +1,116 @@
+TELACONSULTA As screen:
+
+    Image1_1 As image:
+        Height: =120
+        Image: =Marca_Suzano_Horizontal_sem_Tagline_Verde_RGB
+        Width: =1366
+        ZIndex: =1
+
+    Label1_5 As label:
+        Height: =109
+        Size: =20
+        Text: |-
+            ="COLABORADOR:" & LookUp('Gestão de PALLET',Text(codigoqr.Value) = LOTE_PALLET,Colaborador)
+        Width: =695
+        X: =55
+        Y: =120
+        ZIndex: =3
+
+    Rectangle1_2 As rectangle:
+        Height: =738
+        Width: =22
+        X: =1344
+        ZIndex: =4
+
+    Label1_6 As label:
+        Height: =50
+        Size: =25
+        Text: |-
+            ="DATA DO PALLET: "& LookUp('Gestão de PALLET',Text(codigoqr.Value) = LOTE_PALLET,DATA)
+        Width: =527
+        X: =839
+        Y: =656
+        ZIndex: =5
+
+    Label1_7 As label:
+        Height: =62
+        Size: =20
+        Text: |-
+            ="PRODUTO DO PALLET: "& LookUp('Gestão de PALLET',Text(codigoqr.Value) = LOTE_PALLET,PRODUTO)
+        Width: =495
+        X: =55
+        Y: =274
+        ZIndex: =6
+
+    Button5_1 As button:
+        OnSelect: =Navigate(TelaInicial,ScreenTransition.Fade)
+        Text: ="TELA INICIAL"
+        Visible: =Not(Parent.Printing)
+        X: =25
+        Y: =31
+        ZIndex: =7
+
+    Label1_8 As label:
+        Height: =62
+        Size: =20
+        Text: =LookUp('Gestão de PALLET',Text(codigoqr.Value) = LOTE_PALLET,TURNO)
+        Width: =170
+        X: =25
+        Y: =644
+        ZIndex: =8
+
+    Label1_9 As label:
+        Height: =62
+        Size: =20
+        Text: =LookUp('Gestão de PALLET',Text(codigoqr.Value) = LOTE_PALLET,TURMA)
+        Width: =170
+        X: =285
+        Y: =644
+        ZIndex: =9
+
+    Label2_1 As label:
+        FontWeight: =FontWeight.Bold
+        Height: =79
+        Size: =25
+        Text: |-
+            ="LOTE DO PALLET:"
+        Width: =313
+        X: =55
+        Y: =389
+        ZIndex: =10
+
+    Rectangle2_1 As rectangle:
+        BorderThickness: =8
+        Fill: =RGBA(0, 0, 0, 0)
+        Height: =277
+        Width: =322
+        X: =990
+        Y: =167
+        ZIndex: =11
+
+    Image2_1 As image:
+        Height: =255
+        Image: |-
+            ="https://chart.googleapis.com/chart?chs=150x150&cht=qr&chl=" & Label2_2.Text
+        ImagePosition: =ImagePosition.Fill
+        Width: =296
+        X: =1002
+        Y: =177
+        ZIndex: =12
+
+    Rectangle1_3 As rectangle:
+        Height: =30
+        Width: =1366
+        Y: =738
+        ZIndex: =13
+
+    Label2_2 As label:
+        FontWeight: =FontWeight.Bold
+        Height: =79
+        Size: =25
+        Text: =codigoqr.Value
+        Width: =206
+        X: =361
+        Y: =389
+        ZIndex: =14
+

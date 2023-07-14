@@ -78,8 +78,18 @@
         Height: =167
         OnSelect: |-
             =Patch('Gestão de PALLET',
-                DATA
-            
+                {
+                    Colaborador: User().FullName,
+                    DATA:DateProd.SelectedDate,
+                    ÁREA:"FRALDAS",
+                    TURNO:DropdownTurnoProd.Selected.Value,
+                    TURMA:Dropdown1_1.Selected.Value,
+                    'HORA DE CRIAÇÃO DO PALLET':Text(Time(Hour(Now()),Minute(Now()),Second(Now()))),
+                    PRODUTO:Dropdown1_2.Selected.Value,
+                    'Quantidade de Fardos no Pallet':72,
+                    LOTE_PALLET:Loteproducao.Text
+                }   
+            );    
             Navigate(IndentificadorPallet,ScreenTransition.Fade);
         Text: ="GERAR PALLET COM INFORMAÇÕES"
         Width: =172

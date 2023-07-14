@@ -97,7 +97,7 @@
       "zeroalltabindexes": false
     },
     "Author": "",
-    "BindingErrorCount": 6,
+    "BindingErrorCount": 0,
     "ContainsThirdPartyPcfControls": false,
     "DefaultConnectedDataSourceMaxGetRowsCount": 500,
     "DocumentAppType": "DesktopOrTablet",
@@ -116,7 +116,7 @@
     "ManualOfflineProfileId": "",
     "Name": "Identificação - Jumbos",
     "OriginatingVersion": "1.332",
-    "ParserErrorCount": 2,
+    "ParserErrorCount": 0,
     "ShowStatusBar": false
   },
   "PublishInfo": {

@@ -11,3 +11,12 @@ TelaInicial As screen:
         Y: =574
         ZIndex: =2
 
+    Button2_1 As button:
+        Height: =85
+        OnSelect: =Navigate('Apontamento de Producao',ScreenTransition.Fade)
+        Text: ="CONSULTA DE PALLET"
+        Width: =247
+        X: =386
+        Y: =574
+        ZIndex: =3
+

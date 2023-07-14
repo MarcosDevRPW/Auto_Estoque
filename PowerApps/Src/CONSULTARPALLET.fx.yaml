@@ -3,7 +3,7 @@ CONSULTARPALLET As screen:
     Button1_1 As button:
         OnSelect: =Navigate(TelaInicial,ScreenTransition.Fade)
         Text: ="VOLTAR"
-        X: =40
-        Y: =40
+        X: =56
+        Y: =34
         ZIndex: =1
 

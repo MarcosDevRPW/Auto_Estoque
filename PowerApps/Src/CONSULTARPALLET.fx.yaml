@@ -20,7 +20,8 @@ CONSULTARPALLET As screen:
         HoverFillColor: =RGBA(47, 81, 151, 1)
         OnScan: |-
             =Set(matrizqr,BarcodeReader1.Barcodes);
-            Set(codigoqr,First(matrizqr))
+            Set(codigoqr,First(matrizqr));
+            Navigate(TELACONSULTA,ScreenTransition.Fade)
         PressedBorderColor: =RGBA(56, 96, 178, 1)
         PressedContentColor: =RGBA(56, 96, 178, 1)
         PressedFillColor: =RGBA(255, 255, 255, 1)

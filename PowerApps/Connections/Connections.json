@@ -1,1 +1,24 @@
-{}
+{
+  "44cab20e-fc6b-4f50-9f89-62f2726b4462": {
+    "connectionRef": {
+      "displayName": "SharePoint",
+      "iconUri": "https://connectoricons-prod.azureedge.net/u/shgogna/globalperconnector-train1/1.0.1639.3312/sharepointonline/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_sharepointonline"
+    },
+    "datasets": {
+      "https://suzano.sharepoint.com/sites/PROJETORASTREABILIDADExINTELIGNCIADEESTOQUE": {
+        "dataSources": {
+          "Gestão de PALLET": {
+            "tableName": "aaace286-0a76-49d3-a4b1-2be017ecd70e"
+          }
+        }
+      }
+    },
+    "dataSources": [
+      "Gestão de PALLET"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "44cab20e-fc6b-4f50-9f89-62f2726b4462"
+  }
+}

@@ -28,7 +28,7 @@ TELACONSULTA As screen:
         Text: |-
             ="DATA DO PALLET: "& LookUp('Gestão de PALLET',Text(codigoqr.Value) = LOTE_PALLET,DATA)
         Width: =527
-        X: =839
+        X: =692
         Y: =656
         ZIndex: =5
 

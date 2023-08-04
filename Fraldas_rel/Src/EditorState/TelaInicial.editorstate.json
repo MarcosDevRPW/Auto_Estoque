@@ -109,7 +109,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Dataontem",
-      "ParentIndex": 5,
+      "ParentIndex": 4,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -417,7 +417,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Image2",
-      "ParentIndex": 2,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -657,7 +657,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Label1",
-      "ParentIndex": 3,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -953,7 +953,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Paradas",
-      "ParentIndex": 6,
+      "ParentIndex": 5,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -1252,7 +1252,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Paradas_1",
-      "ParentIndex": 10,
+      "ParentIndex": 9,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -1548,7 +1548,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Paradas_2",
-      "ParentIndex": 11,
+      "ParentIndex": 10,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -1839,7 +1839,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Paradas_3",
-      "ParentIndex": 8,
+      "ParentIndex": 7,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -2130,7 +2130,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Paradas_4",
-      "ParentIndex": 7,
+      "ParentIndex": 6,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -2421,7 +2421,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Paradas_5",
-      "ParentIndex": 12,
+      "ParentIndex": 11,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -2712,7 +2712,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Paradas_6",
-      "ParentIndex": 9,
+      "ParentIndex": 8,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -2945,7 +2945,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Rectangle1",
-      "ParentIndex": 4,
+      "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {

@@ -71,7 +71,12 @@
     },
     "dataSources": [
       "Apontamento Produção",
-      "Apontamento Paradas"
+      "Apontamento Paradas",
+      "Apontamento de Qualidade",
+      "Entrada de Lote_1",
+      "Apontamento Refugo",
+      "Apontamento de Limpeza",
+      "Checklist - Repartida de máquina"
     ],
     "dependencies": {},
     "dependents": [],

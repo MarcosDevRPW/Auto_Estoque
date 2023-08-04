@@ -1,0 +1,174 @@
+Consultadeparadas As screen:
+    LoadingSpinnerColor: =RGBA(73, 130, 5, 1)
+
+    Image2_4 As image:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledFill: =RGBA(0, 0, 0, 0)
+        FocusedBorderThickness: =4
+        Height: =103
+        HoverBorderColor: =RGBA(0, 0, 0, 0)
+        HoverFill: =RGBA(0, 0, 0, 0)
+        Image: =Marca_Suzano_Horizontal_sem_Tagline_Verde_RGB
+        PressedBorderColor: =RGBA(0, 0, 0, 0)
+        PressedFill: =RGBA(0, 0, 0, 0)
+        Tooltip: =If(Paradasalternadas,DisplayMode.Disabled, DisplayMode.Edit)
+        Width: =240.57
+        ZIndex: =2
+
+    Label1_10 As label:
+        Align: =Align.Center
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisplayMode: =DisplayMode.View
+        FocusedBorderThickness: =4
+        Font: =Font.'Segoe UI'
+        Height: =98
+        PaddingRight: =3.79
+        PaddingTop: =3.79
+        Size: =45
+        Text: ="Consulta de Paradas"
+        Tooltip: =If(Paradasalternadas,DisplayMode.Disabled, DisplayMode.Edit)
+        Width: =1800
+        ZIndex: =3
+
+    Label1_11 As label:
+        Align: =Align.Center
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        Color: =RGBA(50, 86, 160, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisplayMode: =DisplayMode.View
+        FocusedBorderThickness: =4
+        Font: =Font.'Segoe UI'
+        Height: =98
+        PaddingRight: =3.79
+        PaddingTop: =3.79
+        Size: =18.97
+        Text: ="Voltar"
+        Tooltip: =If(Paradasalternadas,DisplayMode.Disabled, DisplayMode.Edit)
+        Width: =121
+        X: =1679
+        ZIndex: =4
+
+    Icon2_4 As icon.BackArrow:
+        BorderColor: =RGBA(166, 166, 166, 1)
+        Color: =RGBA(73, 130, 5, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(220, 220, 220, 1)
+        DisabledFill: =RGBA(0, 0, 0, 0)
+        FocusedBorderThickness: =4
+        Height: =98
+        HoverBorderColor: =RGBA(0, 0, 0, 0)
+        HoverColor: =ColorFade(RGBA(73, 130, 5, 1), -30%)
+        HoverFill: =RGBA(0, 0, 0, 0)
+        Icon: =Icon.BackArrow
+        OnSelect: =Navigate(TelaParadas, ScreenTransition.Fade)
+        PressedBorderColor: =RGBA(0, 0, 0, 0)
+        PressedColor: =ColorFade(RGBA(73, 130, 5, 1), -30%)
+        PressedFill: =RGBA(0, 0, 0, 0)
+        Tooltip: =If(Paradasalternadas,DisplayMode.Disabled, DisplayMode.Edit)
+        Width: =63.75
+        X: =1627
+        ZIndex: =5
+
+    Dadosconsulta As dataTable.datatable:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.Solid
+        Color: =RGBA(51, 51, 51, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisplayMode: =DisplayMode.Edit
+        Fill: =RGBA(0, 0, 0, 0)
+        Font: =Font.'Segoe UI'
+        FontWeight: =FontWeight.Normal
+        HeadingColor: =RGBA(255, 255, 255, 1)
+        HeadingFill: =RGBA(73, 130, 5, 1)
+        HeadingFont: =Font.'Segoe UI'
+        HeadingFontWeight: =FontWeight.Normal
+        HeadingSize: =19
+        Height: =697
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =RGBA(73, 130, 5, 1)
+        InputFill: =RGBA(255, 255, 255, 1)
+        InvertedColor: =RGBA(255, 255, 255, 1)
+        Items: =codigodeparadas
+        LinkColor: =RGBA(0, 134, 208, 1)
+        PrimaryColor1: =RGBA(73, 130, 5, 1)
+        PrimaryColor2: =ColorFade(RGBA(73, 130, 5, 1), -30%)
+        PrimaryColor3: =ColorFade(RGBA(73, 130, 5, 1), -50%)
+        SelectedColor: =RGBA(51, 51, 51, 1)
+        SelectedFill: =RGBA(187, 221, 140, 1)
+        Size: =17.99
+        Width: =1800
+        X: =0
+        Y: =103
+        ZIndex: =6
+
+        CLASSE_Column1 As dataTableColumn.textualColumn:
+            AutoWidth: =false
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="CLASSE"
+            FieldName: ="CLASSE"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =1
+            Text: =ThisItem.CLASSE
+            Width: =463
+            X: =0
+            Y: =0
+            ZIndex: =1
+
+        LOCAL_Column1 As dataTableColumn.textualColumn:
+            AutoWidth: =false
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="LOCAL"
+            FieldName: ="LOCAL"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =2
+            Text: =ThisItem.LOCAL
+            Width: =404
+            X: =0
+            Y: =0
+            ZIndex: =2
+
+        TIPO_Column1 As dataTableColumn.textualColumn:
+            AutoWidth: =false
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="TIPO"
+            FieldName: ="TIPO"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =4
+            Text: =ThisItem.TIPO
+            Width: =630
+            X: =0
+            Y: =0
+            ZIndex: =3
+
+        Nº_Column1 As dataTableColumn.textualColumn:
+            AutoWidth: =false
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Nº"
+            FieldName: ="Nº"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =0
+            Text: =ThisItem.Nº
+            Width: =268
+            X: =0
+            Y: =0
+            ZIndex: =4
+

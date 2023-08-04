@@ -1,0 +1,7 @@
+{
+  "DataEntityMetadataJson": {
+    "{21B1BE8A-9A0B-4670-9EE8-137F47B41E02}": "{\"name\":\"{21B1BE8A-9A0B-4670-9EE8-137F47B41E02}\",\"title\":\"BaseProdutos\",\"x-ms-permission\":\"read-write\",\"x-ms-capabilities\":{\"sortRestrictions\":{\"sortable\":true},\"filterRestrictions\":{\"filterable\":true},\"filterFunctionSupport\":[\"eq\",\"ne\",\"substringof\",\"contains\",\"startswith\",\"endswith\"]},\"schema\":{\"type\":\"array\",\"items\":{\"type\":\"object\",\"properties\":{\"Nº\":{\"type\":\"string\",\"title\":\"Nº\",\"x-ms-sort\":\"none\",\"x-ms-capabilities\":{\"filterFunctions\":[\"eq\",\"ne\",\"substringof\",\"contains\",\"startswith\",\"endswith\"]},\"x-ms-permission\":\"read-write\"},\"PRODUTOS\":{\"type\":\"string\",\"title\":\"PRODUTOS\",\"x-ms-sort\":\"none\",\"x-ms-capabilities\":{\"filterFunctions\":[\"eq\",\"ne\",\"substringof\",\"contains\",\"startswith\",\"endswith\"]},\"x-ms-permission\":\"read-write\"}}}}}"
+  },
+  "EntityName": "BaseProdutos",
+  "TableName": "{21B1BE8A-9A0B-4670-9EE8-137F47B41E02}"
+}

@@ -1,0 +1,329 @@
+HistoricoProd As screen:
+    LoadingSpinnerColor: =RGBA(73, 130, 5, 1)
+
+    Rectangle6_27 As rectangle:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        DisabledFill: =RGBA(166, 166, 166, 1)
+        Fill: =RGBA(3, 38, 127, 1)
+        FocusedBorderThickness: =4
+        Height: =104
+        HoverFill: =RGBA(0, 94, 146, 1)
+        PressedFill: =RGBA(0, 94, 146, 1)
+        Width: =1800
+        ZIndex: =1
+
+    Rectangle1_9 As rectangle:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        DisabledFill: =RGBA(166, 166, 166, 1)
+        Fill: =RGBA(73, 130, 5, 1)
+        FocusedBorderThickness: =4
+        Height: =5
+        HoverFill: =RGBA(73, 130, 5, 1)
+        PressedFill: =RGBA(73, 130, 5, 1)
+        Width: =1800
+        Y: =103
+        ZIndex: =2
+
+    Image2_7 As image:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledFill: =RGBA(0, 0, 0, 0)
+        FocusedBorderThickness: =4
+        Height: =103
+        HoverBorderColor: =RGBA(0, 0, 0, 0)
+        HoverFill: =RGBA(0, 0, 0, 0)
+        Image: =Marca_Suzano_Horizontal_sem_Tagline_Verde_RGB
+        PressedBorderColor: =RGBA(0, 0, 0, 0)
+        PressedFill: =RGBA(0, 0, 0, 0)
+        Width: =321.01
+        ZIndex: =3
+
+    Label1_9 As label:
+        Align: =Align.Center
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisplayMode: =DisplayMode.View
+        FocusedBorderThickness: =4
+        Font: =Font.'Segoe UI'
+        Height: =108
+        PaddingRight: =3.79
+        PaddingTop: =3.79
+        Size: =34.15
+        Text: ="HISTÓRICO DE PRODUÇÃO"
+        Width: =1800
+        ZIndex: =4
+
+    Label1_25 As label:
+        Align: =Align.Center
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisplayMode: =DisplayMode.View
+        FocusedBorderThickness: =4
+        Font: =Font.'Segoe UI'
+        Height: =54
+        PaddingRight: =3.79
+        PaddingTop: =3.79
+        Size: =23
+        Text: ="VOLTAR"
+        Width: =155
+        X: =1645
+        Y: =26
+        ZIndex: =5
+
+    Icon2_11 As icon.BackArrow:
+        BorderColor: =RGBA(166, 166, 166, 1)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(220, 220, 220, 1)
+        DisabledFill: =RGBA(0, 0, 0, 0)
+        FocusedBorderThickness: =4
+        Height: =79
+        HoverBorderColor: =RGBA(0, 0, 0, 0)
+        HoverColor: =ColorFade(RGBA(73, 130, 5, 1), -30%)
+        HoverFill: =RGBA(0, 0, 0, 0)
+        Icon: =Icon.BackArrow
+        OnSelect: =Navigate(TelaProdução, ScreenTransition.Fade)
+        PressedBorderColor: =RGBA(0, 0, 0, 0)
+        PressedColor: =ColorFade(RGBA(73, 130, 5, 1), -30%)
+        PressedFill: =RGBA(0, 0, 0, 0)
+        Width: =85
+        X: =1572
+        Y: =14
+        ZIndex: =6
+
+    "'Apontamento Prod' As dataTable.datatable":
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.Solid
+        Color: =RGBA(51, 51, 51, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisplayMode: =DisplayMode.Edit
+        Fill: =RGBA(0, 0, 0, 0)
+        Font: =Font.'Segoe UI'
+        FontWeight: =FontWeight.Normal
+        HeadingColor: =RGBA(255, 255, 255, 1)
+        HeadingFill: =RGBA(73, 130, 5, 1)
+        HeadingFont: =Font.'Segoe UI'
+        HeadingFontWeight: =FontWeight.Normal
+        HeadingSize: =13
+        Height: =568
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =RGBA(73, 130, 5, 1)
+        InputFill: =RGBA(255, 255, 255, 1)
+        InvertedColor: =RGBA(255, 255, 255, 1)
+        Items: =If(dropturnohist.Selected.Value = "Selecione o Turno",Filter('Apontamento Produção', Data = histdataprod.SelectedDate),Filter('Apontamento Produção', Data = histdataprod.SelectedDate && Turno = dropturnohist.Selected.Value))
+        LinkColor: =RGBA(0, 134, 208, 1)
+        PrimaryColor1: =RGBA(73, 130, 5, 1)
+        PrimaryColor2: =ColorFade(RGBA(73, 130, 5, 1), -30%)
+        PrimaryColor3: =ColorFade(RGBA(73, 130, 5, 1), -50%)
+        SelectedColor: =RGBA(51, 51, 51, 1)
+        SelectedFill: =RGBA(73, 130, 5, .2)
+        Size: =17
+        Width: =1800
+        X: =0
+        Y: =232
+        ZIndex: =7
+
+        Title_Column1 As dataTableColumn.textualColumn:
+            AutoWidth: =false
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Colaborador"
+            FieldName: ="Title"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            IsHyperlink: =false
+            LayoutHeight: =Parent.Height
+            Order: =1
+            Text: =ThisItem.Title
+            Width: =471
+            X: =0
+            Y: =0
+            ZIndex: =6
+
+        Data_Column1 As dataTableColumn.textualColumn:
+            AutoWidth: =false
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Data"
+            FieldName: ="Data"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =2
+            Text: =ThisItem.Data
+            Width: =167
+            X: =363
+            Y: =0
+            ZIndex: =7
+
+        Turno_Column1 As dataTableColumn.textualColumn:
+            AutoWidth: =false
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Turno"
+            FieldName: ="Turno"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =3
+            Text: =ThisItem.Turno
+            Width: =183
+            X: =495
+            Y: =0
+            ZIndex: =8
+
+        Turma_Column1 As dataTableColumn.textualColumn:
+            AutoWidth: =false
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Turma"
+            FieldName: ="Turma"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =4
+            Text: =ThisItem.Turma
+            Width: =187
+            X: =623
+            Y: =0
+            ZIndex: =9
+
+        "'Produto Produzido_Column1' As dataTableColumn.textualColumn":
+            AutoWidth: =false
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Produto Produzido"
+            FieldName: ="ProdutoProduzido"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =5
+            Text: =ThisItem.'Produto Produzido'
+            Width: =381
+            X: =760
+            Y: =0
+            ZIndex: =10
+
+        "'Lote Palete' As dataTableColumn.numberColumn":
+            AutoWidth: =false
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Lote Produção"
+            FieldName: ="Produ_x00e7__x00e3_oBruta"
+            FieldVariantName: ="numberColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =6
+            Text: =ThisItem.'Lote Produção'
+            Width: =230
+            X: =1033
+            Y: =0
+            ZIndex: =11
+
+        "'Fardos no Palete_Column1' As dataTableColumn.textualColumn":
+            AutoWidth: =false
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Fardos Produzidos"
+            FieldName: ="FardosnoPalete"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =7
+            Text: =ThisItem.'Fardos Produzidos'
+            Width: =153
+            X: =0
+            Y: =0
+            ZIndex: =12
+
+    histdataprod As datepicker:
+        BorderColor: =RGBA(166, 166, 166, 1)
+        CalendarHeaderFill: =ColorFade(RGBA(73, 130, 5, 1), -30%)
+        Color: =RGBA(51, 51, 51, 1)
+        DefaultDate: =If(Hour(Now()) <= 23 && Hour(Now()) >= 6,Today(),Today()-1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Font: =Font.'Segoe UI'
+        Height: =68
+        HoverDateFill: =RGBA(200, 200, 200, 1)
+        IconBackground: =RGBA(73, 130, 5, 1)
+        PaddingRight: =3.79
+        PaddingTop: =3.79
+        SelectedDateFill: =RGBA(73, 130, 5, 1)
+        Size: =19
+        Tooltip: =If(Paradasalternadas,DisplayMode.Disabled, DisplayMode.Edit)
+        Width: =209
+        X: =305
+        Y: =126
+        ZIndex: =8
+
+    dropturnohist As dropdown:
+        BorderColor: =RGBA(166, 166, 166, 1)
+        ChevronBackground: =RGBA(255, 255, 255, 1)
+        ChevronDisabledBackground: =RGBA(244, 244, 244, 1)
+        ChevronDisabledFill: =RGBA(166, 166, 166, 1)
+        ChevronFill: =RGBA(33, 33, 33, 1)
+        ChevronHoverBackground: =RGBA(212, 212, 212, 1)
+        ChevronHoverFill: =RGBA(33, 33, 33, 1)
+        Color: =RGBA(51, 51, 51, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Font: =Font.'Segoe UI'
+        Height: =68
+        HoverBorderColor: =ColorFade(RGBA(73, 130, 5, 1), -30%)
+        HoverColor: =RGBA(51, 51, 51, 1)
+        HoverFill: =RGBA(212, 212, 212, 1)
+        Items: =Distinct(BaseTurnos,TURNOS)
+        PaddingBottom: =5
+        PaddingLeft: =12
+        PaddingRight: =3.79
+        PaddingTop: =3.79
+        PressedBorderColor: =ColorFade(RGBA(73, 130, 5, 1), -30%)
+        PressedColor: =RGBA(255, 255, 255, 1)
+        PressedFill: =RGBA(73, 130, 5, 1)
+        SelectionFill: =RGBA(73, 130, 5, 1)
+        Size: =19
+        Tooltip: =If(Paradasalternadas,DisplayMode.Disabled, DisplayMode.Edit)
+        Width: =301
+        X: =578
+        Y: =126
+        ZIndex: =9
+
+    Button1_12 As button:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Fill: =RGBA(73, 130, 5, 1)
+        FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+        Font: =Font.'Segoe UI'
+        FontWeight: =FontWeight.Semibold
+        Height: =74
+        HoverBorderColor: =RGBA(0, 0, 0, 0)
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =ColorFade(RGBA(73, 130, 5, 1), -10%)
+        OnSelect: =Refresh('Apontamento Produção')
+        PressedBorderColor: =ColorFade(RGBA(73, 130, 5, 1), -50%)
+        PressedColor: =RGBA(255, 255, 255, 1)
+        PressedFill: =ColorFade(RGBA(73, 130, 5, 1), -30%)
+        RadiusBottomLeft: =0
+        RadiusBottomRight: =0
+        RadiusTopLeft: =0
+        RadiusTopRight: =0
+        Size: =25
+        Text: ="ATUALIZAR"
+        Tooltip: =DisplayMode.Edit
+        Width: =197
+        X: =43
+        Y: =123
+        ZIndex: =10
+

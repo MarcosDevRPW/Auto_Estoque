@@ -1,0 +1,858 @@
+TelaParadas As screen:
+    LoadingSpinnerColor: =RGBA(73, 130, 5, 1)
+
+    Rectangle6_5 As rectangle:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        DisabledFill: =RGBA(166, 166, 166, 1)
+        Fill: =RGBA(3, 38, 127, 1)
+        FocusedBorderThickness: =4
+        Height: =104
+        HoverFill: =RGBA(0, 94, 146, 1)
+        PressedFill: =RGBA(0, 94, 146, 1)
+        Width: =1800
+        ZIndex: =1
+
+    Rectangle1_1 As rectangle:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        DisabledFill: =RGBA(166, 166, 166, 1)
+        Fill: =RGBA(73, 130, 5, 1)
+        FocusedBorderThickness: =4
+        Height: =6
+        HoverFill: =RGBA(73, 130, 5, 1)
+        PressedFill: =RGBA(73, 130, 5, 1)
+        Tooltip: =If(Paradasalternadas,DisplayMode.Disabled, DisplayMode.Edit)
+        Width: =1800
+        Y: =98
+        ZIndex: =2
+
+    Image2_1 As image:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledFill: =RGBA(0, 0, 0, 0)
+        FocusedBorderThickness: =4
+        Height: =103
+        HoverBorderColor: =RGBA(0, 0, 0, 0)
+        HoverFill: =RGBA(0, 0, 0, 0)
+        Image: =Marca_Suzano_Horizontal_sem_Tagline_Verde_RGB
+        PressedBorderColor: =RGBA(0, 0, 0, 0)
+        PressedFill: =RGBA(0, 0, 0, 0)
+        Tooltip: =If(Paradasalternadas,DisplayMode.Disabled, DisplayMode.Edit)
+        Width: =240.57
+        ZIndex: =3
+
+    Label1_2 As label:
+        Align: =Align.Center
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisplayMode: =DisplayMode.View
+        FocusedBorderThickness: =4
+        Font: =Font.'Segoe UI'
+        Height: =98
+        PaddingRight: =3.79
+        PaddingTop: =3.79
+        Size: =45
+        Text: ="APONTAMENTO DE PARADAS"
+        Tooltip: =If(Paradasalternadas,DisplayMode.Disabled, DisplayMode.Edit)
+        Width: =1800
+        ZIndex: =4
+
+    Label1_3 As label:
+        Align: =Align.Center
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisplayMode: =DisplayMode.View
+        FocusedBorderThickness: =4
+        Font: =Font.'Segoe UI'
+        Height: =98
+        PaddingRight: =3.79
+        PaddingTop: =3.79
+        Size: =18.97
+        Text: ="VOLTAR"
+        Tooltip: =If(Paradasalternadas,DisplayMode.Disabled, DisplayMode.Edit)
+        Width: =121
+        X: =1679
+        ZIndex: =5
+
+    Icon2_1 As icon.BackArrow:
+        BorderColor: =RGBA(166, 166, 166, 1)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(220, 220, 220, 1)
+        DisabledFill: =RGBA(0, 0, 0, 0)
+        FocusedBorderThickness: =4
+        Height: =98
+        HoverBorderColor: =RGBA(0, 0, 0, 0)
+        HoverColor: =ColorFade(RGBA(73, 130, 5, 1), -30%)
+        HoverFill: =RGBA(0, 0, 0, 0)
+        Icon: =Icon.BackArrow
+        OnSelect: =Navigate(TelaInicial, ScreenTransition.Fade)
+        PressedBorderColor: =RGBA(0, 0, 0, 0)
+        PressedColor: =ColorFade(RGBA(73, 130, 5, 1), -30%)
+        PressedFill: =RGBA(0, 0, 0, 0)
+        Tooltip: =If(Paradasalternadas,DisplayMode.Disabled, DisplayMode.Edit)
+        Width: =63.75
+        X: =1627
+        ZIndex: =6
+
+    dropclasse As dropdown:
+        BorderColor: =RGBA(166, 166, 166, 1)
+        ChevronBackground: =RGBA(255, 255, 255, 1)
+        ChevronDisabledBackground: =RGBA(244, 244, 244, 1)
+        ChevronDisabledFill: =RGBA(166, 166, 166, 1)
+        ChevronFill: =RGBA(33, 33, 33, 1)
+        ChevronHoverBackground: =RGBA(212, 212, 212, 1)
+        ChevronHoverFill: =RGBA(33, 33, 33, 1)
+        Color: =RGBA(51, 51, 51, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(0, 0, 0, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        DisplayMode: =If(Toggle2.Value = true,DisplayMode.Disabled, DisplayMode.Edit)
+        Font: =Font.'Segoe UI'
+        Height: =117
+        HoverBorderColor: =ColorFade(RGBA(73, 130, 5, 1), -30%)
+        HoverColor: =RGBA(51, 51, 51, 1)
+        HoverFill: =RGBA(212, 212, 212, 1)
+        Items: |-
+            =If(Toggle2.Value = true && IsBlank(numcod.Text) <> true,ForAll(Distinct(Filter(codigodeparadas,Nº = Value(numcod.Text)),CLASSE), {Result: ThisRecord.Value}),ForAll(Distinct(codigodeparadas,CLASSE), {Result: ThisRecord.Value}))
+        PaddingBottom: =5
+        PaddingLeft: =12
+        PaddingRight: =3.79
+        PaddingTop: =3.79
+        PressedBorderColor: =ColorFade(RGBA(73, 130, 5, 1), -30%)
+        PressedColor: =RGBA(255, 255, 255, 1)
+        PressedFill: =RGBA(73, 130, 5, 1)
+        SelectionFill: =RGBA(73, 130, 5, 1)
+        Size: =15
+        Tooltip: =If(Paradasalternadas,DisplayMode.Disabled, DisplayMode.Edit)
+        Width: =279
+        X: =19
+        Y: =298
+        ZIndex: =7
+
+    droplocal As dropdown:
+        BorderColor: =RGBA(166, 166, 166, 1)
+        ChevronBackground: =RGBA(0, 0, 0, 0)
+        ChevronDisabledBackground: =RGBA(244, 244, 244, 1)
+        ChevronDisabledFill: =RGBA(0, 134, 208, 1)
+        ChevronFill: =RGBA(33, 33, 33, 1)
+        ChevronHoverBackground: =RGBA(212, 212, 212, 1)
+        ChevronHoverFill: =RGBA(33, 33, 33, 1)
+        Color: =RGBA(51, 51, 51, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(0, 0, 0, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        DisplayMode: =If(Toggle2.Value = true,DisplayMode.Disabled, DisplayMode.Edit)
+        Font: =Font.'Segoe UI'
+        Height: =117
+        HoverBorderColor: =ColorFade(RGBA(73, 130, 5, 1), -30%)
+        HoverColor: =RGBA(51, 51, 51, 1)
+        HoverFill: =RGBA(212, 212, 212, 1)
+        Items: |-
+            =If(Toggle2.Value = true && IsBlank(numcod.Text) <> true,ForAll(Distinct(Filter(codigodeparadas,Nº = Value(numcod.Text)),LOCAL), {Result: ThisRecord.Value}),ForAll(Distinct(codigodeparadas,LOCAL), {Result: ThisRecord.Value}))
+        PaddingBottom: =5
+        PaddingLeft: =12
+        PaddingRight: =3.79
+        PaddingTop: =3.79
+        PressedBorderColor: =ColorFade(RGBA(73, 130, 5, 1), -30%)
+        PressedColor: =RGBA(255, 255, 255, 1)
+        PressedFill: =RGBA(73, 130, 5, 1)
+        SelectionFill: =RGBA(73, 130, 5, 1)
+        Size: =15
+        TabIndex: =3
+        Tooltip: =("Local da linha")
+        Width: =257
+        X: =322
+        Y: =298
+        ZIndex: =8
+
+    droptipoparada As dropdown:
+        BorderColor: =RGBA(166, 166, 166, 1)
+        ChevronBackground: =RGBA(255, 255, 255, 1)
+        ChevronDisabledBackground: =RGBA(244, 244, 244, 1)
+        ChevronDisabledFill: =RGBA(166, 166, 166, 1)
+        ChevronFill: =RGBA(33, 33, 33, 1)
+        ChevronHoverBackground: =RGBA(212, 212, 212, 1)
+        ChevronHoverFill: =RGBA(33, 33, 33, 1)
+        Color: =RGBA(51, 51, 51, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(0, 0, 0, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        DisplayMode: =If(Toggle2.Value = true,DisplayMode.Disabled, DisplayMode.Edit)
+        Font: =Font.'Segoe UI'
+        Height: =117
+        HoverBorderColor: =ColorFade(RGBA(73, 130, 5, 1), -30%)
+        HoverColor: =RGBA(51, 51, 51, 1)
+        HoverFill: =RGBA(212, 212, 212, 1)
+        Items: |-
+            =If(
+                Toggle2.Value = true && IsBlank(numcod.Text) <> true,
+                ForAll(
+                    Distinct(
+                        Filter(
+                            codigodeparadas,
+                            Nº = Value(numcod.Text)
+                        ),
+                        TIPO
+                    ),
+                    {Result: ThisRecord.Value}
+                ),
+                ForAll(
+                    Distinct(
+                        Filter(
+                            codigodeparadas,
+                            CLASSE = dropclasse.Selected.Result && LOCAL = droplocal.Selected.Result
+                        ),
+                        TIPO
+                    ),
+                    {Result: ThisRecord.Value}
+                )
+            )
+        PaddingBottom: =5
+        PaddingLeft: =12
+        PaddingRight: =3.79
+        PaddingTop: =3.79
+        PressedBorderColor: =ColorFade(RGBA(73, 130, 5, 1), -30%)
+        PressedColor: =RGBA(255, 255, 255, 1)
+        PressedFill: =RGBA(73, 130, 5, 1)
+        SelectionFill: =RGBA(73, 130, 5, 1)
+        Size: =15
+        Tooltip: =If(Paradasalternadas,DisplayMode.Disabled, DisplayMode.Edit)
+        Width: =437
+        X: =600
+        Y: =298
+        ZIndex: =9
+
+    dateparada As datepicker:
+        BorderColor: =RGBA(166, 166, 166, 1)
+        CalendarHeaderFill: =ColorFade(RGBA(73, 130, 5, 1), -30%)
+        Color: =RGBA(51, 51, 51, 1)
+        DefaultDate: =If(Hour(Now()) <= 23 && Hour(Now()) >= 6,Today(),Today()-1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Font: =Font.'Segoe UI'
+        Height: =100
+        HoverDateFill: =RGBA(200, 200, 200, 1)
+        IconBackground: =RGBA(73, 130, 5, 1)
+        PaddingRight: =3.79
+        PaddingTop: =3.79
+        SelectedDateFill: =RGBA(73, 130, 5, 1)
+        Size: =19
+        Tooltip: =If(Paradasalternadas,DisplayMode.Disabled, DisplayMode.Edit)
+        Width: =209
+        X: =138
+        Y: =128
+        ZIndex: =10
+
+    Label4 As label:
+        Align: =Align.Center
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        Color: =RGBA(51, 51, 51, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.'Segoe UI'
+        Height: =98
+        PaddingRight: =3.79
+        PaddingTop: =3.79
+        Size: =18
+        Text: ="DATA DA PARADA"
+        Tooltip: =If(Paradasalternadas,DisplayMode.Disabled, DisplayMode.Edit)
+        Width: =135
+        X: =3
+        Y: =130
+        ZIndex: =11
+
+    dropturnoparada As dropdown:
+        BorderColor: =RGBA(166, 166, 166, 1)
+        ChevronBackground: =RGBA(255, 255, 255, 1)
+        ChevronDisabledBackground: =RGBA(244, 244, 244, 1)
+        ChevronDisabledFill: =RGBA(166, 166, 166, 1)
+        ChevronFill: =RGBA(33, 33, 33, 1)
+        ChevronHoverBackground: =RGBA(212, 212, 212, 1)
+        ChevronHoverFill: =RGBA(33, 33, 33, 1)
+        Color: =RGBA(51, 51, 51, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Font: =Font.'Segoe UI'
+        Height: =100
+        HoverBorderColor: =ColorFade(RGBA(73, 130, 5, 1), -30%)
+        HoverColor: =RGBA(51, 51, 51, 1)
+        HoverFill: =RGBA(212, 212, 212, 1)
+        Items: =Distinct(BaseTurnos,TURNOS)
+        PaddingBottom: =5
+        PaddingLeft: =12
+        PaddingRight: =3.79
+        PaddingTop: =3.79
+        PressedBorderColor: =ColorFade(RGBA(73, 130, 5, 1), -30%)
+        PressedColor: =RGBA(255, 255, 255, 1)
+        PressedFill: =RGBA(73, 130, 5, 1)
+        SelectionFill: =RGBA(73, 130, 5, 1)
+        Size: =19
+        Tooltip: =If(Paradasalternadas,DisplayMode.Disabled, DisplayMode.Edit)
+        Width: =301
+        X: =385
+        Y: =128
+        ZIndex: =12
+
+    dropturmaparada As dropdown:
+        BorderColor: =RGBA(166, 166, 166, 1)
+        ChevronBackground: =RGBA(255, 255, 255, 1)
+        ChevronDisabledBackground: =RGBA(244, 244, 244, 1)
+        ChevronDisabledFill: =RGBA(166, 166, 166, 1)
+        ChevronFill: =RGBA(33, 33, 33, 1)
+        ChevronHoverBackground: =RGBA(212, 212, 212, 1)
+        ChevronHoverFill: =RGBA(33, 33, 33, 1)
+        Color: =RGBA(51, 51, 51, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Height: =100
+        HoverBorderColor: =ColorFade(RGBA(73, 130, 5, 1), -30%)
+        HoverColor: =RGBA(51, 51, 51, 1)
+        HoverFill: =RGBA(212, 212, 212, 1)
+        Items: =Distinct(BaseTurmas,Turmas)
+        PaddingBottom: =5
+        PaddingLeft: =12
+        PaddingRight: =3.79
+        PaddingTop: =3.79
+        PressedBorderColor: =ColorFade(RGBA(73, 130, 5, 1), -30%)
+        PressedColor: =RGBA(255, 255, 255, 1)
+        PressedFill: =RGBA(73, 130, 5, 1)
+        SelectionFill: =RGBA(73, 130, 5, 1)
+        Size: =19
+        Tooltip: =If(Paradasalternadas,DisplayMode.Disabled, DisplayMode.Edit)
+        Width: =278
+        X: =724
+        Y: =128
+        ZIndex: =13
+
+    inputparadadetalhada As text:
+        BorderColor: =RGBA(73, 130, 5, 1)
+        BorderThickness: =2
+        Color: =RGBA(0, 0, 0, 1)
+        Default: =""
+        DisabledBorderColor: =RGBA(166, 166, 166, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        FocusedBorderThickness: =4
+        Height: =383
+        HintText: |-
+            ="                                                        
+                                                                                                        
+                                                                                                 
+                                                                                                                         Digite a descrição da parada da linha"
+        HoverBorderColor: =RGBA(73, 130, 5, 1)
+        HoverColor: =RGBA(0, 0, 0, 1)
+        HoverFill: =RGBA(186, 202, 226, 1)
+        Mode: =TextMode.MultiLine
+        Size: =28
+        Tooltip: =If(Paradasalternadas,DisplayMode.Disabled, DisplayMode.Edit)
+        Width: =730
+        X: =1052
+        Y: =120
+        ZIndex: =14
+
+    inicioparada As text:
+        BorderColor: =RGBA(166, 166, 166, 1)
+        BorderThickness: =2
+        Color: =RGBA(51, 51, 51, 1)
+        Default: =""
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        DisplayMode: =If(Paradasalternadas,DisplayMode.Disabled, DisplayMode.Edit)
+        FocusedBorderThickness: =4
+        Font: =Font.'Segoe UI'
+        Height: =102
+        HintText: ="Inicio"
+        HoverBorderColor: =ColorFade(RGBA(73, 130, 5, 1), -30%)
+        HoverColor: =RGBA(51, 51, 51, 1)
+        HoverFill: =RGBA(255, 255, 255, 1)
+        PressedBorderColor: =RGBA(73, 130, 5, 1)
+        PressedColor: =RGBA(51, 51, 51, 1)
+        PressedFill: =RGBA(255, 255, 255, 1)
+        RadiusBottomLeft: =0
+        RadiusBottomRight: =0
+        RadiusTopLeft: =0
+        RadiusTopRight: =0
+        Size: =17
+        Tooltip: =
+        Width: =189
+        X: =19
+        Y: =639
+        ZIndex: =15
+
+    fimparada As text:
+        BorderColor: =RGBA(166, 166, 166, 1)
+        BorderThickness: =2
+        Color: =RGBA(51, 51, 51, 1)
+        Default: =""
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        DisplayMode: =If(Paradasalternadas,DisplayMode.Disabled, DisplayMode.Edit)
+        FocusedBorderThickness: =4
+        Font: =Font.'Segoe UI'
+        Height: =102
+        HintText: ="Fim"
+        HoverBorderColor: =ColorFade(RGBA(73, 130, 5, 1), -30%)
+        HoverColor: =RGBA(51, 51, 51, 1)
+        HoverFill: =RGBA(255, 255, 255, 1)
+        PressedBorderColor: =RGBA(73, 130, 5, 1)
+        PressedColor: =RGBA(51, 51, 51, 1)
+        PressedFill: =RGBA(255, 255, 255, 1)
+        RadiusBottomLeft: =0
+        RadiusBottomRight: =0
+        RadiusTopLeft: =0
+        RadiusTopRight: =0
+        Size: =17
+        Tooltip: =If(Paradasalternadas,DisplayMode.Disabled, DisplayMode.Edit)
+        Width: =189
+        X: =272
+        Y: =639
+        ZIndex: =16
+
+    duraçãoparada As text:
+        Align: =Align.Center
+        BorderColor: =RGBA(166, 166, 166, 1)
+        BorderThickness: =2
+        Color: =RGBA(51, 51, 51, 1)
+        Default: =""
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.'Segoe UI'
+        Format: =TextFormat.Number
+        Height: =102
+        HintText: ="Duração em Minutos"
+        HoverBorderColor: =ColorFade(RGBA(73, 130, 5, 1), -30%)
+        HoverColor: =RGBA(51, 51, 51, 1)
+        HoverFill: =RGBA(255, 255, 255, 1)
+        PressedBorderColor: =RGBA(73, 130, 5, 1)
+        PressedColor: =RGBA(51, 51, 51, 1)
+        PressedFill: =RGBA(255, 255, 255, 1)
+        RadiusBottomLeft: =0
+        RadiusBottomRight: =0
+        RadiusTopLeft: =0
+        RadiusTopRight: =0
+        Size: =22
+        Tooltip: =If(Paradasalternadas,DisplayMode.Disabled, DisplayMode.Edit)
+        Width: =340
+        X: =614
+        Y: =471
+        ZIndex: =17
+
+    Button1 As button:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Fill: =RGBA(73, 130, 5, 1)
+        FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+        Font: =Font.'Segoe UI'
+        FontWeight: =FontWeight.Semibold
+        Height: =152
+        HoverBorderColor: =RGBA(0, 0, 0, 0)
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =ColorFade(RGBA(73, 130, 5, 1), -10%)
+        OnSelect: |-
+            =UpdateContext(
+                {
+                    confirmaçãoparada: true
+                }
+            )
+        PressedBorderColor: =ColorFade(RGBA(73, 130, 5, 1), -50%)
+        PressedColor: =RGBA(255, 255, 255, 1)
+        PressedFill: =ColorFade(RGBA(73, 130, 5, 1), -30%)
+        RadiusBottomLeft: =0
+        RadiusBottomRight: =0
+        RadiusTopLeft: =0
+        RadiusTopRight: =0
+        Size: =23
+        Text: ="Enviar"
+        Tooltip: =If(Paradasalternadas,DisplayMode.Disabled, DisplayMode.Edit)
+        Width: =206
+        X: =1554
+        Y: =589
+        ZIndex: =18
+
+    Button1_1 As button:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Fill: =RGBA(73, 130, 5, 1)
+        FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+        Font: =Font.'Segoe UI'
+        FontWeight: =FontWeight.Semibold
+        Height: =152
+        HoverBorderColor: =RGBA(0, 0, 0, 0)
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =ColorFade(RGBA(73, 130, 5, 1), -10%)
+        OnSelect: =Navigate(Consultadeparadas, ScreenTransition.Fade)
+        PressedBorderColor: =ColorFade(RGBA(73, 130, 5, 1), -50%)
+        PressedColor: =RGBA(255, 255, 255, 1)
+        PressedFill: =ColorFade(RGBA(73, 130, 5, 1), -30%)
+        RadiusBottomLeft: =0
+        RadiusBottomRight: =0
+        RadiusTopLeft: =0
+        RadiusTopRight: =0
+        Size: =23
+        Text: ="Consultar Códigos"
+        Tooltip: =If(Paradasalternadas,DisplayMode.Disabled, DisplayMode.Edit)
+        Width: =206
+        X: =1300
+        Y: =589
+        ZIndex: =19
+
+    Paradasalternadas As checkbox:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        CheckboxBorderColor: =RGBA(102, 102, 102, 1)
+        CheckboxSize: =110
+        CheckmarkFill: =RGBA(73, 130, 5, 1)
+        Color: =RGBA(51, 51, 51, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.'Segoe UI'
+        Height: =102
+        HoverBorderColor: =RGBA(0, 0, 0, 0)
+        HoverColor: =RGBA(51, 51, 51, 1)
+        HoverFill: =RGBA(0, 0, 0, 0)
+        PressedBorderColor: =RGBA(0, 0, 0, 0)
+        PressedColor: =RGBA(51, 51, 51, 1)
+        PressedFill: =RGBA(0, 0, 0, 0)
+        Size: =17
+        Text: ="Paradas Alternadas?"
+        Tooltip: =If(Paradasalternadas,DisplayMode.Disabled, DisplayMode.Edit)
+        Width: =240
+        X: =526
+        Y: =630
+        ZIndex: =20
+
+    Toggle2 As toggleSwitch:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        Color: =RGBA(51, 51, 51, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        FalseFill: =RGBA(102, 102, 102, 1)
+        FalseHoverFill: =RGBA(33, 33, 33, 1)
+        FalseText: ="Consulta por Filtro"
+        FocusedBorderThickness: =4
+        Font: =Font.'Segoe UI'
+        HandleFill: =RGBA(255, 255, 255, 1)
+        Height: =102
+        HoverBorderColor: =RGBA(0, 0, 0, 0)
+        PressedBorderColor: =RGBA(0, 0, 0, 0)
+        Size: =17
+        TrueFill: =RGBA(73, 130, 5, 1)
+        TrueHoverFill: =ColorFade(RGBA(73, 130, 5, 1), -30%)
+        TrueText: ="Consulta por Código"
+        Width: =327
+        X: =183
+        Y: =471
+        ZIndex: =21
+
+    numcod As text:
+        BorderColor: =RGBA(166, 166, 166, 1)
+        BorderThickness: =2
+        Color: =RGBA(51, 51, 51, 1)
+        Default: =""
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        DisplayMode: =If(Toggle2.Value = true, DisplayMode.Edit, DisplayMode.Disabled)
+        FocusedBorderThickness: =4
+        Font: =Font.'Segoe UI'
+        Format: =TextFormat.Number
+        Height: =102
+        HintText: ="Nº"
+        HoverBorderColor: =ColorFade(RGBA(73, 130, 5, 1), -30%)
+        HoverColor: =RGBA(51, 51, 51, 1)
+        HoverFill: =RGBA(255, 255, 255, 1)
+        PressedBorderColor: =RGBA(73, 130, 5, 1)
+        PressedColor: =RGBA(51, 51, 51, 1)
+        PressedFill: =RGBA(255, 255, 255, 1)
+        RadiusBottomLeft: =0
+        RadiusBottomRight: =0
+        RadiusTopLeft: =0
+        RadiusTopRight: =0
+        Size: =15
+        Tooltip: =
+        Width: =137
+        X: =19
+        Y: =471
+        ZIndex: =22
+
+    Button1_8 As button:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Fill: =RGBA(73, 130, 5, 1)
+        FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+        Font: =Font.'Segoe UI'
+        FontWeight: =FontWeight.Semibold
+        Height: =152
+        HoverBorderColor: =RGBA(0, 0, 0, 0)
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =ColorFade(RGBA(73, 130, 5, 1), -10%)
+        OnSelect: =Navigate(HistoricoParadas, ScreenTransition.Fade)
+        PressedBorderColor: =ColorFade(RGBA(73, 130, 5, 1), -50%)
+        PressedColor: =RGBA(255, 255, 255, 1)
+        PressedFill: =ColorFade(RGBA(73, 130, 5, 1), -30%)
+        RadiusBottomLeft: =0
+        RadiusBottomRight: =0
+        RadiusTopLeft: =0
+        RadiusTopRight: =0
+        Size: =23
+        Text: ="Histórico de Paradas"
+        Tooltip: =If(Paradasalternadas,DisplayMode.Disabled, DisplayMode.Edit)
+        Width: =206
+        X: =1026
+        Y: =589
+        ZIndex: =23
+
+    ContConfirmaçãoParada As groupContainer:
+        Fill: =RGBA(0, 0, 0, 0.41)
+        Height: =800
+        Visible: =confirmaçãoparada
+        Width: =1800
+        ZIndex: =24
+
+        Rectangle2_1 As rectangle:
+            BorderColor: =RGBA(0, 0, 0, 1)
+            BorderThickness: =9
+            DisabledFill: =RGBA(204, 231, 246, 1)
+            Fill: =RGBA(204, 231, 246, 1)
+            FocusedBorderThickness: =4
+            Height: =630
+            HoverFill: =RGBA(204, 231, 246, 1)
+            PressedFill: =RGBA(0, 0, 0, 0)
+            Width: =871
+            X: =466
+            Y: =78
+            ZIndex: =1
+
+        Label2_1 As label:
+            BorderColor: =RGBA(0, 0, 0, 0)
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =2
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            FocusedBorderThickness: =4
+            Font: =Font.'Segoe UI'
+            Height: =464
+            PaddingRight: =3.79
+            PaddingTop: =3.79
+            Size: =15
+            Text: |-
+                ="Data: " & dateparada.SelectedDate &
+                "
+                
+                "
+                & "Turno: " & dropturnoparada.SelectedText.Value &
+                "
+                
+                " 
+                & "Turma: " & dropturmaparada.SelectedText.Value &
+                "
+                
+                "
+                & "Classe: " & dropclasse.Selected.Result &
+                "
+                
+                "
+                & "Local: " & droplocal.Selected.Result &
+                "
+                
+                "
+                & "Tipo: " & droptipoparada.Selected.Result &
+                "
+                
+                "
+                & "inicio: " & If(Paradasalternadas,"Paradas Alternadas",Text (inicioparada.Text)) & "  Fim: " & If(Paradasalternadas,"Paradas Alternadas",Text (fimparada.Text)) & "     Duração: " &
+                duraçãoparada.Text &
+                "
+                
+                "
+                & "Descrição: " & inputparadadetalhada
+            VerticalAlign: =VerticalAlign.Top
+            Width: =855
+            X: =482
+            Y: =94
+            ZIndex: =2
+
+        NãoProd_1 As button:
+            BorderColor: =RGBA(0, 0, 0, 0)
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(244, 244, 244, 1)
+            Fill: =RGBA(0, 13, 75, 1)
+            FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+            Font: =Font.'Segoe UI'
+            FontWeight: =FontWeight.Semibold
+            Height: =90
+            HoverBorderColor: =RGBA(0, 0, 0, 0)
+            HoverColor: =RGBA(255, 255, 255, 1)
+            HoverFill: =ColorFade(RGBA(73, 130, 5, 1), -10%)
+            OnSelect: |-
+                =    UpdateContext(
+                    {
+                        confirmaçãoparada:false
+                    }
+                );
+            PaddingRight: =3.79
+            PaddingTop: =3.79
+            PressedBorderColor: =ColorFade(RGBA(73, 130, 5, 1), -50%)
+            PressedColor: =RGBA(255, 255, 255, 1)
+            PressedFill: =ColorFade(RGBA(73, 130, 5, 1), -30%)
+            RadiusBottomLeft: =0
+            RadiusBottomRight: =0
+            RadiusTopLeft: =0
+            RadiusTopRight: =0
+            Size: =15
+            Text: ="Não"
+            Width: =180
+            X: =974
+            Y: =598
+            ZIndex: =3
+
+        ConfirmarProd_1 As button:
+            BorderColor: =RGBA(0, 0, 0, 0)
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =RGBA(244, 244, 244, 1)
+            Fill: =RGBA(0, 13, 75, 1)
+            FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+            Font: =Font.'Segoe UI'
+            FontWeight: =FontWeight.Semibold
+            Height: =90
+            HoverBorderColor: =RGBA(0, 0, 0, 0)
+            HoverColor: =RGBA(255, 255, 255, 1)
+            HoverFill: =ColorFade(RGBA(73, 130, 5, 1), -10%)
+            OnSelect: |-
+                =If(dropturnoparada.Selected.Value <> "Selecione o Turno" && dropturmaparada.Selected.Value <> "Selecione a Turma" && dropclasse.Selected.Result <> "Selecione a Classe" && droplocal.Selected.Result <> "Selecione o Local" && Value(duraçãoparada.Text) <= 480 && Value(duraçãoparada.Text) > 0,
+                UpdateContext(
+                    {
+                        confirmaçãoparada:false
+                    }
+                );
+                
+                
+                    Patch(
+                        'Apontamento Paradas',
+                        {
+                            Title: User().FullName,
+                            Data: DateValue(dateparada.SelectedDate),
+                            Turno: Text(dropturnoparada.Selected.Value),
+                            Turma: Text(dropturmaparada.Selected.Value),
+                            Classe: Text(dropclasse.SelectedText.Value),
+                            Local: Text(droplocal.SelectedText.Value),
+                            'Tipo de parada': Text(droptipoparada.SelectedText.Value),
+                            inicio:If(Paradasalternadas, "Paradas Alternadas",Text(inicioparada.Text)),
+                            Fim:If(Paradasalternadas, "Paradas Alternadas", Text(fimparada.Text)),
+                            Duração: Value(duraçãoparada.Text),
+                            'Descrição Detalhada': Text(inputparadadetalhada.Text)
+                        }
+                    );
+                
+                    Reset(dateparada);
+                    Reset(dropturnoparada);
+                    Reset(dropturmaparada);
+                    Reset(dropclasse);
+                    Reset(droplocal);
+                    Reset(droptipoparada);
+                    Reset(inicioparada);
+                    Reset(fimparada);
+                    Reset(inputparadadetalhada);
+                    Reset(duraçãoparada);
+                    Reset(Paradasalternadas);
+                    Reset(numcod);
+                    Refresh(codigodeparadas);
+                    Refresh('Apontamento Paradas');
+                    Navigate(TelaExito, ScreenTransition.Fade)
+                ,Notify("Você está esquecendo de preencher algo ou colocando a duração da para errada!.")
+                )
+            PaddingRight: =3.79
+            PaddingTop: =3.79
+            PressedBorderColor: =ColorFade(RGBA(73, 130, 5, 1), -50%)
+            PressedColor: =RGBA(255, 255, 255, 1)
+            PressedFill: =ColorFade(RGBA(73, 130, 5, 1), -30%)
+            RadiusBottomLeft: =0
+            RadiusBottomRight: =0
+            RadiusTopLeft: =0
+            RadiusTopRight: =0
+            Size: =11.38
+            Text: ="Confirmar"
+            Width: =180
+            X: =652
+            Y: =598
+            ZIndex: =4
+
+        Icon1_1 As icon.CancelBadge:
+            BorderColor: =RGBA(166, 166, 166, 1)
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledColor: =RGBA(220, 220, 220, 1)
+            DisabledFill: =RGBA(0, 0, 0, 0)
+            FocusedBorderThickness: =4
+            Height: =74
+            HoverBorderColor: =RGBA(0, 0, 0, 0)
+            HoverColor: =ColorFade(RGBA(73, 130, 5, 1), -30%)
+            HoverFill: =RGBA(0, 0, 0, 0)
+            Icon: =Icon.CancelBadge
+            OnSelect: |-
+                =    UpdateContext(
+                    {
+                        confirmaçãoparada:false
+                    }
+                );
+            PressedBorderColor: =RGBA(0, 0, 0, 0)
+            PressedColor: =ColorFade(RGBA(73, 130, 5, 1), -30%)
+            PressedFill: =RGBA(0, 0, 0, 0)
+            Width: =66
+            X: =1258
+            Y: =94
+            ZIndex: =5
+
+        Label5_1 As label:
+            BorderColor: =RGBA(0, 0, 0, 0)
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =2
+            Color: =RGBA(51, 51, 51, 1)
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledColor: =RGBA(166, 166, 166, 1)
+            FocusedBorderThickness: =4
+            Font: =Font.'Segoe UI'
+            Height: =71
+            PaddingRight: =3.79
+            PaddingTop: =3.79
+            Size: =19
+            Text: ="Porfavor, Confirme os dados antes de enviar!"
+            Width: =539
+            X: =652
+            Y: =527
+            ZIndex: =6
+

@@ -1,0 +1,7 @@
+{
+  "DataEntityMetadataJson": {
+    "{3DBAAC16-9094-47B8-B5C1-45512C6E51B0}": "{\"name\":\"{3DBAAC16-9094-47B8-B5C1-45512C6E51B0}\",\"title\":\"Basechecklimpeza\",\"x-ms-permission\":\"read-write\",\"x-ms-capabilities\":{\"sortRestrictions\":{\"sortable\":true},\"filterRestrictions\":{\"filterable\":true},\"filterFunctionSupport\":[\"eq\",\"ne\",\"substringof\",\"contains\",\"startswith\",\"endswith\"]},\"schema\":{\"type\":\"array\",\"items\":{\"type\":\"object\",\"properties\":{\"Nº\":{\"type\":\"string\",\"title\":\"Nº\",\"x-ms-sort\":\"none\",\"x-ms-capabilities\":{\"filterFunctions\":[\"eq\",\"ne\",\"substringof\",\"contains\",\"startswith\",\"endswith\"]},\"x-ms-permission\":\"read-write\"},\"Checks\":{\"type\":\"string\",\"title\":\"Checks\",\"x-ms-sort\":\"none\",\"x-ms-capabilities\":{\"filterFunctions\":[\"eq\",\"ne\",\"substringof\",\"contains\",\"startswith\",\"endswith\"]},\"x-ms-permission\":\"read-write\"}}}}}"
+  },
+  "EntityName": "Basechecklimpeza",
+  "TableName": "{3DBAAC16-9094-47B8-B5C1-45512C6E51B0}"
+}

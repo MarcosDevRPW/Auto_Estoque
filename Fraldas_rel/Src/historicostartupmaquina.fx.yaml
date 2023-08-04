@@ -1,0 +1,335 @@
+historicostartupmaquina As screen:
+    LoadingSpinnerColor: =RGBA(73, 130, 5, 1)
+
+    Rectangle6_31 As rectangle:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        DisabledFill: =RGBA(166, 166, 166, 1)
+        Fill: =RGBA(3, 38, 127, 1)
+        FocusedBorderThickness: =4
+        Height: =104
+        HoverFill: =RGBA(0, 94, 146, 1)
+        PressedFill: =RGBA(0, 94, 146, 1)
+        Width: =1800
+        ZIndex: =1
+
+    Rectangle1_15 As rectangle:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        DisabledFill: =RGBA(166, 166, 166, 1)
+        Fill: =RGBA(73, 130, 5, 1)
+        FocusedBorderThickness: =4
+        Height: =6
+        HoverFill: =RGBA(73, 130, 5, 1)
+        PressedFill: =RGBA(73, 130, 5, 1)
+        Tooltip: =If(Paradasalternadas,DisplayMode.Disabled, DisplayMode.Edit)
+        Width: =1800
+        Y: =98
+        ZIndex: =2
+
+    Image2_11 As image:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledFill: =RGBA(0, 0, 0, 0)
+        FocusedBorderThickness: =4
+        Height: =103
+        HoverBorderColor: =RGBA(0, 0, 0, 0)
+        HoverFill: =RGBA(0, 0, 0, 0)
+        Image: =Marca_Suzano_Horizontal_sem_Tagline_Verde_RGB
+        PressedBorderColor: =RGBA(0, 0, 0, 0)
+        PressedFill: =RGBA(0, 0, 0, 0)
+        Tooltip: =If(Paradasalternadas,DisplayMode.Disabled, DisplayMode.Edit)
+        Width: =240.57
+        ZIndex: =3
+
+    Label1_31 As label:
+        Align: =Align.Center
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisplayMode: =DisplayMode.View
+        FocusedBorderThickness: =4
+        Font: =Font.'Segoe UI'
+        Height: =98
+        PaddingRight: =3.79
+        PaddingTop: =3.79
+        Size: =45
+        Text: ="HISTÓRICO DE REPARTIDAS"
+        Tooltip: =If(Paradasalternadas,DisplayMode.Disabled, DisplayMode.Edit)
+        Width: =1800
+        ZIndex: =4
+
+    Label1_32 As label:
+        Align: =Align.Center
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisplayMode: =DisplayMode.View
+        FocusedBorderThickness: =4
+        Font: =Font.'Segoe UI'
+        Height: =98
+        PaddingRight: =3.79
+        PaddingTop: =3.79
+        Size: =18.97
+        Text: ="VOLTAR"
+        Tooltip: =If(Paradasalternadas,DisplayMode.Disabled, DisplayMode.Edit)
+        Width: =121
+        X: =1679
+        ZIndex: =5
+
+    Icon2_15 As icon.BackArrow:
+        BorderColor: =RGBA(166, 166, 166, 1)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(220, 220, 220, 1)
+        DisabledFill: =RGBA(0, 0, 0, 0)
+        FocusedBorderThickness: =4
+        Height: =98
+        HoverBorderColor: =RGBA(0, 0, 0, 0)
+        HoverColor: =ColorFade(RGBA(73, 130, 5, 1), -30%)
+        HoverFill: =RGBA(0, 0, 0, 0)
+        Icon: =Icon.BackArrow
+        OnSelect: =Navigate(Startupmaquina, ScreenTransition.Fade)
+        PressedBorderColor: =RGBA(0, 0, 0, 0)
+        PressedColor: =ColorFade(RGBA(73, 130, 5, 1), -30%)
+        PressedFill: =RGBA(0, 0, 0, 0)
+        Tooltip: =If(Paradasalternadas,DisplayMode.Disabled, DisplayMode.Edit)
+        Width: =63.75
+        X: =1627
+        ZIndex: =6
+
+    datarepartidahist As datepicker:
+        BorderColor: =RGBA(166, 166, 166, 1)
+        CalendarHeaderFill: =ColorFade(RGBA(73, 130, 5, 1), -30%)
+        Color: =RGBA(51, 51, 51, 1)
+        DefaultDate: =If(Hour(Now()) <= 23 && Hour(Now()) >= 6,Today(),Today()-1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Font: =Font.'Segoe UI'
+        Height: =68
+        HoverDateFill: =RGBA(200, 200, 200, 1)
+        IconBackground: =RGBA(73, 130, 5, 1)
+        PaddingRight: =3.79
+        PaddingTop: =3.79
+        SelectedDateFill: =RGBA(73, 130, 5, 1)
+        Size: =19
+        Tooltip: =If(Paradasalternadas,DisplayMode.Disabled, DisplayMode.Edit)
+        Width: =209
+        X: =305
+        Y: =126
+        ZIndex: =7
+
+    Button1_19 As button:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Fill: =RGBA(73, 130, 5, 1)
+        FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+        Font: =Font.'Segoe UI'
+        FontWeight: =FontWeight.Semibold
+        Height: =74
+        HoverBorderColor: =RGBA(0, 0, 0, 0)
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =ColorFade(RGBA(73, 130, 5, 1), -10%)
+        OnSelect: =Refresh('Checklist - Repartida de máquina')
+        PressedBorderColor: =ColorFade(RGBA(73, 130, 5, 1), -50%)
+        PressedColor: =RGBA(255, 255, 255, 1)
+        PressedFill: =ColorFade(RGBA(73, 130, 5, 1), -30%)
+        RadiusBottomLeft: =0
+        RadiusBottomRight: =0
+        RadiusTopLeft: =0
+        RadiusTopRight: =0
+        Size: =25
+        Text: ="ATUALIZAR"
+        Tooltip: =DisplayMode.Edit
+        Width: =197
+        X: =43
+        Y: =123
+        ZIndex: =9
+
+    DataTable6 As dataTable.datatable:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.Solid
+        Color: =RGBA(51, 51, 51, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisplayMode: =DisplayMode.Edit
+        Fill: =RGBA(0, 0, 0, 0)
+        Font: =Font.'Segoe UI'
+        FontWeight: =FontWeight.Normal
+        HeadingColor: =RGBA(255, 255, 255, 1)
+        HeadingFill: =RGBA(73, 130, 5, 1)
+        HeadingFont: =Font.'Segoe UI'
+        HeadingFontWeight: =FontWeight.Normal
+        HeadingSize: =13
+        Height: =560
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =RGBA(73, 130, 5, 1)
+        InputFill: =RGBA(255, 255, 255, 1)
+        InvertedColor: =RGBA(255, 255, 255, 1)
+        Items: =If(Toggle1.Value = true,Filter('Checklist - Repartida de máquina', Data = datarepartidahist.SelectedDate),'Checklist - Repartida de máquina')
+        LinkColor: =RGBA(0, 134, 208, 1)
+        PrimaryColor1: =RGBA(73, 130, 5, 1)
+        PrimaryColor2: =ColorFade(RGBA(73, 130, 5, 1), -30%)
+        PrimaryColor3: =ColorFade(RGBA(73, 130, 5, 1), -50%)
+        SelectedColor: =RGBA(51, 51, 51, 1)
+        SelectedFill: =RGBA(73, 130, 5, .2)
+        Size: =13
+        Width: =1800
+        X: =0
+        Y: =240
+        ZIndex: =10
+
+        Título_Column4 As dataTableColumn.textualColumn:
+            AutoWidth: =false
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Colaborador"
+            FieldName: ="Title"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =1
+            Text: =ThisItem.Título
+            Width: =314
+            X: =0
+            Y: =0
+            ZIndex: =1
+
+        Data_Column5 As dataTableColumn.textualColumn:
+            AutoWidth: =false
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Data"
+            FieldName: ="Data"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =2
+            Text: =ThisItem.Data
+            Width: =119
+            X: =306
+            Y: =0
+            ZIndex: =2
+
+        Turno_Column5 As dataTableColumn.textualColumn:
+            AutoWidth: =false
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Turno"
+            FieldName: ="Turno"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =3
+            Text: =ThisItem.Turno
+            Width: =157
+            X: =0
+            Y: =0
+            ZIndex: =3
+
+        Turma_Column5 As dataTableColumn.textualColumn:
+            AutoWidth: =false
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Turma"
+            FieldName: ="Turma"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =4
+            Text: =ThisItem.Turma
+            Width: =131
+            X: =0
+            Y: =0
+            ZIndex: =4
+
+        Inspeção_Column2 As dataTableColumn.textualColumn:
+            AutoWidth: =false
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Inspeção"
+            FieldName: ="Inspe_x00e7__x00e3_o"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =5
+            Text: =ThisItem.Inspeção
+            Width: =478
+            X: =0
+            Y: =0
+            ZIndex: =5
+
+        "'Tipo de repartida_Column1' As dataTableColumn.textualColumn":
+            AutoWidth: =false
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Tipo de repartida"
+            FieldName: ="Tipoderepartida"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =6
+            Text: =ThisItem.'Tipo de repartida'
+            Width: =228
+            X: =0
+            Y: =0
+            ZIndex: =6
+
+        Check_Column1 As dataTableColumn.textualColumn:
+            AutoWidth: =false
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Check"
+            FieldName: ="Check"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =7
+            Text: =ThisItem.Check
+            Width: =84
+            X: =0
+            Y: =0
+            ZIndex: =7
+
+        Observação_Column1 As dataTableColumn.textualColumn:
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="Observação"
+            FieldName: ="Observa_x00e7__x00e3_o"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =8
+            Text: =ThisItem.Observação
+            Width: =100
+            X: =0
+            Y: =0
+            ZIndex: =8
+
+    Toggle1 As toggleSwitch:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        Color: =RGBA(51, 51, 51, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        FalseFill: =RGBA(102, 102, 102, 1)
+        FalseHoverFill: =RGBA(33, 33, 33, 1)
+        FalseText: ="FILTRO DE DATA DESATIVADO"
+        FocusedBorderThickness: =4
+        Font: =Font.'Segoe UI'
+        HandleFill: =RGBA(255, 255, 255, 1)
+        Height: =68
+        HoverBorderColor: =RGBA(0, 0, 0, 0)
+        PressedBorderColor: =RGBA(0, 0, 0, 0)
+        Size: =13
+        TrueFill: =RGBA(73, 130, 5, 1)
+        TrueHoverFill: =ColorFade(RGBA(73, 130, 5, 1), -30%)
+        TrueText: ="FILTRO DE DATA ATIVADO"
+        Width: =261
+        X: =538
+        Y: =126
+        ZIndex: =11
+

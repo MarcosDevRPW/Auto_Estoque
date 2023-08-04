@@ -1,0 +1,7 @@
+{
+  "DataEntityMetadataJson": {
+    "{C8DDE002-DC50-47BA-991A-BBEC01AAB821}": "{\"name\":\"{C8DDE002-DC50-47BA-991A-BBEC01AAB821}\",\"title\":\"Basecheckpartida\",\"x-ms-permission\":\"read-write\",\"x-ms-capabilities\":{\"sortRestrictions\":{\"sortable\":true},\"filterRestrictions\":{\"filterable\":true},\"filterFunctionSupport\":[\"eq\",\"ne\",\"substringof\",\"contains\",\"startswith\",\"endswith\"]},\"schema\":{\"type\":\"array\",\"items\":{\"type\":\"object\",\"properties\":{\"Nº\":{\"type\":\"string\",\"title\":\"Nº\",\"x-ms-sort\":\"none\",\"x-ms-capabilities\":{\"filterFunctions\":[\"eq\",\"ne\",\"substringof\",\"contains\",\"startswith\",\"endswith\"]},\"x-ms-permission\":\"read-write\"},\"Checks\":{\"type\":\"string\",\"title\":\"Checks\",\"x-ms-sort\":\"none\",\"x-ms-capabilities\":{\"filterFunctions\":[\"eq\",\"ne\",\"substringof\",\"contains\",\"startswith\",\"endswith\"]},\"x-ms-permission\":\"read-write\"}}}}}"
+  },
+  "EntityName": "Basecheckpartida",
+  "TableName": "{C8DDE002-DC50-47BA-991A-BBEC01AAB821}"
+}

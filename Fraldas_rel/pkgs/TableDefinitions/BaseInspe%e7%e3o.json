@@ -1,0 +1,7 @@
+{
+  "DataEntityMetadataJson": {
+    "{3E6B31AA-6D83-4AF3-A28C-3881AB732C77}": "{\"name\":\"{3E6B31AA-6D83-4AF3-A28C-3881AB732C77}\",\"title\":\"BaseInspeção\",\"x-ms-permission\":\"read-write\",\"x-ms-capabilities\":{\"sortRestrictions\":{\"sortable\":true},\"filterRestrictions\":{\"filterable\":true},\"filterFunctionSupport\":[\"eq\",\"ne\",\"substringof\",\"contains\",\"startswith\",\"endswith\"]},\"schema\":{\"type\":\"array\",\"items\":{\"type\":\"object\",\"properties\":{\"Nº\":{\"type\":\"string\",\"title\":\"Nº\",\"x-ms-sort\":\"none\",\"x-ms-capabilities\":{\"filterFunctions\":[\"eq\",\"ne\",\"substringof\",\"contains\",\"startswith\",\"endswith\"]},\"x-ms-permission\":\"read-write\"},\"Inspeção\":{\"type\":\"string\",\"title\":\"Inspeção\",\"x-ms-sort\":\"none\",\"x-ms-capabilities\":{\"filterFunctions\":[\"eq\",\"ne\",\"substringof\",\"contains\",\"startswith\",\"endswith\"]},\"x-ms-permission\":\"read-write\"}}}}}"
+  },
+  "EntityName": "BaseInspeção",
+  "TableName": "{3E6B31AA-6D83-4AF3-A28C-3881AB732C77}"
+}

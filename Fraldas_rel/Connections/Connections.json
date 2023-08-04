@@ -1,0 +1,125 @@
+{
+  "aa888289-765d-489e-890c-5b48d0d083b1": {
+    "connectionRef": {
+      "apiTier": "Standard",
+      "displayName": "Excel Online (Business)",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1639/1.0.1639.3319/excelonlinebusiness/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_excelonlinebusiness",
+      "parameterHints": {},
+      "parameterHintsV2": {}
+    },
+    "datasets": {
+      "groups%252F3e058e49-3b01-4984-a0d8-856e871c83b7,b%2521rsrR3jJXIkOMjO1rxarHb0FGj8lYquxPmBnOjhFIYnAwHa-KAG21QIyCuoI3B132,01TSNGQROGBJ7B7ZYPUZGKQAJL2V7CBNHZ": {
+        "dataSources": {
+          "Basechecklimpeza": {
+            "tableName": "{3DBAAC16-9094-47B8-B5C1-45512C6E51B0}"
+          },
+          "Basecheckpartida": {
+            "tableName": "{C8DDE002-DC50-47BA-991A-BBEC01AAB821}"
+          },
+          "BaseInspeção": {
+            "tableName": "{3E6B31AA-6D83-4AF3-A28C-3881AB732C77}"
+          },
+          "BaseProdutos": {
+            "tableName": "{21B1BE8A-9A0B-4670-9EE8-137F47B41E02}"
+          },
+          "BaseTurmas": {
+            "tableName": "{33308262-B5BE-4E62-BAF3-CBC7A5748A7E}"
+          },
+          "BaseTurnos": {
+            "tableName": "{36B84F9B-E370-4698-B1A1-445C210066DF}"
+          },
+          "codigodeparadas": {
+            "tableName": "{11E8C925-1894-4A30-BA6F-EF04BCDD14B2}"
+          }
+        }
+      }
+    },
+    "dataSources": [
+      "codigodeparadas",
+      "BaseInspeção",
+      "BaseProdutos",
+      "BaseTurmas",
+      "BaseTurnos",
+      "Basechecklimpeza",
+      "Basecheckpartida"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "aa888289-765d-489e-890c-5b48d0d083b1"
+  },
+  "d34ca73e-ce31-4aa2-9e3b-11b8c9e605a5": {
+    "connectionRef": {
+      "apiTier": "Standard",
+      "displayName": "SharePoint",
+      "iconUri": "https://connectoricons-prod.azureedge.net/u/shgogna/globalperconnector-train1/1.0.1639.3312/sharepointonline/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_sharepointonline",
+      "parameterHints": {},
+      "parameterHintsV2": {}
+    },
+    "datasets": {
+      "https://suzano.sharepoint.com/sites/ReltorioOperacional-Fraldas": {
+        "dataSources": {
+          "Apontamento Paradas": {
+            "tableName": "99ffbc65-becc-4759-9b26-f26986769b4e"
+          },
+          "Apontamento Produção": {
+            "tableName": "b802263b-d6d4-4783-badd-10544df4858c"
+          }
+        }
+      }
+    },
+    "dataSources": [
+      "Apontamento Produção",
+      "Apontamento Paradas"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "d34ca73e-ce31-4aa2-9e3b-11b8c9e605a5"
+  },
+  "d3584fb1-3b63-4d2b-89cb-ccb03e9cd9a9": {
+    "connectionRef": {
+      "apiTier": "Standard",
+      "displayName": "SharePoint",
+      "iconUri": "https://connectoricons-prod.azureedge.net/u/shgogna/globalperconnector-train1/1.0.1639.3312/sharepointonline/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_sharepointonline",
+      "parameterHints": {},
+      "parameterHintsV2": {}
+    },
+    "datasets": {
+      "https://suzano.sharepoint.com/sites/ReltorioOperacional-Fraldas": {
+        "dataSources": {
+          "Apontamento de Limpeza": {
+            "tableName": "18afddbe-9d30-419b-81e3-b26be89fdb86"
+          },
+          "Apontamento de Qualidade": {
+            "tableName": "16d26aa0-d591-415d-a0e2-e8059c3e376f"
+          },
+          "Apontamento Refugo": {
+            "tableName": "1028b4da-3ee5-461b-ba7e-7a24e563207b"
+          },
+          "Checklist - Repartida de máquina": {
+            "tableName": "cbfa1273-47bf-4fc6-a1f2-34a0252293d2"
+          },
+          "Entrada de Lote_1": {
+            "tableName": "ccfed7de-2719-4056-b1a8-218880ff7c7f"
+          },
+          "Produtos - Fraldas": {
+            "tableName": "a7a02d29-98f8-4b6d-a6d1-6c9aa33f5e11"
+          }
+        }
+      }
+    },
+    "dataSources": [
+      "Apontamento de Qualidade",
+      "Entrada de Lote_1",
+      "Apontamento Refugo",
+      "Apontamento de Limpeza",
+      "Checklist - Repartida de máquina",
+      "Produtos - Fraldas"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "d3584fb1-3b63-4d2b-89cb-ccb03e9cd9a9"
+  }
+}

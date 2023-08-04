@@ -1,0 +1,7 @@
+{
+  "DataEntityMetadataJson": {
+    "{11E8C925-1894-4A30-BA6F-EF04BCDD14B2}": "{\"name\":\"{11E8C925-1894-4A30-BA6F-EF04BCDD14B2}\",\"title\":\"codigodeparadas\",\"x-ms-permission\":\"read-write\",\"x-ms-capabilities\":{\"sortRestrictions\":{\"sortable\":true},\"filterRestrictions\":{\"filterable\":true},\"filterFunctionSupport\":[\"eq\",\"ne\",\"substringof\",\"contains\",\"startswith\",\"endswith\"]},\"schema\":{\"type\":\"array\",\"items\":{\"type\":\"object\",\"properties\":{\"Nº\":{\"type\":\"string\",\"title\":\"Nº\",\"x-ms-sort\":\"none\",\"x-ms-capabilities\":{\"filterFunctions\":[\"eq\",\"ne\",\"substringof\",\"contains\",\"startswith\",\"endswith\"]},\"x-ms-permission\":\"read-write\"},\"CLASSE\":{\"type\":\"string\",\"title\":\"CLASSE\",\"x-ms-sort\":\"none\",\"x-ms-capabilities\":{\"filterFunctions\":[\"eq\",\"ne\",\"substringof\",\"contains\",\"startswith\",\"endswith\"]},\"x-ms-permission\":\"read-write\"},\"TIPO\":{\"type\":\"string\",\"title\":\"TIPO\",\"x-ms-sort\":\"none\",\"x-ms-capabilities\":{\"filterFunctions\":[\"eq\",\"ne\",\"substringof\",\"contains\",\"startswith\",\"endswith\"]},\"x-ms-permission\":\"read-write\"},\"LOCAL\":{\"type\":\"string\",\"title\":\"LOCAL\",\"x-ms-sort\":\"none\",\"x-ms-capabilities\":{\"filterFunctions\":[\"eq\",\"ne\",\"substringof\",\"contains\",\"startswith\",\"endswith\"]},\"x-ms-permission\":\"read-write\"}}}}}"
+  },
+  "EntityName": "codigodeparadas",
+  "TableName": "{11E8C925-1894-4A30-BA6F-EF04BCDD14B2}"
+}

@@ -1,0 +1,7 @@
+{
+  "DataEntityMetadataJson": {
+    "{36B84F9B-E370-4698-B1A1-445C210066DF}": "{\"name\":\"{36B84F9B-E370-4698-B1A1-445C210066DF}\",\"title\":\"BaseTurnos\",\"x-ms-permission\":\"read-write\",\"x-ms-capabilities\":{\"sortRestrictions\":{\"sortable\":true},\"filterRestrictions\":{\"filterable\":true},\"filterFunctionSupport\":[\"eq\",\"ne\",\"substringof\",\"contains\",\"startswith\",\"endswith\"]},\"schema\":{\"type\":\"array\",\"items\":{\"type\":\"object\",\"properties\":{\"Nº\":{\"type\":\"string\",\"title\":\"Nº\",\"x-ms-sort\":\"none\",\"x-ms-capabilities\":{\"filterFunctions\":[\"eq\",\"ne\",\"substringof\",\"contains\",\"startswith\",\"endswith\"]},\"x-ms-permission\":\"read-write\"},\"TURNOS\":{\"type\":\"string\",\"title\":\"TURNOS\",\"x-ms-sort\":\"none\",\"x-ms-capabilities\":{\"filterFunctions\":[\"eq\",\"ne\",\"substringof\",\"contains\",\"startswith\",\"endswith\"]},\"x-ms-permission\":\"read-write\"}}}}}"
+  },
+  "EntityName": "BaseTurnos",
+  "TableName": "{36B84F9B-E370-4698-B1A1-445C210066DF}"
+}

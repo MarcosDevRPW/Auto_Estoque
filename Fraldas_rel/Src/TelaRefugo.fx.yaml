@@ -1,0 +1,564 @@
+TelaRefugo As screen:
+    LoadingSpinnerColor: =RGBA(73, 130, 5, 1)
+
+    Rectangle6_22 As rectangle:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        DisabledFill: =RGBA(166, 166, 166, 1)
+        Fill: =RGBA(3, 38, 127, 1)
+        FocusedBorderThickness: =4
+        Height: =104
+        HoverFill: =RGBA(0, 94, 146, 1)
+        PressedFill: =RGBA(0, 94, 146, 1)
+        Width: =1800
+        ZIndex: =1
+
+    Label1_17 As label:
+        Align: =Align.Center
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisplayMode: =DisplayMode.View
+        FocusedBorderThickness: =4
+        Font: =Font.'Segoe UI'
+        Height: =104
+        PaddingRight: =3.79
+        PaddingTop: =3.79
+        Size: =45
+        Text: ="APONTAMENTO REFUGO"
+        Tooltip: =If(Paradasalternadas,DisplayMode.Disabled, DisplayMode.Edit)
+        Width: =1800
+        ZIndex: =2
+
+    Label1_18 As label:
+        Align: =Align.Center
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisplayMode: =DisplayMode.View
+        FocusedBorderThickness: =4
+        Font: =Font.'Segoe UI'
+        Height: =98
+        PaddingRight: =3.79
+        PaddingTop: =3.79
+        Size: =18.97
+        Text: ="VOLTAR"
+        Tooltip: =If(Paradasalternadas,DisplayMode.Disabled, DisplayMode.Edit)
+        Width: =121
+        X: =1679
+        ZIndex: =3
+
+    Icon2_7 As icon.BackArrow:
+        BorderColor: =RGBA(166, 166, 166, 1)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(220, 220, 220, 1)
+        DisabledFill: =RGBA(0, 0, 0, 0)
+        FocusedBorderThickness: =4
+        Height: =98
+        HoverBorderColor: =RGBA(0, 0, 0, 0)
+        HoverColor: =ColorFade(RGBA(73, 130, 5, 1), -30%)
+        HoverFill: =RGBA(0, 0, 0, 0)
+        Icon: =Icon.BackArrow
+        OnSelect: =Navigate(TelaInicial, ScreenTransition.Fade)
+        PressedBorderColor: =RGBA(0, 0, 0, 0)
+        PressedColor: =ColorFade(RGBA(73, 130, 5, 1), -30%)
+        PressedFill: =RGBA(0, 0, 0, 0)
+        Tooltip: =If(Paradasalternadas,DisplayMode.Disabled, DisplayMode.Edit)
+        Width: =63.75
+        X: =1627
+        ZIndex: =4
+
+    Image1_2 As image:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledFill: =RGBA(0, 0, 0, 0)
+        FocusedBorderThickness: =4
+        Height: =104
+        HoverBorderColor: =RGBA(0, 0, 0, 0)
+        HoverFill: =RGBA(0, 0, 0, 0)
+        Image: =Marca_Suzano_Horizontal_sem_Tagline_Verde_RGB
+        PressedBorderColor: =RGBA(0, 0, 0, 0)
+        PressedFill: =RGBA(0, 0, 0, 0)
+        Width: =515
+        ZIndex: =5
+
+    dropturnorefugo As dropdown:
+        BorderColor: =RGBA(166, 166, 166, 1)
+        ChevronBackground: =RGBA(255, 255, 255, 1)
+        ChevronDisabledBackground: =RGBA(244, 244, 244, 1)
+        ChevronDisabledFill: =RGBA(166, 166, 166, 1)
+        ChevronFill: =RGBA(33, 33, 33, 1)
+        ChevronHoverBackground: =RGBA(212, 212, 212, 1)
+        ChevronHoverFill: =RGBA(33, 33, 33, 1)
+        Color: =RGBA(51, 51, 51, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Font: =Font.'Segoe UI'
+        Height: =60
+        HoverBorderColor: =ColorFade(RGBA(73, 130, 5, 1), -30%)
+        HoverColor: =RGBA(51, 51, 51, 1)
+        HoverFill: =RGBA(212, 212, 212, 1)
+        Items: =Distinct(BaseTurnos,TURNOS)
+        PaddingBottom: =5
+        PaddingLeft: =12
+        PaddingRight: =3.79
+        PaddingTop: =3.79
+        PressedBorderColor: =ColorFade(RGBA(73, 130, 5, 1), -30%)
+        PressedColor: =RGBA(255, 255, 255, 1)
+        PressedFill: =RGBA(73, 130, 5, 1)
+        SelectionFill: =RGBA(73, 130, 5, 1)
+        Size: =14
+        Tooltip: =If(Paradasalternadas,DisplayMode.Disabled, DisplayMode.Edit)
+        Width: =206
+        X: =225
+        Y: =139
+        ZIndex: =6
+
+    dropturmarefugo As dropdown:
+        BorderColor: =RGBA(166, 166, 166, 1)
+        ChevronBackground: =RGBA(255, 255, 255, 1)
+        ChevronDisabledBackground: =RGBA(244, 244, 244, 1)
+        ChevronDisabledFill: =RGBA(166, 166, 166, 1)
+        ChevronFill: =RGBA(33, 33, 33, 1)
+        ChevronHoverBackground: =RGBA(212, 212, 212, 1)
+        ChevronHoverFill: =RGBA(33, 33, 33, 1)
+        Color: =RGBA(51, 51, 51, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Font: =Font.'Segoe UI'
+        Height: =60
+        HoverBorderColor: =ColorFade(RGBA(73, 130, 5, 1), -30%)
+        HoverColor: =RGBA(51, 51, 51, 1)
+        HoverFill: =RGBA(212, 212, 212, 1)
+        Items: =Distinct(BaseTurmas,Turmas)
+        PaddingBottom: =5
+        PaddingLeft: =12
+        PaddingRight: =3.79
+        PaddingTop: =3.79
+        PressedBorderColor: =ColorFade(RGBA(73, 130, 5, 1), -30%)
+        PressedColor: =RGBA(255, 255, 255, 1)
+        PressedFill: =RGBA(73, 130, 5, 1)
+        SelectionFill: =RGBA(73, 130, 5, 1)
+        Size: =14
+        Tooltip: =If(Paradasalternadas,DisplayMode.Disabled, DisplayMode.Edit)
+        Width: =223
+        X: =476
+        Y: =139
+        ZIndex: =7
+
+    datarefugo As datepicker:
+        BorderColor: =RGBA(166, 166, 166, 1)
+        CalendarHeaderFill: =ColorFade(RGBA(73, 130, 5, 1), -30%)
+        Color: =RGBA(51, 51, 51, 1)
+        DefaultDate: =If(Hour(Now()) <= 23 && Hour(Now()) >= 6,Today(),Today()-1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Font: =Font.'Segoe UI'
+        Height: =60
+        HoverDateFill: =RGBA(200, 200, 200, 1)
+        IconBackground: =RGBA(73, 130, 5, 1)
+        PaddingRight: =3.79
+        PaddingTop: =3.79
+        SelectedDateFill: =RGBA(73, 130, 5, 1)
+        Size: =15
+        Tooltip: =If(Paradasalternadas,DisplayMode.Disabled, DisplayMode.Edit)
+        Width: =172
+        X: =32
+        Y: =139
+        ZIndex: =8
+
+    Dropdownselectrefugo As dropdown:
+        BorderColor: =RGBA(166, 166, 166, 1)
+        ChevronBackground: =RGBA(255, 255, 255, 1)
+        ChevronDisabledBackground: =RGBA(244, 244, 244, 1)
+        ChevronDisabledFill: =RGBA(166, 166, 166, 1)
+        ChevronFill: =RGBA(33, 33, 33, 1)
+        ChevronHoverBackground: =RGBA(212, 212, 212, 1)
+        ChevronHoverFill: =RGBA(33, 33, 33, 1)
+        Color: =RGBA(51, 51, 51, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Font: =Font.'Segoe UI'
+        Height: =60
+        HoverBorderColor: =ColorFade(RGBA(73, 130, 5, 1), -30%)
+        HoverColor: =RGBA(51, 51, 51, 1)
+        HoverFill: =RGBA(212, 212, 212, 1)
+        Items: =Distinct(BaseProdutos,PRODUTOS)
+        PaddingBottom: =5
+        PaddingLeft: =12
+        PaddingRight: =3.79
+        PaddingTop: =3.79
+        PressedBorderColor: =ColorFade(RGBA(73, 130, 5, 1), -30%)
+        PressedColor: =RGBA(255, 255, 255, 1)
+        PressedFill: =RGBA(73, 130, 5, 1)
+        SelectionFill: =RGBA(73, 130, 5, 1)
+        Size: =16
+        Width: =350
+        X: =743
+        Y: =139
+        ZIndex: =9
+
+    textrefugo As text:
+        BorderColor: =RGBA(166, 166, 166, 1)
+        BorderThickness: =2
+        Color: =RGBA(51, 51, 51, 1)
+        Default: =""
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.'Segoe UI'
+        Format: =TextFormat.Number
+        Height: =63
+        HintText: ="PESO(KG)"
+        HoverBorderColor: =ColorFade(RGBA(73, 130, 5, 1), -30%)
+        HoverColor: =RGBA(51, 51, 51, 1)
+        HoverFill: =RGBA(255, 255, 255, 1)
+        PressedBorderColor: =RGBA(73, 130, 5, 1)
+        PressedColor: =RGBA(51, 51, 51, 1)
+        PressedFill: =RGBA(255, 255, 255, 1)
+        RadiusBottomLeft: =0
+        RadiusBottomRight: =0
+        RadiusTopLeft: =0
+        RadiusTopRight: =0
+        Size: =13
+        Width: =220
+        X: =1148
+        Y: =186
+        ZIndex: =10
+
+    Rectangle6_23 As rectangle:
+        BorderColor: =RGBA(3, 38, 127, 1)
+        BorderThickness: =2
+        DisabledFill: =RGBA(166, 166, 166, 1)
+        Fill: =RGBA(3, 38, 127, 1)
+        FocusedBorderThickness: =4
+        Height: =47
+        HoverFill: =RGBA(0, 94, 146, 1)
+        PressedFill: =RGBA(0, 94, 146, 1)
+        Width: =220
+        X: =1148
+        Y: =139
+        ZIndex: =11
+
+    labelrefugo As label:
+        Align: =Align.Center
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.'Segoe UI'
+        Height: =47
+        Size: =15
+        Text: ="PESO DO REFUGO(KG)"
+        Width: =220
+        X: =1148
+        Y: =139
+        ZIndex: =12
+
+    Rectangle1_10 As rectangle:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        DisabledFill: =RGBA(166, 166, 166, 1)
+        Fill: =RGBA(73, 130, 5, 1)
+        FocusedBorderThickness: =4
+        Height: =5
+        HoverFill: =RGBA(73, 130, 5, 1)
+        PressedFill: =RGBA(73, 130, 5, 1)
+        Width: =1800
+        Y: =330
+        ZIndex: =14
+
+    Label1_19 As label:
+        Align: =Align.Center
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisplayMode: =DisplayMode.View
+        FocusedBorderThickness: =4
+        Font: =Font.'Segoe UI'
+        Height: =86
+        PaddingRight: =3.79
+        PaddingTop: =3.79
+        Size: =18.21
+        Text: ="Apontamentos de Refugo"
+        Width: =1623
+        X: =176
+        Y: =330
+        ZIndex: =15
+
+    Button1_4 As button:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Fill: =RGBA(73, 130, 5, 1)
+        FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+        Font: =Font.'Segoe UI'
+        FontWeight: =FontWeight.Semibold
+        Height: =127
+        HoverBorderColor: =RGBA(0, 0, 0, 0)
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =ColorFade(RGBA(73, 130, 5, 1), -10%)
+        OnSelect: |-
+            =If(
+                dropturmarefugo.Selected.Value <> "Selecione a Turma" && dropturnorefugo.Selected.Value <> "Selecione o Turno" && Dropdownselectrefugo.Selected.Value <> "Selecione o Produto Produzindo" && IsBlank(textrefugo.Text) <> true,
+                Patch(
+                    'Apontamento Refugo',
+                    {
+                        Título: User().FullName,
+                        DATA:DateValue(datarefugo),
+                        TURNO: dropturnorefugo.Selected.Value,
+                        TURMA: dropturmarefugo.Selected.Value,
+                        'PRODUTO PRODUZIDO': Dropdownselectrefugo.Selected.Value,
+                        'PESO DA PRENSA(KG)':Value(textrefugo.Text)
+                    }
+                );
+            Reset(dropturnorefugo);
+            Reset(dropturmarefugo);
+            Reset(Dropdownselectrefugo);
+            Reset(textrefugo);
+            ,Notify("Você esqueceu de preencher algum campo ou não colocou algum peso!.")
+            )
+        PressedBorderColor: =ColorFade(RGBA(73, 130, 5, 1), -50%)
+        PressedColor: =RGBA(255, 255, 255, 1)
+        PressedFill: =ColorFade(RGBA(73, 130, 5, 1), -30%)
+        RadiusBottomLeft: =0
+        RadiusBottomRight: =0
+        RadiusTopLeft: =0
+        RadiusTopRight: =0
+        Size: =32
+        Text: ="Enviar"
+        Tooltip: =If(Paradasalternadas,DisplayMode.Disabled, DisplayMode.Edit)
+        Width: =313
+        X: =1434
+        Y: =130
+        ZIndex: =16
+
+    DataTable1 As dataTable.datatable:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.Solid
+        Color: =RGBA(51, 51, 51, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisplayMode: =DisplayMode.Edit
+        Fill: =RGBA(0, 0, 0, 0)
+        Font: =Font.'Segoe UI'
+        FontWeight: =FontWeight.Normal
+        HeadingColor: =RGBA(255, 255, 255, 1)
+        HeadingFill: =RGBA(73, 130, 5, 1)
+        HeadingFont: =Font.'Segoe UI'
+        HeadingFontWeight: =FontWeight.Normal
+        HeadingSize: =13
+        Height: =383
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =RGBA(73, 130, 5, 1)
+        InputFill: =RGBA(255, 255, 255, 1)
+        InvertedColor: =RGBA(255, 255, 255, 1)
+        Items: =If(dropturnoparadarefg.Selected.Value = "Selecione o Turno",Filter('Apontamento Refugo',DATA = dataparadarefg.SelectedDate),Filter('Apontamento Refugo',DATA = dataparadarefg.SelectedDate && TURNO = dropturnoparadarefg.Selected.Value))
+        LinkColor: =RGBA(0, 134, 208, 1)
+        PrimaryColor1: =RGBA(73, 130, 5, 1)
+        PrimaryColor2: =ColorFade(RGBA(73, 130, 5, 1), -30%)
+        PrimaryColor3: =ColorFade(RGBA(73, 130, 5, 1), -50%)
+        SelectedColor: =RGBA(51, 51, 51, 1)
+        SelectedFill: =RGBA(73, 130, 5, .2)
+        Size: =13
+        Width: =1800
+        X: =0
+        Y: =416
+        ZIndex: =17
+
+        Título_Column1 As dataTableColumn.textualColumn:
+            AutoWidth: =false
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="COLABORADOR"
+            FieldName: ="Title"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =1
+            Text: =ThisItem.Título
+            Width: =461
+            X: =0
+            Y: =0
+            ZIndex: =1
+
+        DATA_Column1 As dataTableColumn.textualColumn:
+            AutoWidth: =false
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="DATA"
+            FieldName: ="DATA"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =2
+            Text: =ThisItem.DATA
+            Width: =172
+            X: =0
+            Y: =0
+            ZIndex: =2
+
+        TURMA_Column1 As dataTableColumn.textualColumn:
+            AutoWidth: =false
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="TURMA"
+            FieldName: ="TURMA"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =3
+            Text: =ThisItem.TURMA
+            Width: =178
+            X: =0
+            Y: =0
+            ZIndex: =3
+
+        TURNO_Column1 As dataTableColumn.textualColumn:
+            AutoWidth: =false
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="TURNO"
+            FieldName: ="TURNO"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =4
+            Text: =ThisItem.TURNO
+            Width: =174
+            X: =0
+            Y: =0
+            ZIndex: =4
+
+        "'PRODUTO PRODUZIDO_Column1' As dataTableColumn.textualColumn":
+            AutoWidth: =false
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="PRODUTO PRODUZIDO"
+            FieldName: ="PRODUTOPRODUZIDO"
+            FieldVariantName: ="textualColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =5
+            Text: =ThisItem.'PRODUTO PRODUZIDO'
+            Width: =528
+            X: =0
+            Y: =0
+            ZIndex: =5
+
+        "'PESO DA PRENSA(KG)_Column1' As dataTableColumn.numberColumn":
+            AutoWidth: =false
+            DisplayMode: =DisplayMode.Edit
+            FieldDisplayName: ="PESO DA PRENSA(KG)"
+            FieldName: ="PESODAPRENSA_x0028_KG_x0029_"
+            FieldVariantName: ="numberColumn"
+            Height: =Parent.Height
+            LayoutHeight: =Parent.Height
+            Order: =6
+            Text: =ThisItem.'PESO DA PRENSA(KG)'
+            Width: =269
+            X: =0
+            Y: =0
+            ZIndex: =6
+
+    dataparadarefg As datepicker:
+        BorderColor: =RGBA(166, 166, 166, 1)
+        CalendarHeaderFill: =ColorFade(RGBA(73, 130, 5, 1), -30%)
+        Color: =RGBA(51, 51, 51, 1)
+        DefaultDate: =If(Hour(Now()) <= 23 && Hour(Now()) >= 6,Today(),Today()-1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Font: =Font.'Segoe UI'
+        Height: =56
+        HoverDateFill: =RGBA(200, 200, 200, 1)
+        IconBackground: =RGBA(73, 130, 5, 1)
+        PaddingRight: =3.79
+        PaddingTop: =3.79
+        SelectedDateFill: =RGBA(73, 130, 5, 1)
+        Size: =19
+        Tooltip: =If(Paradasalternadas,DisplayMode.Disabled, DisplayMode.Edit)
+        Width: =209
+        X: =246
+        Y: =348
+        ZIndex: =18
+
+    dropturnoparadarefg As dropdown:
+        BorderColor: =RGBA(166, 166, 166, 1)
+        ChevronBackground: =RGBA(255, 255, 255, 1)
+        ChevronDisabledBackground: =RGBA(244, 244, 244, 1)
+        ChevronDisabledFill: =RGBA(166, 166, 166, 1)
+        ChevronFill: =RGBA(33, 33, 33, 1)
+        ChevronHoverBackground: =RGBA(212, 212, 212, 1)
+        ChevronHoverFill: =RGBA(33, 33, 33, 1)
+        Color: =RGBA(51, 51, 51, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Font: =Font.'Segoe UI'
+        Height: =56
+        HoverBorderColor: =ColorFade(RGBA(73, 130, 5, 1), -30%)
+        HoverColor: =RGBA(51, 51, 51, 1)
+        HoverFill: =RGBA(212, 212, 212, 1)
+        Items: =Distinct(BaseTurnos,TURNOS)
+        PaddingBottom: =5
+        PaddingLeft: =12
+        PaddingRight: =3.79
+        PaddingTop: =3.79
+        PressedBorderColor: =ColorFade(RGBA(73, 130, 5, 1), -30%)
+        PressedColor: =RGBA(255, 255, 255, 1)
+        PressedFill: =RGBA(73, 130, 5, 1)
+        SelectionFill: =RGBA(73, 130, 5, 1)
+        Size: =19
+        Tooltip: =If(Paradasalternadas,DisplayMode.Disabled, DisplayMode.Edit)
+        Width: =296
+        X: =476
+        Y: =348
+        ZIndex: =19
+
+    Button1_10 As button:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Fill: =RGBA(73, 130, 5, 1)
+        FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+        Font: =Font.'Segoe UI'
+        FontWeight: =FontWeight.Semibold
+        Height: =60
+        HoverBorderColor: =RGBA(0, 0, 0, 0)
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =ColorFade(RGBA(73, 130, 5, 1), -10%)
+        OnSelect: =Refresh('Apontamento Refugo')
+        PressedBorderColor: =ColorFade(RGBA(73, 130, 5, 1), -50%)
+        PressedColor: =RGBA(255, 255, 255, 1)
+        PressedFill: =ColorFade(RGBA(73, 130, 5, 1), -30%)
+        RadiusBottomLeft: =0
+        RadiusBottomRight: =0
+        RadiusTopLeft: =0
+        RadiusTopRight: =0
+        Size: =25
+        Text: ="ATUALIZAR"
+        Tooltip: =DisplayMode.Edit
+        Width: =193
+        X: =32
+        Y: =344
+        ZIndex: =20
+

@@ -1,0 +1,1676 @@
+"'Entrada de Lote' As screen":
+    LoadingSpinnerColor: =RGBA(73, 130, 5, 1)
+
+    entrada1 As text:
+        BorderColor: =RGBA(166, 166, 166, 1)
+        BorderThickness: =2
+        Color: =RGBA(51, 51, 51, 1)
+        Default: =""
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.'Segoe UI'
+        Height: =63
+        HintText: ="Lote"
+        HoverBorderColor: =ColorFade(RGBA(73, 130, 5, 1), -30%)
+        HoverColor: =RGBA(51, 51, 51, 1)
+        HoverFill: =RGBA(255, 255, 255, 1)
+        PressedBorderColor: =RGBA(73, 130, 5, 1)
+        PressedColor: =RGBA(51, 51, 51, 1)
+        PressedFill: =RGBA(255, 255, 255, 1)
+        RadiusBottomLeft: =0
+        RadiusBottomRight: =0
+        RadiusTopLeft: =0
+        RadiusTopRight: =0
+        Size: =13
+        Width: =220
+        X: =26
+        Y: =283
+        ZIndex: =1
+
+    Rectangle6_2 As rectangle:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        DisabledFill: =RGBA(166, 166, 166, 1)
+        Fill: =RGBA(3, 38, 127, 1)
+        FocusedBorderThickness: =4
+        Height: =104
+        HoverFill: =RGBA(0, 94, 146, 1)
+        PressedFill: =RGBA(0, 94, 146, 1)
+        Width: =1800
+        ZIndex: =2
+
+    Label1_15 As label:
+        Align: =Align.Center
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisplayMode: =DisplayMode.View
+        FocusedBorderThickness: =4
+        Font: =Font.'Segoe UI'
+        Height: =104
+        PaddingRight: =3.79
+        PaddingTop: =3.79
+        Size: =45
+        Text: ="ENTRADA DE LOTE"
+        Tooltip: =If(Paradasalternadas,DisplayMode.Disabled, DisplayMode.Edit)
+        Width: =1800
+        ZIndex: =3
+
+    Label1_16 As label:
+        Align: =Align.Center
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisplayMode: =DisplayMode.View
+        FocusedBorderThickness: =4
+        Font: =Font.'Segoe UI'
+        Height: =98
+        PaddingRight: =3.79
+        PaddingTop: =3.79
+        Size: =18.97
+        Text: ="VOLTAR"
+        Tooltip: =If(Paradasalternadas,DisplayMode.Disabled, DisplayMode.Edit)
+        Width: =121
+        X: =1679
+        ZIndex: =4
+
+    Icon2_6 As icon.BackArrow:
+        BorderColor: =RGBA(166, 166, 166, 1)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(220, 220, 220, 1)
+        DisabledFill: =RGBA(0, 0, 0, 0)
+        FocusedBorderThickness: =4
+        Height: =98
+        HoverBorderColor: =RGBA(0, 0, 0, 0)
+        HoverColor: =ColorFade(RGBA(73, 130, 5, 1), -30%)
+        HoverFill: =RGBA(0, 0, 0, 0)
+        Icon: =Icon.BackArrow
+        OnSelect: =Navigate(TelaInicial, ScreenTransition.Fade)
+        PressedBorderColor: =RGBA(0, 0, 0, 0)
+        PressedColor: =ColorFade(RGBA(73, 130, 5, 1), -30%)
+        PressedFill: =RGBA(0, 0, 0, 0)
+        Tooltip: =If(Paradasalternadas,DisplayMode.Disabled, DisplayMode.Edit)
+        Width: =63.75
+        X: =1627
+        ZIndex: =5
+
+    Image1_1 As image:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledFill: =RGBA(0, 0, 0, 0)
+        FocusedBorderThickness: =4
+        Height: =104
+        HoverBorderColor: =RGBA(0, 0, 0, 0)
+        HoverFill: =RGBA(0, 0, 0, 0)
+        Image: =Marca_Suzano_Horizontal_sem_Tagline_Verde_RGB
+        PressedBorderColor: =RGBA(0, 0, 0, 0)
+        PressedFill: =RGBA(0, 0, 0, 0)
+        Width: =515
+        ZIndex: =6
+
+    Rectangle6_3 As rectangle:
+        BorderColor: =RGBA(3, 38, 127, 1)
+        BorderThickness: =2
+        DisabledFill: =RGBA(166, 166, 166, 1)
+        Fill: =RGBA(3, 38, 127, 1)
+        FocusedBorderThickness: =4
+        Height: =47
+        HoverFill: =RGBA(0, 94, 146, 1)
+        PressedFill: =RGBA(0, 94, 146, 1)
+        Width: =220
+        X: =26
+        Y: =236
+        ZIndex: =7
+
+    Label8 As label:
+        Align: =Align.Center
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.'Segoe UI'
+        Height: =47
+        Size: =15
+        Text: ="POLY 210"
+        Width: =220
+        X: =26
+        Y: =236
+        ZIndex: =8
+
+    dropturnoentrada As dropdown:
+        BorderColor: =RGBA(166, 166, 166, 1)
+        ChevronBackground: =RGBA(255, 255, 255, 1)
+        ChevronDisabledBackground: =RGBA(244, 244, 244, 1)
+        ChevronDisabledFill: =RGBA(166, 166, 166, 1)
+        ChevronFill: =RGBA(33, 33, 33, 1)
+        ChevronHoverBackground: =RGBA(212, 212, 212, 1)
+        ChevronHoverFill: =RGBA(33, 33, 33, 1)
+        Color: =RGBA(51, 51, 51, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Font: =Font.'Segoe UI'
+        Height: =60
+        HoverBorderColor: =ColorFade(RGBA(73, 130, 5, 1), -30%)
+        HoverColor: =RGBA(51, 51, 51, 1)
+        HoverFill: =RGBA(212, 212, 212, 1)
+        Items: =Distinct(BaseTurnos,TURNOS)
+        PaddingBottom: =5
+        PaddingLeft: =12
+        PaddingRight: =3.79
+        PaddingTop: =3.79
+        PressedBorderColor: =ColorFade(RGBA(73, 130, 5, 1), -30%)
+        PressedColor: =RGBA(255, 255, 255, 1)
+        PressedFill: =RGBA(73, 130, 5, 1)
+        SelectionFill: =RGBA(73, 130, 5, 1)
+        Size: =14
+        Tooltip: =If(Paradasalternadas,DisplayMode.Disabled, DisplayMode.Edit)
+        Width: =206
+        X: =543
+        Y: =126
+        ZIndex: =9
+
+    dropturmaentrada As dropdown:
+        BorderColor: =RGBA(166, 166, 166, 1)
+        ChevronBackground: =RGBA(255, 255, 255, 1)
+        ChevronDisabledBackground: =RGBA(244, 244, 244, 1)
+        ChevronDisabledFill: =RGBA(166, 166, 166, 1)
+        ChevronFill: =RGBA(33, 33, 33, 1)
+        ChevronHoverBackground: =RGBA(212, 212, 212, 1)
+        ChevronHoverFill: =RGBA(33, 33, 33, 1)
+        Color: =RGBA(51, 51, 51, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Font: =Font.'Segoe UI'
+        Height: =60
+        HoverBorderColor: =ColorFade(RGBA(73, 130, 5, 1), -30%)
+        HoverColor: =RGBA(51, 51, 51, 1)
+        HoverFill: =RGBA(212, 212, 212, 1)
+        Items: =Distinct(BaseTurmas,Turmas)
+        PaddingBottom: =5
+        PaddingLeft: =12
+        PaddingRight: =3.79
+        PaddingTop: =3.79
+        PressedBorderColor: =ColorFade(RGBA(73, 130, 5, 1), -30%)
+        PressedColor: =RGBA(255, 255, 255, 1)
+        PressedFill: =RGBA(73, 130, 5, 1)
+        SelectionFill: =RGBA(73, 130, 5, 1)
+        Size: =14
+        Tooltip: =If(Paradasalternadas,DisplayMode.Disabled, DisplayMode.Edit)
+        Width: =223
+        X: =794
+        Y: =126
+        ZIndex: =10
+
+    dateentrada As datepicker:
+        BorderColor: =RGBA(166, 166, 166, 1)
+        CalendarHeaderFill: =ColorFade(RGBA(73, 130, 5, 1), -30%)
+        Color: =RGBA(51, 51, 51, 1)
+        DefaultDate: =If(Hour(Now()) <= 23 && Hour(Now()) >= 6,Today(),Today()-1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Font: =Font.'Segoe UI'
+        Height: =60
+        HoverDateFill: =RGBA(200, 200, 200, 1)
+        IconBackground: =RGBA(73, 130, 5, 1)
+        PaddingRight: =3.79
+        PaddingTop: =3.79
+        SelectedDateFill: =RGBA(73, 130, 5, 1)
+        Size: =15
+        Tooltip: =If(Paradasalternadas,DisplayMode.Disabled, DisplayMode.Edit)
+        Width: =172
+        X: =350
+        Y: =126
+        ZIndex: =11
+
+    Dropdownselectentrada As dropdown:
+        BorderColor: =RGBA(166, 166, 166, 1)
+        ChevronBackground: =RGBA(255, 255, 255, 1)
+        ChevronDisabledBackground: =RGBA(244, 244, 244, 1)
+        ChevronDisabledFill: =RGBA(166, 166, 166, 1)
+        ChevronFill: =RGBA(33, 33, 33, 1)
+        ChevronHoverBackground: =RGBA(212, 212, 212, 1)
+        ChevronHoverFill: =RGBA(33, 33, 33, 1)
+        Color: =RGBA(51, 51, 51, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Font: =Font.'Segoe UI'
+        Height: =60
+        HoverBorderColor: =ColorFade(RGBA(73, 130, 5, 1), -30%)
+        HoverColor: =RGBA(51, 51, 51, 1)
+        HoverFill: =RGBA(212, 212, 212, 1)
+        Items: =Distinct(BaseProdutos,PRODUTOS)
+        PaddingBottom: =5
+        PaddingLeft: =12
+        PaddingRight: =3.79
+        PaddingTop: =3.79
+        PressedBorderColor: =ColorFade(RGBA(73, 130, 5, 1), -30%)
+        PressedColor: =RGBA(255, 255, 255, 1)
+        PressedFill: =RGBA(73, 130, 5, 1)
+        SelectionFill: =RGBA(73, 130, 5, 1)
+        Size: =16
+        Width: =350
+        X: =1061
+        Y: =126
+        ZIndex: =12
+
+    entrada2 As text:
+        BorderColor: =RGBA(166, 166, 166, 1)
+        BorderThickness: =2
+        Color: =RGBA(51, 51, 51, 1)
+        Default: =""
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.'Segoe UI'
+        Height: =63
+        HintText: ="Lote"
+        HoverBorderColor: =ColorFade(RGBA(73, 130, 5, 1), -30%)
+        HoverColor: =RGBA(51, 51, 51, 1)
+        HoverFill: =RGBA(255, 255, 255, 1)
+        PressedBorderColor: =RGBA(73, 130, 5, 1)
+        PressedColor: =RGBA(51, 51, 51, 1)
+        PressedFill: =RGBA(255, 255, 255, 1)
+        RadiusBottomLeft: =0
+        RadiusBottomRight: =0
+        RadiusTopLeft: =0
+        RadiusTopRight: =0
+        Size: =13
+        Width: =220
+        X: =272
+        Y: =283
+        ZIndex: =13
+
+    Rectangle6_6 As rectangle:
+        BorderColor: =RGBA(3, 38, 127, 1)
+        BorderThickness: =2
+        DisabledFill: =RGBA(166, 166, 166, 1)
+        Fill: =RGBA(3, 38, 127, 1)
+        FocusedBorderThickness: =4
+        Height: =47
+        HoverFill: =RGBA(0, 94, 146, 1)
+        PressedFill: =RGBA(0, 94, 146, 1)
+        Width: =220
+        X: =272
+        Y: =236
+        ZIndex: =14
+
+    Label8_1 As label:
+        Align: =Align.Center
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.'Segoe UI'
+        Height: =47
+        Size: =15
+        Text: ="N. W. 40G"
+        Width: =220
+        X: =272
+        Y: =236
+        ZIndex: =15
+
+    entrada3 As text:
+        BorderColor: =RGBA(166, 166, 166, 1)
+        BorderThickness: =2
+        Color: =RGBA(51, 51, 51, 1)
+        Default: =""
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.'Segoe UI'
+        Height: =63
+        HintText: ="Lote"
+        HoverBorderColor: =ColorFade(RGBA(73, 130, 5, 1), -30%)
+        HoverColor: =RGBA(51, 51, 51, 1)
+        HoverFill: =RGBA(255, 255, 255, 1)
+        PressedBorderColor: =RGBA(73, 130, 5, 1)
+        PressedColor: =RGBA(51, 51, 51, 1)
+        PressedFill: =RGBA(255, 255, 255, 1)
+        RadiusBottomLeft: =0
+        RadiusBottomRight: =0
+        RadiusTopLeft: =0
+        RadiusTopRight: =0
+        Size: =13
+        Width: =220
+        X: =515
+        Y: =283
+        ZIndex: =16
+
+    Rectangle6_7 As rectangle:
+        BorderColor: =RGBA(3, 38, 127, 1)
+        BorderThickness: =2
+        DisabledFill: =RGBA(166, 166, 166, 1)
+        Fill: =RGBA(3, 38, 127, 1)
+        FocusedBorderThickness: =4
+        Height: =47
+        HoverFill: =RGBA(0, 94, 146, 1)
+        PressedFill: =RGBA(0, 94, 146, 1)
+        Width: =220
+        X: =515
+        Y: =236
+        ZIndex: =17
+
+    Label8_2 As label:
+        Align: =Align.Center
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.'Segoe UI'
+        Height: =47
+        Size: =15
+        Text: ="N. W. 10G SPUN"
+        Width: =220
+        X: =515
+        Y: =236
+        ZIndex: =18
+
+    entrada4 As text:
+        BorderColor: =RGBA(166, 166, 166, 1)
+        BorderThickness: =2
+        Color: =RGBA(51, 51, 51, 1)
+        Default: =""
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.'Segoe UI'
+        Height: =63
+        HintText: ="Lote"
+        HoverBorderColor: =ColorFade(RGBA(73, 130, 5, 1), -30%)
+        HoverColor: =RGBA(51, 51, 51, 1)
+        HoverFill: =RGBA(255, 255, 255, 1)
+        PressedBorderColor: =RGBA(73, 130, 5, 1)
+        PressedColor: =RGBA(51, 51, 51, 1)
+        PressedFill: =RGBA(255, 255, 255, 1)
+        RadiusBottomLeft: =0
+        RadiusBottomRight: =0
+        RadiusTopLeft: =0
+        RadiusTopRight: =0
+        Size: =13
+        Width: =220
+        X: =767
+        Y: =283
+        ZIndex: =19
+
+    Rectangle6_8 As rectangle:
+        BorderColor: =RGBA(3, 38, 127, 1)
+        BorderThickness: =2
+        DisabledFill: =RGBA(166, 166, 166, 1)
+        Fill: =RGBA(3, 38, 127, 1)
+        FocusedBorderThickness: =4
+        Height: =47
+        HoverFill: =RGBA(0, 94, 146, 1)
+        PressedFill: =RGBA(0, 94, 146, 1)
+        Width: =220
+        X: =767
+        Y: =236
+        ZIndex: =20
+
+    Label8_3 As label:
+        Align: =Align.Center
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.'Segoe UI'
+        Height: =47
+        Size: =15
+        Text: ="N. W. 155 12G"
+        Width: =220
+        X: =767
+        Y: =236
+        ZIndex: =21
+
+    entrada5 As text:
+        BorderColor: =RGBA(166, 166, 166, 1)
+        BorderThickness: =2
+        Color: =RGBA(51, 51, 51, 1)
+        Default: =""
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.'Segoe UI'
+        Height: =63
+        HintText: ="Lote"
+        HoverBorderColor: =ColorFade(RGBA(73, 130, 5, 1), -30%)
+        HoverColor: =RGBA(51, 51, 51, 1)
+        HoverFill: =RGBA(255, 255, 255, 1)
+        PressedBorderColor: =RGBA(73, 130, 5, 1)
+        PressedColor: =RGBA(51, 51, 51, 1)
+        PressedFill: =RGBA(255, 255, 255, 1)
+        RadiusBottomLeft: =0
+        RadiusBottomRight: =0
+        RadiusTopLeft: =0
+        RadiusTopRight: =0
+        Size: =13
+        Width: =220
+        X: =1020
+        Y: =283
+        ZIndex: =22
+
+    Rectangle6_9 As rectangle:
+        BorderColor: =RGBA(3, 38, 127, 1)
+        BorderThickness: =2
+        DisabledFill: =RGBA(166, 166, 166, 1)
+        Fill: =RGBA(3, 38, 127, 1)
+        FocusedBorderThickness: =4
+        Height: =47
+        HoverFill: =RGBA(0, 94, 146, 1)
+        PressedFill: =RGBA(0, 94, 146, 1)
+        Width: =220
+        X: =1020
+        Y: =236
+        ZIndex: =23
+
+    Label8_4 As label:
+        Align: =Align.Center
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.'Segoe UI'
+        Height: =47
+        Size: =15
+        Text: ="N. W.  160 13G"
+        Width: =220
+        X: =1020
+        Y: =236
+        ZIndex: =24
+
+    entrada7 As text:
+        BorderColor: =RGBA(166, 166, 166, 1)
+        BorderThickness: =2
+        Color: =RGBA(51, 51, 51, 1)
+        Default: =""
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.'Segoe UI'
+        Height: =63
+        HintText: ="Lote"
+        HoverBorderColor: =ColorFade(RGBA(73, 130, 5, 1), -30%)
+        HoverColor: =RGBA(51, 51, 51, 1)
+        HoverFill: =RGBA(255, 255, 255, 1)
+        PressedBorderColor: =RGBA(73, 130, 5, 1)
+        PressedColor: =RGBA(51, 51, 51, 1)
+        PressedFill: =RGBA(255, 255, 255, 1)
+        RadiusBottomLeft: =0
+        RadiusBottomRight: =0
+        RadiusTopLeft: =0
+        RadiusTopRight: =0
+        Size: =13
+        Width: =220
+        X: =1548
+        Y: =283
+        ZIndex: =25
+
+    Rectangle6_10 As rectangle:
+        BorderColor: =RGBA(3, 38, 127, 1)
+        BorderThickness: =2
+        DisabledFill: =RGBA(166, 166, 166, 1)
+        Fill: =RGBA(3, 38, 127, 1)
+        FocusedBorderThickness: =4
+        Height: =47
+        HoverFill: =RGBA(0, 94, 146, 1)
+        PressedFill: =RGBA(0, 94, 146, 1)
+        Width: =220
+        X: =1548
+        Y: =236
+        ZIndex: =26
+
+    Label8_5 As label:
+        Align: =Align.Center
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.'Segoe UI'
+        Height: =47
+        Size: =15
+        Text: ="ADESIVO ELÁSTICO"
+        Width: =220
+        X: =1548
+        Y: =236
+        ZIndex: =27
+
+    entrada6 As text:
+        BorderColor: =RGBA(166, 166, 166, 1)
+        BorderThickness: =2
+        Color: =RGBA(51, 51, 51, 1)
+        Default: =""
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.'Segoe UI'
+        Height: =63
+        HintText: ="Lote"
+        HoverBorderColor: =ColorFade(RGBA(73, 130, 5, 1), -30%)
+        HoverColor: =RGBA(51, 51, 51, 1)
+        HoverFill: =RGBA(255, 255, 255, 1)
+        PressedBorderColor: =RGBA(73, 130, 5, 1)
+        PressedColor: =RGBA(51, 51, 51, 1)
+        PressedFill: =RGBA(255, 255, 255, 1)
+        RadiusBottomLeft: =0
+        RadiusBottomRight: =0
+        RadiusTopLeft: =0
+        RadiusTopRight: =0
+        Size: =13
+        Width: =220
+        X: =1282
+        Y: =283
+        ZIndex: =28
+
+    Rectangle6_11 As rectangle:
+        BorderColor: =RGBA(3, 38, 127, 1)
+        BorderThickness: =2
+        DisabledFill: =RGBA(166, 166, 166, 1)
+        Fill: =RGBA(3, 38, 127, 1)
+        FocusedBorderThickness: =4
+        Height: =47
+        HoverFill: =RGBA(0, 94, 146, 1)
+        PressedFill: =RGBA(0, 94, 146, 1)
+        Width: =220
+        X: =1282
+        Y: =236
+        ZIndex: =29
+
+    Label8_6 As label:
+        Align: =Align.Center
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.'Segoe UI'
+        Height: =47
+        Size: =15
+        Text: ="ADESIVO CONSTRUÇÃO"
+        Width: =220
+        X: =1282
+        Y: =236
+        ZIndex: =30
+
+    entrada9 As text:
+        BorderColor: =RGBA(166, 166, 166, 1)
+        BorderThickness: =2
+        Color: =RGBA(51, 51, 51, 1)
+        Default: =""
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.'Segoe UI'
+        Height: =63
+        HintText: ="Lote"
+        HoverBorderColor: =ColorFade(RGBA(73, 130, 5, 1), -30%)
+        HoverColor: =RGBA(51, 51, 51, 1)
+        HoverFill: =RGBA(255, 255, 255, 1)
+        PressedBorderColor: =RGBA(73, 130, 5, 1)
+        PressedColor: =RGBA(51, 51, 51, 1)
+        PressedFill: =RGBA(255, 255, 255, 1)
+        RadiusBottomLeft: =0
+        RadiusBottomRight: =0
+        RadiusTopLeft: =0
+        RadiusTopRight: =0
+        Size: =13
+        Width: =220
+        X: =272
+        Y: =435
+        ZIndex: =31
+
+    Rectangle6_12 As rectangle:
+        BorderColor: =RGBA(3, 38, 127, 1)
+        BorderThickness: =2
+        DisabledFill: =RGBA(166, 166, 166, 1)
+        Fill: =RGBA(3, 38, 127, 1)
+        FocusedBorderThickness: =4
+        Height: =47
+        HoverFill: =RGBA(0, 94, 146, 1)
+        PressedFill: =RGBA(0, 94, 146, 1)
+        Width: =220
+        X: =272
+        Y: =388
+        ZIndex: =32
+
+    Label8_7 As label:
+        Align: =Align.Center
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.'Segoe UI'
+        Height: =47
+        Size: =15
+        Text: ="TAPE LAMINADO"
+        Width: =220
+        X: =272
+        Y: =388
+        ZIndex: =33
+
+    entrada8 As text:
+        BorderColor: =RGBA(166, 166, 166, 1)
+        BorderThickness: =2
+        Color: =RGBA(51, 51, 51, 1)
+        Default: =""
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.'Segoe UI'
+        Height: =63
+        HintText: ="Lote"
+        HoverBorderColor: =ColorFade(RGBA(73, 130, 5, 1), -30%)
+        HoverColor: =RGBA(51, 51, 51, 1)
+        HoverFill: =RGBA(255, 255, 255, 1)
+        PressedBorderColor: =RGBA(73, 130, 5, 1)
+        PressedColor: =RGBA(51, 51, 51, 1)
+        PressedFill: =RGBA(255, 255, 255, 1)
+        RadiusBottomLeft: =0
+        RadiusBottomRight: =0
+        RadiusTopLeft: =0
+        RadiusTopRight: =0
+        Size: =13
+        Width: =220
+        X: =26
+        Y: =435
+        ZIndex: =34
+
+    Rectangle6_13 As rectangle:
+        BorderColor: =RGBA(3, 38, 127, 1)
+        BorderThickness: =2
+        DisabledFill: =RGBA(166, 166, 166, 1)
+        Fill: =RGBA(3, 38, 127, 1)
+        FocusedBorderThickness: =4
+        Height: =47
+        HoverFill: =RGBA(0, 94, 146, 1)
+        PressedFill: =RGBA(0, 94, 146, 1)
+        Width: =220
+        X: =26
+        Y: =388
+        ZIndex: =35
+
+    Label8_8 As label:
+        Align: =Align.Center
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.'Segoe UI'
+        Height: =47
+        Size: =15
+        Text: ="FRONTAL 171mm"
+        Width: =220
+        X: =26
+        Y: =388
+        ZIndex: =36
+
+    entrada11 As text:
+        BorderColor: =RGBA(166, 166, 166, 1)
+        BorderThickness: =2
+        Color: =RGBA(51, 51, 51, 1)
+        Default: =""
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.'Segoe UI'
+        Height: =63
+        HintText: ="Lote"
+        HoverBorderColor: =ColorFade(RGBA(73, 130, 5, 1), -30%)
+        HoverColor: =RGBA(51, 51, 51, 1)
+        HoverFill: =RGBA(255, 255, 255, 1)
+        PressedBorderColor: =RGBA(73, 130, 5, 1)
+        PressedColor: =RGBA(51, 51, 51, 1)
+        PressedFill: =RGBA(255, 255, 255, 1)
+        RadiusBottomLeft: =0
+        RadiusBottomRight: =0
+        RadiusTopLeft: =0
+        RadiusTopRight: =0
+        Size: =13
+        Width: =220
+        X: =1020
+        Y: =435
+        ZIndex: =37
+
+    Rectangle6_14 As rectangle:
+        BorderColor: =RGBA(3, 38, 127, 1)
+        BorderThickness: =2
+        DisabledFill: =RGBA(166, 166, 166, 1)
+        Fill: =RGBA(3, 38, 127, 1)
+        FocusedBorderThickness: =4
+        Height: =47
+        HoverFill: =RGBA(0, 94, 146, 1)
+        PressedFill: =RGBA(0, 94, 146, 1)
+        Width: =220
+        X: =1020
+        Y: =388
+        ZIndex: =38
+
+    Label8_9 As label:
+        Align: =Align.Center
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.'Segoe UI'
+        Height: =47
+        Size: =15
+        Text: ="ELASTANO"
+        Width: =220
+        X: =1020
+        Y: =388
+        ZIndex: =39
+
+    entrada10 As text:
+        BorderColor: =RGBA(166, 166, 166, 1)
+        BorderThickness: =2
+        Color: =RGBA(51, 51, 51, 1)
+        Default: =""
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.'Segoe UI'
+        Height: =63
+        HintText: ="Lote"
+        HoverBorderColor: =ColorFade(RGBA(73, 130, 5, 1), -30%)
+        HoverColor: =RGBA(51, 51, 51, 1)
+        HoverFill: =RGBA(255, 255, 255, 1)
+        PressedBorderColor: =RGBA(73, 130, 5, 1)
+        PressedColor: =RGBA(51, 51, 51, 1)
+        PressedFill: =RGBA(255, 255, 255, 1)
+        RadiusBottomLeft: =0
+        RadiusBottomRight: =0
+        RadiusTopLeft: =0
+        RadiusTopRight: =0
+        Size: =13
+        Width: =220
+        X: =515
+        Y: =435
+        ZIndex: =40
+
+    Rectangle6_15 As rectangle:
+        BorderColor: =RGBA(3, 38, 127, 1)
+        BorderThickness: =2
+        DisabledFill: =RGBA(166, 166, 166, 1)
+        Fill: =RGBA(3, 38, 127, 1)
+        FocusedBorderThickness: =4
+        Height: =47
+        HoverFill: =RGBA(0, 94, 146, 1)
+        PressedFill: =RGBA(0, 94, 146, 1)
+        Width: =220
+        X: =515
+        Y: =388
+        ZIndex: =41
+
+    Label8_10 As label:
+        Align: =Align.Center
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.'Segoe UI'
+        Height: =47
+        Size: =15
+        Text: ="CELULOSE LONGA"
+        Width: =220
+        X: =515
+        Y: =388
+        ZIndex: =42
+
+    entrada13 As text:
+        BorderColor: =RGBA(166, 166, 166, 1)
+        BorderThickness: =2
+        Color: =RGBA(51, 51, 51, 1)
+        Default: =""
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.'Segoe UI'
+        Height: =63
+        HintText: ="Lote"
+        HoverBorderColor: =ColorFade(RGBA(73, 130, 5, 1), -30%)
+        HoverColor: =RGBA(51, 51, 51, 1)
+        HoverFill: =RGBA(255, 255, 255, 1)
+        PressedBorderColor: =RGBA(73, 130, 5, 1)
+        PressedColor: =RGBA(51, 51, 51, 1)
+        PressedFill: =RGBA(255, 255, 255, 1)
+        RadiusBottomLeft: =0
+        RadiusBottomRight: =0
+        RadiusTopLeft: =0
+        RadiusTopRight: =0
+        Size: =13
+        Width: =220
+        X: =26
+        Y: =580
+        ZIndex: =43
+
+    Rectangle6_16 As rectangle:
+        BorderColor: =RGBA(3, 38, 127, 1)
+        BorderThickness: =2
+        DisabledFill: =RGBA(166, 166, 166, 1)
+        Fill: =RGBA(3, 38, 127, 1)
+        FocusedBorderThickness: =4
+        Height: =47
+        HoverFill: =RGBA(0, 94, 146, 1)
+        PressedFill: =RGBA(0, 94, 146, 1)
+        Width: =220
+        X: =26
+        Y: =533
+        ZIndex: =44
+
+    Label8_11 As label:
+        Align: =Align.Center
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.'Segoe UI'
+        Height: =47
+        Size: =15
+        Text: ="FRAGANCIA"
+        Width: =220
+        X: =26
+        Y: =533
+        ZIndex: =45
+
+    entrada12 As text:
+        BorderColor: =RGBA(166, 166, 166, 1)
+        BorderThickness: =2
+        Color: =RGBA(51, 51, 51, 1)
+        Default: =""
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.'Segoe UI'
+        Height: =63
+        HintText: ="Lote"
+        HoverBorderColor: =ColorFade(RGBA(73, 130, 5, 1), -30%)
+        HoverColor: =RGBA(51, 51, 51, 1)
+        HoverFill: =RGBA(255, 255, 255, 1)
+        PressedBorderColor: =RGBA(73, 130, 5, 1)
+        PressedColor: =RGBA(51, 51, 51, 1)
+        PressedFill: =RGBA(255, 255, 255, 1)
+        RadiusBottomLeft: =0
+        RadiusBottomRight: =0
+        RadiusTopLeft: =0
+        RadiusTopRight: =0
+        Size: =13
+        Width: =220
+        X: =1282
+        Y: =435
+        ZIndex: =46
+
+    Rectangle6_17 As rectangle:
+        BorderColor: =RGBA(3, 38, 127, 1)
+        BorderThickness: =2
+        DisabledFill: =RGBA(166, 166, 166, 1)
+        Fill: =RGBA(3, 38, 127, 1)
+        FocusedBorderThickness: =4
+        Height: =47
+        HoverFill: =RGBA(0, 94, 146, 1)
+        PressedFill: =RGBA(0, 94, 146, 1)
+        Width: =220
+        X: =1282
+        Y: =388
+        ZIndex: =47
+
+    Label8_12 As label:
+        Align: =Align.Center
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.'Segoe UI'
+        Height: =47
+        Size: =15
+        Text: ="SAP (GEL)"
+        Width: =220
+        X: =1282
+        Y: =388
+        ZIndex: =48
+
+    entrada15 As text:
+        BorderColor: =RGBA(166, 166, 166, 1)
+        BorderThickness: =2
+        Color: =RGBA(51, 51, 51, 1)
+        Default: =""
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.'Segoe UI'
+        Height: =63
+        HintText: ="Lote"
+        HoverBorderColor: =ColorFade(RGBA(73, 130, 5, 1), -30%)
+        HoverColor: =RGBA(51, 51, 51, 1)
+        HoverFill: =RGBA(255, 255, 255, 1)
+        PressedBorderColor: =RGBA(73, 130, 5, 1)
+        PressedColor: =RGBA(51, 51, 51, 1)
+        PressedFill: =RGBA(255, 255, 255, 1)
+        RadiusBottomLeft: =0
+        RadiusBottomRight: =0
+        RadiusTopLeft: =0
+        RadiusTopRight: =0
+        Size: =13
+        Width: =220
+        X: =272
+        Y: =580
+        ZIndex: =49
+
+    Rectangle6_18 As rectangle:
+        BorderColor: =RGBA(3, 38, 127, 1)
+        BorderThickness: =2
+        DisabledFill: =RGBA(166, 166, 166, 1)
+        Fill: =RGBA(3, 38, 127, 1)
+        FocusedBorderThickness: =4
+        Height: =47
+        HoverFill: =RGBA(0, 94, 146, 1)
+        PressedFill: =RGBA(0, 94, 146, 1)
+        Width: =220
+        X: =272
+        Y: =533
+        ZIndex: =50
+
+    Label8_13 As label:
+        Align: =Align.Center
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.'Segoe UI'
+        Height: =47
+        Size: =15
+        Text: ="CAPA FARDOS"
+        Width: =220
+        X: =272
+        Y: =533
+        ZIndex: =51
+
+    entrada14 As text:
+        BorderColor: =RGBA(166, 166, 166, 1)
+        BorderThickness: =2
+        Color: =RGBA(51, 51, 51, 1)
+        Default: =""
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.'Segoe UI'
+        Height: =63
+        HintText: ="Lote"
+        HoverBorderColor: =ColorFade(RGBA(73, 130, 5, 1), -30%)
+        HoverColor: =RGBA(51, 51, 51, 1)
+        HoverFill: =RGBA(255, 255, 255, 1)
+        PressedBorderColor: =RGBA(73, 130, 5, 1)
+        PressedColor: =RGBA(51, 51, 51, 1)
+        PressedFill: =RGBA(255, 255, 255, 1)
+        RadiusBottomLeft: =0
+        RadiusBottomRight: =0
+        RadiusTopLeft: =0
+        RadiusTopRight: =0
+        Size: =13
+        Width: =220
+        X: =1548
+        Y: =435
+        ZIndex: =52
+
+    Rectangle6_19 As rectangle:
+        BorderColor: =RGBA(3, 38, 127, 1)
+        BorderThickness: =2
+        DisabledFill: =RGBA(166, 166, 166, 1)
+        Fill: =RGBA(3, 38, 127, 1)
+        FocusedBorderThickness: =4
+        Height: =47
+        HoverFill: =RGBA(0, 94, 146, 1)
+        PressedFill: =RGBA(0, 94, 146, 1)
+        Width: =220
+        X: =1548
+        Y: =388
+        ZIndex: =53
+
+    Label8_14 As label:
+        Align: =Align.Center
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.'Segoe UI'
+        Height: =47
+        Size: =15
+        Text: ="EMBALAGENS"
+        Width: =220
+        X: =1548
+        Y: =388
+        ZIndex: =54
+
+    Button1_3 As button:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Fill: =RGBA(73, 130, 5, 1)
+        FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+        Font: =Font.'Segoe UI'
+        FontWeight: =FontWeight.Semibold
+        Height: =127
+        HoverBorderColor: =RGBA(0, 0, 0, 0)
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =ColorFade(RGBA(73, 130, 5, 1), -10%)
+        OnSelect: |-
+            =If(
+                dropturmaentrada.Selected.Value <> "Selecione a Turma" && Dropdownselectentrada.Selected.Value <> "Selecione o Turno" && Dropdownselectentrada.Selected.Value <> "Selecione o Produto Produzindo",
+                If(IsBlank(entrada1.Text) <> true,
+                    Patch(
+                        'Entrada de Lote_1',
+                        {
+                            COLABORADOR: User().FullName,
+                            DATA: DateValue(dateentrada.SelectedDate),
+                            'Horário de entrada': Text(Time(Hour(Now()),Minute(Now()),Second(Now()))),
+                            TURMA: dropturnoentrada.Selected.Value,
+                            TURNO: dropturmaentrada.Selected.Value,
+                            INSUMO:Label8.Text,
+                            LOTE: entrada1.Text
+                            
+                        }
+                    );
+                    Reset(entrada1);
+                );
+                If(IsBlank(entrada2.Text) <> true,
+                    Patch(
+                        'Entrada de Lote_1',
+                        {
+                            COLABORADOR: User().FullName,
+                            DATA: DateValue(dateentrada.SelectedDate),
+                            'Horário de entrada': Text(Time(Hour(Now()),Minute(Now()),Second(Now()))),
+                            TURMA: dropturnoentrada.Selected.Value,
+                            TURNO: dropturmaentrada.Selected.Value,
+                            INSUMO:Label8_1.Text,
+                            LOTE: entrada2.Text
+                        }
+                    );
+                    Reset(entrada2);
+                );
+                If(IsBlank(entrada3.Text) <> true,
+                    Patch(
+                        'Entrada de Lote_1',
+                        {
+                            COLABORADOR: User().FullName,
+                            DATA: DateValue(dateentrada.SelectedDate),
+                            'Horário de entrada': Text(Time(Hour(Now()),Minute(Now()),Second(Now()))),
+                            TURMA: dropturnoentrada.Selected.Value,
+                            TURNO: dropturmaentrada.Selected.Value,
+                            INSUMO:Label8_2.Text,
+                            LOTE: entrada3.Text
+                        }
+                    );
+                    Reset(entrada3);
+                );
+                If(IsBlank(entrada4.Text) <> true,
+                    Patch(
+                        'Entrada de Lote_1',
+                        {
+                            COLABORADOR: User().FullName,
+                            DATA: DateValue(dateentrada.SelectedDate),
+                            'Horário de entrada': Text(Time(Hour(Now()),Minute(Now()),Second(Now()))),
+                            TURMA: dropturnoentrada.Selected.Value,
+                            TURNO: dropturmaentrada.Selected.Value,
+                            INSUMO:Label8_3.Text,
+                            LOTE: entrada4.Text
+                        }
+                    );
+                    Reset(entrada4);
+                );
+               If(IsBlank(entrada5.Text) <> true,
+                    Patch(
+                        'Entrada de Lote_1',
+                        {
+                            COLABORADOR: User().FullName,
+                            DATA: DateValue(dateentrada.SelectedDate),
+                            'Horário de entrada': Text(Time(Hour(Now()),Minute(Now()),Second(Now()))),
+                            TURMA: dropturnoentrada.Selected.Value,
+                            TURNO: dropturmaentrada.Selected.Value,
+                            INSUMO:Label8_4.Text,
+                            LOTE: entrada5.Text
+                        }
+                    );
+                    Reset(entrada5);
+                );
+              If(IsBlank(entrada6.Text) <> true,
+                    Patch(
+                        'Entrada de Lote_1',
+                        {
+                            COLABORADOR: User().FullName,
+                            DATA: DateValue(dateentrada.SelectedDate),
+                            'Horário de entrada': Text(Time(Hour(Now()),Minute(Now()),Second(Now()))),
+                            TURMA: dropturnoentrada.Selected.Value,
+                            TURNO: dropturmaentrada.Selected.Value,
+                            INSUMO:Label8_6.Text,
+                            LOTE: entrada6.Text
+                        }
+                    );
+                    Reset(entrada6);
+                );
+                  If(IsBlank(entrada7.Text) <> true,
+                    Patch(
+                        'Entrada de Lote_1',
+                        {
+                            COLABORADOR: User().FullName,
+                            DATA: DateValue(dateentrada.SelectedDate),
+                            'Horário de entrada': Text(Time(Hour(Now()),Minute(Now()),Second(Now()))),
+                            TURMA: dropturnoentrada.Selected.Value,
+                            TURNO: dropturmaentrada.Selected.Value,
+                            INSUMO:Label8_5.Text,
+                            LOTE: entrada7.Text
+                        }
+                    );
+                    Reset(entrada7);
+                );
+                  If(IsBlank(entrada8.Text) <> true,
+                    Patch(
+                        'Entrada de Lote_1',
+                        {
+                            COLABORADOR: User().FullName,
+                            DATA: DateValue(dateentrada.SelectedDate),
+                            'Horário de entrada': Text(Time(Hour(Now()),Minute(Now()),Second(Now()))),
+                            TURMA: dropturnoentrada.Selected.Value,
+                            TURNO: dropturmaentrada.Selected.Value,
+                            INSUMO:Label8_8.Text,
+                            LOTE: entrada8.Text
+                        }
+                    );
+                    Reset(entrada8);
+                );
+                 If(IsBlank(entrada9.Text) <> true,
+                    Patch(
+                        'Entrada de Lote_1',
+                        {
+                            COLABORADOR: User().FullName,
+                            DATA: DateValue(dateentrada.SelectedDate),
+                            'Horário de entrada': Text(Time(Hour(Now()),Minute(Now()),Second(Now()))),
+                            TURMA: dropturnoentrada.Selected.Value,
+                            TURNO: dropturmaentrada.Selected.Value,
+                            INSUMO:Label8_7.Text,
+                            LOTE: entrada9.Text
+                        }
+                    );
+                    Reset(entrada9);
+                );
+                If(IsBlank(entrada10.Text) <> true,
+                    Patch(
+                        'Entrada de Lote_1',
+                        {
+                            COLABORADOR: User().FullName,
+                            DATA: DateValue(dateentrada.SelectedDate),
+                            'Horário de entrada': Text(Time(Hour(Now()),Minute(Now()),Second(Now()))),
+                            TURMA: dropturnoentrada.Selected.Value,
+                            TURNO: dropturmaentrada.Selected.Value,
+                            INSUMO:Label8_10.Text,
+                            LOTE: entrada10.Text
+                        }
+                    );
+                    Reset(entrada10);
+                );
+                If(IsBlank(entrada11.Text) <> true,
+                    Patch(
+                        'Entrada de Lote_1',
+                        {
+                            COLABORADOR: User().FullName,
+                            DATA: DateValue(dateentrada.SelectedDate),
+                            'Horário de entrada': Text(Time(Hour(Now()),Minute(Now()),Second(Now()))),
+                            TURMA: dropturnoentrada.Selected.Value,
+                            TURNO: dropturmaentrada.Selected.Value,
+                            INSUMO:Label8_9.Text,
+                            LOTE: entrada11.Text
+                        }
+                    );
+                    Reset(entrada11);
+                );
+                   If(IsBlank(entrada12.Text) <> true,
+                    Patch(
+                        'Entrada de Lote_1',
+                        {
+                            COLABORADOR: User().FullName,
+                            DATA: DateValue(dateentrada.SelectedDate),
+                            'Horário de entrada': Text(Time(Hour(Now()),Minute(Now()),Second(Now()))),
+                            TURMA: dropturnoentrada.Selected.Value,
+                            TURNO: dropturmaentrada.Selected.Value,
+                            INSUMO:Label8_12.Text,
+                            LOTE: entrada12.Text
+                        }
+                    );
+                    Reset(entrada12);
+                );
+                If(IsBlank(entrada13.Text) <> true,
+                    Patch(
+                        'Entrada de Lote_1',
+                        {
+                            COLABORADOR: User().FullName,
+                            DATA: DateValue(dateentrada.SelectedDate),
+                            'Horário de entrada': Text(Time(Hour(Now()),Minute(Now()),Second(Now()))),
+                            TURMA: dropturnoentrada.Selected.Value,
+                            TURNO: dropturmaentrada.Selected.Value,
+                            INSUMO:Label8_11.Text,
+                            LOTE: entrada13.Text
+                        }
+                    );
+                    Reset(entrada13);
+                );
+                If(IsBlank(entrada14.Text) <> true,
+                    Patch(
+                        'Entrada de Lote_1',
+                        {
+                            COLABORADOR: User().FullName,
+                            DATA: DateValue(dateentrada.SelectedDate),
+                            'Horário de entrada': Text(Time(Hour(Now()),Minute(Now()),Second(Now()))),
+                            TURMA: dropturnoentrada.Selected.Value,
+                            TURNO: dropturmaentrada.Selected.Value,
+                            INSUMO:Label8_14.Text,
+                            LOTE: entrada14.Text
+                        }
+                    );
+                    Reset(entrada14);
+                );
+                    If(IsBlank(entrada15.Text) <> true,
+                    Patch(
+                        'Entrada de Lote_1',
+                        {
+                            COLABORADOR: User().FullName,
+                            DATA: DateValue(dateentrada.SelectedDate),
+                            'Horário de entrada': Text(Time(Hour(Now()),Minute(Now()),Second(Now()))),
+                            TURMA: dropturnoentrada.Selected.Value,
+                            TURNO: dropturmaentrada.Selected.Value,
+                            INSUMO:Label8_13.Text,
+                            LOTE: entrada15.Text
+                        }
+                    );
+                    Reset(entrada15);
+                );
+                 If(IsBlank(entrada10_1.Text) <> true,
+                    Patch(
+                        'Entrada de Lote_1',
+                        {
+                            COLABORADOR: User().FullName,
+                            DATA: DateValue(dateentrada.SelectedDate),
+                            'Horário de entrada': Text(Time(Hour(Now()),Minute(Now()),Second(Now()))),
+                            TURMA: dropturnoentrada.Selected.Value,
+                            TURNO: dropturmaentrada.Selected.Value,
+                            INSUMO:Label8_15.Text,
+                            LOTE: entrada10_1.Text
+                        }
+                    );
+                    Reset(entrada10_1);
+                );
+                Notify("Enviado Com Sucesso",NotificationType.Success)
+                ,
+                Notify("Não esqueça de seleciona a turma, turno e o produto produzido",NotificationType.Error)
+            )
+        PressedBorderColor: =ColorFade(RGBA(73, 130, 5, 1), -50%)
+        PressedColor: =RGBA(255, 255, 255, 1)
+        PressedFill: =ColorFade(RGBA(73, 130, 5, 1), -30%)
+        RadiusBottomLeft: =0
+        RadiusBottomRight: =0
+        RadiusTopLeft: =0
+        RadiusTopRight: =0
+        Size: =32
+        Text: ="Enviar"
+        Tooltip: =If(Paradasalternadas,DisplayMode.Disabled, DisplayMode.Edit)
+        Width: =313
+        X: =1455
+        Y: =643
+        ZIndex: =55
+
+    entrada10_1 As text:
+        BorderColor: =RGBA(166, 166, 166, 1)
+        BorderThickness: =2
+        Color: =RGBA(51, 51, 51, 1)
+        Default: =""
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.'Segoe UI'
+        Height: =63
+        HintText: ="Lote"
+        HoverBorderColor: =ColorFade(RGBA(73, 130, 5, 1), -30%)
+        HoverColor: =RGBA(51, 51, 51, 1)
+        HoverFill: =RGBA(255, 255, 255, 1)
+        PressedBorderColor: =RGBA(73, 130, 5, 1)
+        PressedColor: =RGBA(51, 51, 51, 1)
+        PressedFill: =RGBA(255, 255, 255, 1)
+        RadiusBottomLeft: =0
+        RadiusBottomRight: =0
+        RadiusTopLeft: =0
+        RadiusTopRight: =0
+        Size: =13
+        Width: =220
+        X: =767
+        Y: =435
+        ZIndex: =56
+
+    Rectangle6_20 As rectangle:
+        BorderColor: =RGBA(3, 38, 127, 1)
+        BorderThickness: =2
+        DisabledFill: =RGBA(166, 166, 166, 1)
+        Fill: =RGBA(3, 38, 127, 1)
+        FocusedBorderThickness: =4
+        Height: =47
+        HoverFill: =RGBA(0, 94, 146, 1)
+        PressedFill: =RGBA(0, 94, 146, 1)
+        Width: =220
+        X: =767
+        Y: =388
+        ZIndex: =57
+
+    Label8_15 As label:
+        Align: =Align.Center
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.'Segoe UI'
+        Height: =47
+        Size: =15
+        Text: ="CELULOSE CURTA"
+        Width: =220
+        X: =767
+        Y: =388
+        ZIndex: =58
+
+    Button1_5 As button:
+        BorderColor: =RGBA(0, 0, 0, 0)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        DisabledFill: =RGBA(244, 244, 244, 1)
+        Fill: =RGBA(73, 130, 5, 1)
+        FocusedBorderColor: =ColorFade(Self.Fill, -75%)
+        Font: =Font.'Segoe UI'
+        FontWeight: =FontWeight.Semibold
+        Height: =110
+        HoverBorderColor: =RGBA(0, 0, 0, 0)
+        HoverColor: =RGBA(255, 255, 255, 1)
+        HoverFill: =ColorFade(RGBA(73, 130, 5, 1), -10%)
+        OnSelect: =Navigate(ConsultaEntradas, ScreenTransition.Fade)
+        PressedBorderColor: =ColorFade(RGBA(73, 130, 5, 1), -50%)
+        PressedColor: =RGBA(255, 255, 255, 1)
+        PressedFill: =ColorFade(RGBA(73, 130, 5, 1), -30%)
+        RadiusBottomLeft: =0
+        RadiusBottomRight: =0
+        RadiusTopLeft: =0
+        RadiusTopRight: =0
+        Size: =25
+        Text: ="Historico de Lotes"
+        Tooltip: =If(Paradasalternadas,DisplayMode.Disabled, DisplayMode.Edit)
+        Width: =259
+        X: =26
+        Y: =672
+        ZIndex: =59
+
+    Icon4 As icon.Help:
+        BorderColor: =RGBA(166, 166, 166, 1)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(220, 220, 220, 1)
+        DisabledFill: =RGBA(0, 0, 0, 0)
+        FocusedBorderThickness: =4
+        Height: =47
+        HoverBorderColor: =RGBA(0, 0, 0, 0)
+        HoverColor: =ColorFade(RGBA(73, 130, 5, 1), -30%)
+        HoverFill: =RGBA(0, 0, 0, 0)
+        Icon: =Icon.Help
+        OnSelect: |-
+            =UpdateContext({popimagem:true});
+            UpdateContext({loteimagem:'Lote Embalagens'})
+        PressedBorderColor: =RGBA(0, 0, 0, 0)
+        PressedColor: =ColorFade(RGBA(73, 130, 5, 1), -30%)
+        PressedFill: =RGBA(0, 0, 0, 0)
+        Width: =39
+        X: =1725
+        Y: =388
+        ZIndex: =60
+
+    Icon4_1 As icon.Help:
+        BorderColor: =RGBA(166, 166, 166, 1)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(220, 220, 220, 1)
+        DisabledFill: =RGBA(0, 0, 0, 0)
+        FocusedBorderThickness: =4
+        Height: =47
+        HoverBorderColor: =RGBA(0, 0, 0, 0)
+        HoverColor: =ColorFade(RGBA(73, 130, 5, 1), -30%)
+        HoverFill: =RGBA(0, 0, 0, 0)
+        Icon: =Icon.Help
+        OnSelect: |-
+            =UpdateContext({popimagem:true});
+            UpdateContext({loteimagem:'Lote Poly'})
+        PressedBorderColor: =RGBA(0, 0, 0, 0)
+        PressedColor: =ColorFade(RGBA(73, 130, 5, 1), -30%)
+        PressedFill: =RGBA(0, 0, 0, 0)
+        Width: =39
+        X: =198
+        Y: =236
+        ZIndex: =61
+
+    Icon4_2 As icon.Help:
+        BorderColor: =RGBA(166, 166, 166, 1)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(220, 220, 220, 1)
+        DisabledFill: =RGBA(0, 0, 0, 0)
+        FocusedBorderThickness: =4
+        Height: =47
+        HoverBorderColor: =RGBA(0, 0, 0, 0)
+        HoverColor: =ColorFade(RGBA(73, 130, 5, 1), -30%)
+        HoverFill: =RGBA(0, 0, 0, 0)
+        Icon: =Icon.Help
+        OnSelect: |-
+            =UpdateContext({popimagem:true});
+            UpdateContext({loteimagem:'Lote NW'})
+        PressedBorderColor: =RGBA(0, 0, 0, 0)
+        PressedColor: =ColorFade(RGBA(73, 130, 5, 1), -30%)
+        PressedFill: =RGBA(0, 0, 0, 0)
+        Width: =39
+        X: =445
+        Y: =236
+        ZIndex: =62
+
+    Icon4_3 As icon.Help:
+        BorderColor: =RGBA(166, 166, 166, 1)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(220, 220, 220, 1)
+        DisabledFill: =RGBA(0, 0, 0, 0)
+        FocusedBorderThickness: =4
+        Height: =47
+        HoverBorderColor: =RGBA(0, 0, 0, 0)
+        HoverColor: =ColorFade(RGBA(73, 130, 5, 1), -30%)
+        HoverFill: =RGBA(0, 0, 0, 0)
+        Icon: =Icon.Help
+        OnSelect: |-
+            =UpdateContext({popimagem:true});
+            UpdateContext({loteimagem:'Lote NW'})
+        PressedBorderColor: =RGBA(0, 0, 0, 0)
+        PressedColor: =ColorFade(RGBA(73, 130, 5, 1), -30%)
+        PressedFill: =RGBA(0, 0, 0, 0)
+        Width: =32
+        X: =702
+        Y: =236
+        ZIndex: =63
+
+    Icon4_4 As icon.Help:
+        BorderColor: =RGBA(166, 166, 166, 1)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(220, 220, 220, 1)
+        DisabledFill: =RGBA(0, 0, 0, 0)
+        FocusedBorderThickness: =4
+        Height: =47
+        HoverBorderColor: =RGBA(0, 0, 0, 0)
+        HoverColor: =ColorFade(RGBA(73, 130, 5, 1), -30%)
+        HoverFill: =RGBA(0, 0, 0, 0)
+        Icon: =Icon.Help
+        OnSelect: |-
+            =UpdateContext({popimagem:true});
+            UpdateContext({loteimagem:'Lote NW'})
+        PressedBorderColor: =RGBA(0, 0, 0, 0)
+        PressedColor: =ColorFade(RGBA(73, 130, 5, 1), -30%)
+        PressedFill: =RGBA(0, 0, 0, 0)
+        Width: =32
+        X: =949
+        Y: =236
+        ZIndex: =64
+
+    Icon4_5 As icon.Help:
+        BorderColor: =RGBA(166, 166, 166, 1)
+        Color: =RGBA(255, 255, 255, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(220, 220, 220, 1)
+        DisabledFill: =RGBA(0, 0, 0, 0)
+        FocusedBorderThickness: =4
+        Height: =47
+        HoverBorderColor: =RGBA(0, 0, 0, 0)
+        HoverColor: =ColorFade(RGBA(73, 130, 5, 1), -30%)
+        HoverFill: =RGBA(0, 0, 0, 0)
+        Icon: =Icon.Help
+        OnSelect: |-
+            =UpdateContext({popimagem:true});
+            UpdateContext({loteimagem:'Lote NW'})
+        PressedBorderColor: =RGBA(0, 0, 0, 0)
+        PressedColor: =ColorFade(RGBA(73, 130, 5, 1), -30%)
+        PressedFill: =RGBA(0, 0, 0, 0)
+        Width: =32
+        X: =1202
+        Y: =236
+        ZIndex: =65
+
+    loteimagem As groupContainer:
+        Fill: =RGBA(0, 0, 0, 0.35)
+        Height: =800
+        Visible: =popimagem
+        Width: =1800
+        ZIndex: =66
+
+        Rectangle8 As rectangle:
+            BorderColor: =RGBA(99, 139, 44, 1)
+            BorderThickness: =6
+            DisabledFill: =RGBA(237, 237, 237, 1)
+            Fill: =RGBA(237, 237, 237, 1)
+            FocusedBorderThickness: =4
+            Height: =593
+            HoverFill: =RGBA(237, 237, 237, 1)
+            PressedFill: =RGBA(237, 237, 237, 1)
+            Width: =1096
+            X: =342
+            Y: =128
+            ZIndex: =1
+
+        Icon5 As icon.CancelBadge:
+            BorderColor: =RGBA(166, 166, 166, 1)
+            Color: =RGBA(73, 130, 5, 1)
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledColor: =RGBA(220, 220, 220, 1)
+            DisabledFill: =RGBA(0, 0, 0, 0)
+            FocusedBorderThickness: =4
+            HoverBorderColor: =RGBA(0, 0, 0, 0)
+            HoverColor: =ColorFade(RGBA(73, 130, 5, 1), -30%)
+            HoverFill: =RGBA(0, 0, 0, 0)
+            Icon: =Icon.CancelBadge
+            OnSelect: |-
+                =UpdateContext({popimagem:false})
+            PressedBorderColor: =RGBA(0, 0, 0, 0)
+            PressedColor: =ColorFade(RGBA(73, 130, 5, 1), -30%)
+            PressedFill: =RGBA(0, 0, 0, 0)
+            X: =1356
+            Y: =141
+            ZIndex: =2
+
+        Image3 As image:
+            BorderColor: =RGBA(0, 0, 0, 0)
+            BorderStyle: =BorderStyle.None
+            BorderThickness: =2
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledFill: =RGBA(0, 0, 0, 0)
+            FocusedBorderThickness: =4
+            Height: =518
+            HoverBorderColor: =RGBA(0, 0, 0, 0)
+            HoverFill: =RGBA(0, 0, 0, 0)
+            Image: =loteimagem
+            PressedBorderColor: =RGBA(0, 0, 0, 0)
+            PressedFill: =RGBA(0, 0, 0, 0)
+            Width: =950
+            X: =369
+            Y: =180
+            ZIndex: =3
+

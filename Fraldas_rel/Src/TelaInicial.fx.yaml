@@ -317,16 +317,3 @@ TelaInicial As screen:
         Y: =476
         ZIndex: =13
 
-    Rectangle9 As rectangle:
-        BorderColor: =RGBA(0, 0, 0, 0)
-        BorderStyle: =BorderStyle.None
-        BorderThickness: =2
-        DisabledFill: =RGBA(166, 166, 166, 1)
-        Fill: =RGBA(73, 130, 5, 1)
-        FocusedBorderThickness: =4
-        HoverFill: =RGBA(73, 130, 5, 1)
-        PressedFill: =RGBA(73, 130, 5, 1)
-        X: =990
-        Y: =256
-        ZIndex: =14
-

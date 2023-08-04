@@ -29,20 +29,19 @@
       "Created": "Criado",
       "Editor": "Modificado por",
       "Editor#Claims": "Modificado por Claims",
-      "field_1": "Produto Descrição",
-      "field_2": "Tipo",
-      "field_3": "Qtde atual",
+      "field_1": "PRODUTO",
+      "field_2": "PRODUTO DESCRIÇÃO",
+      "field_3": "QUANTIDADE DE FARDOS",
       "ID": "ID",
       "Modified": "Modificado",
       "OData__ColorTag": "Pressione Delete para excluir o ícone.",
-      "Produto": "Produto",
-      "Title": "Material"
+      "Title": "NI"
     },
     "DatasetName": "https://suzano.sharepoint.com/sites/ReltorioOperacional-Fraldas",
     "EncodeDataset": true,
     "IsSampleData": false,
     "IsWritable": true,
-    "Name": "Produtos - Fraldas",
+    "Name": "Produto - Fraldas - Descrição",
     "Type": "ConnectedDataSourceInfo"
   }
 ]

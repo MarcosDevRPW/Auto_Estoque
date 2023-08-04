@@ -65,13 +65,22 @@
           },
           "Apontamento Produção": {
             "tableName": "b802263b-d6d4-4783-badd-10544df4858c"
+          },
+          "Produto - Fraldas - Descrição": {
+            "tableName": "70986ebb-e66b-4401-8bfa-01649b1d910e"
           }
         }
       }
     },
     "dataSources": [
       "Apontamento Produção",
-      "Apontamento Paradas"
+      "Apontamento Paradas",
+      "Apontamento de Limpeza",
+      "Apontamento de Qualidade",
+      "Apontamento Refugo",
+      "Checklist - Repartida de máquina",
+      "Entrada de Lote_1",
+      "Produto - Fraldas - Descrição"
     ],
     "dependencies": {},
     "dependents": [],
@@ -103,9 +112,6 @@
           },
           "Entrada de Lote_1": {
             "tableName": "ccfed7de-2719-4056-b1a8-218880ff7c7f"
-          },
-          "Produtos - Fraldas": {
-            "tableName": "a7a02d29-98f8-4b6d-a6d1-6c9aa33f5e11"
           }
         }
       }
@@ -115,8 +121,7 @@
       "Entrada de Lote_1",
       "Apontamento Refugo",
       "Apontamento de Limpeza",
-      "Checklist - Repartida de máquina",
-      "Produtos - Fraldas"
+      "Checklist - Repartida de máquina"
     ],
     "dependencies": {},
     "dependents": [],

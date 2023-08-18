@@ -13,7 +13,7 @@ TelaProdução As screen:
         FocusedBorderThickness: =4
         Font: =Font.'Segoe UI'
         Format: =TextFormat.Number
-        Height: =158
+        Height: =134
         HintText: ="Nº do Pallet"
         HoverBorderColor: =ColorFade(RGBA(73, 130, 5, 1), -30%)
         HoverColor: =RGBA(51, 51, 51, 1)
@@ -33,8 +33,8 @@ TelaProdução As screen:
         RadiusTopLeft: =0
         RadiusTopRight: =0
         Size: =23
-        Width: =269
-        X: =718
+        Width: =213
+        X: =947
         Y: =310
         ZIndex: =1
 
@@ -304,7 +304,7 @@ TelaProdução As screen:
         FocusedBorderThickness: =4
         Font: =Font.'Segoe UI'
         FontWeight: =FontWeight.Semibold
-        Height: =158
+        Height: =134
         Size: =25
         Text: |-
             =Text(
@@ -319,7 +319,7 @@ TelaProdução As screen:
                     "03"
                 )
             )
-        Width: =259
+        Width: =235
         X: =378
         Y: =310
         ZIndex: =13
@@ -337,7 +337,7 @@ TelaProdução As screen:
         FocusedBorderThickness: =4
         Font: =Font.'Segoe UI'
         FontWeight: =FontWeight.Semibold
-        Height: =158
+        Height: =134
         HintText: ="....."
         HoverBorderColor: =ColorFade(RGBA(73, 130, 5, 1), -30%)
         HoverColor: =RGBA(51, 51, 51, 1)
@@ -352,8 +352,8 @@ TelaProdução As screen:
         RadiusTopLeft: =0
         RadiusTopRight: =0
         Size: =23
-        Width: =269
-        X: =1059
+        Width: =233
+        X: =1253
         Y: =310
         ZIndex: =14
 
@@ -399,9 +399,9 @@ TelaProdução As screen:
         FontWeight: =FontWeight.Bold
         Height: =41
         Size: =15
-        Text: ="LOTE DO PALLET"
-        Width: =259
-        X: =387
+        Text: ="LOTE FATURAMENTO"
+        Width: =235
+        X: =378
         Y: =310
         ZIndex: =16
 
@@ -416,13 +416,23 @@ TelaProdução As screen:
         FocusedBorderThickness: =4
         Font: =Font.'Segoe UI'
         FontWeight: =FontWeight.Bold
-        Height: =41
+        Height: =34
         Size: =15
         Text: ="FARDOS NO PALLET"
-        Width: =269
-        X: =1059
+        Width: =233
+        X: =1253
         Y: =310
         ZIndex: =17
+
+    "InfoButtonCanvas1 As 'Botão Informações'":
+        Content: ="A Quantidade de Fardos que irá compor o Pallet de acordo com o produto."
+        DisplayMode: =DisplayMode.Edit
+        Height: =34
+        IconSize: ='InfoButtonCanvas.IconSize'.Large
+        Width: =211
+        X: =1377
+        Y: =310
+        ZIndex: =18
 
     ContConfirmaçãoProd As groupContainer:
         Fill: =RGBA(0, 0, 0, 0.41)
@@ -430,7 +440,7 @@ TelaProdução As screen:
         Visible: |
             =ProduçãoPop
         Width: =1800
-        ZIndex: =18
+        ZIndex: =19
 
         Rectangle2 As rectangle:
             BorderColor: =RGBA(0, 0, 0, 1)
@@ -536,22 +546,23 @@ TelaProdução As screen:
             HoverColor: =RGBA(255, 255, 255, 1)
             HoverFill: =ColorFade(RGBA(73, 130, 5, 1), -10%)
             OnSelect: |+
-                =If(DropdownTurnoProd.Selected.Value <> "Selecione o Turno" && DropdownTurmaProd.Selected.Value <> "Selecione a Turma" && DropdownSelectProd.Selected.Value <> "Selecione o Produto Produzido" && IsBlank(Fardosnopallet) <> true,
+                =If(DropdownTurnoProd.Selected.Value <> "Selecione o Turno" && DropdownTurmaProd.Selected.Value <> "Selecione a Turma" && DropdownSelectProd.Selected.Value <> "Selecione o Produto Produzido" && IsBlank(Fardosnopallet) <> true && IsBlank(Pallet.Text) <> true,
                     UpdateContext(
                     {
                         ProduçãoPop:false
                     }
                 );
                     Patch(
-                        'Apontamento Produção',
+                        'Apontamento Produção (NOVO)',
                         {
-                            Title :User().FullName,
+                            Título:User().FullName,
                             Data: DateValue(DateProd.SelectedDate),
                             Turno: Text(DropdownTurnoProd.Selected.Value),
                             Turma: Text(DropdownTurmaProd.Selected.Value),
-                            'Produto Produzido': Text(DropdownSelectProd.Selected.Value),
-                            'Lote Produção':Text(Loteproducao.Text),
-                            'Fardos Produzidos':Fardosnopallet.Text
+                            Produto: Text(DropdownSelectProd.Selected.Value),
+                            'Lote Faturamento':Text(Loteproducao.Text),
+                            'Quantidade de Fardos no Pallet':Fardosnopallet.Text,
+                            'Hora de Produção':Text(Time(Hour(Now()),Minute(Now()),Second(Now())))
                         }
                     );
                 
@@ -560,7 +571,19 @@ TelaProdução As screen:
                     Reset(DropdownSelectProd);
                     Reset(DateProd);
                     Reset(Fardosnopallet);
-                    Navigate(TelaExito, ScreenTransition.Fade)
+                    Navigate(TelaImpressãoProdução, ScreenTransition.Fade);
+                    UpdateContext(
+                        {
+                            impressãocolaborador:User().FullName,
+                            impressãodata: DateValue(DateProd.SelectedDate),
+                            impressãoturno:Text(DropdownTurnoProd.Selected.Value),
+                            impressãoturma: Text(DropdownTurmaProd.Selected.Value),
+                            impressãoproduto: Text(DropdownSelectProd.Selected.Value),
+                            impressãolotefaturamento:Text(Loteproducao.Text),
+                            impressãoquantidadedefardosnopallet:Fardosnopallet.Text,
+                            impressãohoradeprodução:Text(Time(Hour(Now()),Minute(Now()),Second(Now())))
+                        }
+                    )
                 );
                 
                 
@@ -574,7 +597,7 @@ TelaProdução As screen:
             RadiusTopLeft: =0
             RadiusTopRight: =0
             Size: =15
-            Text: ="Confirmar"
+            Text: ="Enviar e Imprimir"
             Width: =180
             X: =668
             Y: =535
@@ -624,13 +647,52 @@ TelaProdução As screen:
             Y: =464
             ZIndex: =6
 
-    "InfoButtonCanvas1 As 'Botão Informações'":
-        Content: ="A Quantidade de Fardos que irá compor o Pallet de acordo com o produto."
-        DisplayMode: =DisplayMode.Edit
-        Height: =41
-        IconSize: ='InfoButtonCanvas.IconSize'.Large
-        Width: =244
-        X: =1183
+    Loteproducao_1 As label:
+        Align: =Align.Center
+        BorderThickness: =2
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Fill: =RGBA(202, 202, 202, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.'Segoe UI'
+        FontWeight: =FontWeight.Semibold
+        Height: =134
+        Size: =25
+        Text: |-
+            =Text(
+                Replace(Text(Replace(Text(Replace(Text(Replace(Text(DateProd.SelectedDate),3,1,"")),5,1,"")),5,1,"")),5,1,"") & If(
+                    DropdownTurnoProd.Selected.Value = "Turno 1",
+                    "01"
+                ) & If(
+                    DropdownTurnoProd.Selected.Value = "Turno 2",
+                    "02"
+                ) & If(
+                    DropdownTurnoProd.Selected.Value = "Turno 3",
+                    "03"
+                )
+            )
+        Width: =213
+        X: =671
         Y: =310
-        ZIndex: =19
+        ZIndex: =20
+
+    Label3_3 As label:
+        Align: =Align.Center
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        Color: =RGBA(51, 51, 51, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.'Segoe UI'
+        FontWeight: =FontWeight.Bold
+        Height: =41
+        Size: =15
+        Text: ="LOTE DO PALLET"
+        Width: =213
+        X: =671
+        Y: =310
+        ZIndex: =21
 

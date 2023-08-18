@@ -1,4 +1,26 @@
 {
+  "7e1dcf17-9718-44d4-adbb-3f65e24a024f": {
+    "connectionRef": {
+      "displayName": "SharePoint",
+      "iconUri": "https://connectoricons-prod.azureedge.net/u/shgogna/globalperconnector-train1/1.0.1639.3312/sharepointonline/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_sharepointonline"
+    },
+    "datasets": {
+      "https://suzano.sharepoint.com/sites/ReltorioOperacional-Fraldas": {
+        "dataSources": {
+          "Apontamento Produção (NOVO)": {
+            "tableName": "e9f9f596-65c5-453c-b529-fa61fd652eca"
+          }
+        }
+      }
+    },
+    "dataSources": [
+      "Apontamento Produção (NOVO)"
+    ],
+    "dependencies": {},
+    "dependents": [],
+    "id": "7e1dcf17-9718-44d4-adbb-3f65e24a024f"
+  },
   "aa888289-765d-489e-890c-5b48d0d083b1": {
     "connectionRef": {
       "apiTier": "Standard",

@@ -15,7 +15,14 @@
       }
     },
     "dataSources": [
-      "Apontamento Produção (NOVO)"
+      "Apontamento Produção (NOVO)",
+      "Apontamento de Limpeza",
+      "Apontamento Paradas",
+      "Apontamento de Qualidade",
+      "Apontamento Produção",
+      "Apontamento Refugo",
+      "Checklist - Repartida de máquina",
+      "Entrada de Lote_1"
     ],
     "dependencies": {},
     "dependents": [],

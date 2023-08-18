@@ -402,8 +402,8 @@ TelaInicial As screen:
         Image: ='Asset 18'
         PressedBorderColor: =RGBA(0, 0, 0, 0)
         PressedFill: =RGBA(0, 0, 0, 0)
-        X: =23
-        Y: =172
+        X: =19
+        Y: =252
         ZIndex: =16
 
     Image9_1 As image:
@@ -418,8 +418,8 @@ TelaInicial As screen:
         Image: ='Asset 18'
         PressedBorderColor: =RGBA(0, 0, 0, 0)
         PressedFill: =RGBA(0, 0, 0, 0)
-        X: =105
-        Y: =174
+        X: =92
+        Y: =252
         ZIndex: =17
 
     Image9_2 As image:
@@ -434,8 +434,8 @@ TelaInicial As screen:
         Image: ='Asset 18'
         PressedBorderColor: =RGBA(0, 0, 0, 0)
         PressedFill: =RGBA(0, 0, 0, 0)
-        X: =190
-        Y: =174
+        X: =56
+        Y: =152
         ZIndex: =18
 
     Image8 As image:
@@ -452,8 +452,8 @@ TelaInicial As screen:
         PressedBorderColor: =RGBA(0, 0, 0, 0)
         PressedFill: =RGBA(0, 0, 0, 0)
         Width: =295
-        X: =105
-        Y: =165
+        X: =34
+        Y: =226
         ZIndex: =19
 
     Image7 As image:
@@ -470,7 +470,7 @@ TelaInicial As screen:
         PressedBorderColor: =RGBA(0, 0, 0, 0)
         PressedFill: =RGBA(0, 0, 0, 0)
         Width: =276
-        X: =190
-        Y: =388
+        X: =224
+        Y: =406
         ZIndex: =20
 

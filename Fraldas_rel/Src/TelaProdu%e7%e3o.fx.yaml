@@ -294,7 +294,7 @@ TelaProdução As screen:
         Y: =581
         ZIndex: =12
 
-    Loteproducao As label:
+    Loteproducaofaturamento As label:
         Align: =Align.Center
         BorderThickness: =2
         Color: =RGBA(0, 0, 0, 1)
@@ -352,7 +352,7 @@ TelaProdução As screen:
         RadiusTopLeft: =0
         RadiusTopRight: =0
         Size: =23
-        Width: =233
+        Width: =238
         X: =1253
         Y: =310
         ZIndex: =14
@@ -430,9 +430,58 @@ TelaProdução As screen:
         Height: =34
         IconSize: ='InfoButtonCanvas.IconSize'.Large
         Width: =211
-        X: =1377
+        X: =1372
         Y: =310
         ZIndex: =18
+
+    Loteproducaopallet As label:
+        Align: =Align.Center
+        BorderThickness: =2
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        Fill: =RGBA(202, 202, 202, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.'Segoe UI'
+        FontWeight: =FontWeight.Semibold
+        Height: =134
+        Size: =25
+        Text: |-
+            =Text(
+                Replace(Text(Replace(Text(Replace(Text(Replace(Text(DateProd.SelectedDate),3,1,"")),5,1,"")),5,1,"")),5,1,"") & If(
+                    DropdownTurnoProd.Selected.Value = "Turno 1",
+                    "01"
+                ) & If(
+                    DropdownTurnoProd.Selected.Value = "Turno 2",
+                    "02"
+                ) & If(
+                    DropdownTurnoProd.Selected.Value = "Turno 3",
+                    "03"
+                )
+            ) & If(Value(Pallet.Text) >=1 && Value(Pallet.Text) <= 9,"0" & Pallet.Text,Pallet.Text)
+        Width: =215
+        X: =662
+        Y: =310
+        ZIndex: =19
+
+    Label3_3 As label:
+        Align: =Align.Center
+        BorderColor: =RGBA(0, 0, 0, 0)
+        BorderStyle: =BorderStyle.None
+        BorderThickness: =2
+        Color: =RGBA(51, 51, 51, 1)
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        FocusedBorderThickness: =4
+        Font: =Font.'Segoe UI'
+        FontWeight: =FontWeight.Bold
+        Height: =41
+        Size: =15
+        Text: ="LOTE PALLET"
+        Width: =215
+        X: =662
+        Y: =310
+        ZIndex: =20
 
     ContConfirmaçãoProd As groupContainer:
         Fill: =RGBA(0, 0, 0, 0.41)
@@ -440,7 +489,7 @@ TelaProdução As screen:
         Visible: |
             =ProduçãoPop
         Width: =1800
-        ZIndex: =19
+        ZIndex: =21
 
         Rectangle2 As rectangle:
             BorderColor: =RGBA(0, 0, 0, 1)
@@ -486,7 +535,7 @@ TelaProdução As screen:
                 "
                 
                 "
-                & "Lote Produção: " & Loteproducao.Text &
+                & "Lote Produção: " & Loteproducaofaturamento.Text &
                 "
                 
                 "
@@ -560,7 +609,8 @@ TelaProdução As screen:
                             Turno: Text(DropdownTurnoProd.Selected.Value),
                             Turma: Text(DropdownTurmaProd.Selected.Value),
                             Produto: Text(DropdownSelectProd.Selected.Value),
-                            'Lote Faturamento':Text(Loteproducao.Text),
+                            'Lote Faturamento':Text(Loteproducaofaturamento.Text),
+                            'Lote Pallet':Text(Loteproducaopallet.Text),
                             'Quantidade de Fardos no Pallet':Fardosnopallet.Text,
                             'Hora de Produção':Text(Time(Hour(Now()),Minute(Now()),Second(Now())))
                         }
@@ -579,7 +629,7 @@ TelaProdução As screen:
                             impressãoturno:Text(DropdownTurnoProd.Selected.Value),
                             impressãoturma: Text(DropdownTurmaProd.Selected.Value),
                             impressãoproduto: Text(DropdownSelectProd.Selected.Value),
-                            impressãolotefaturamento:Text(Loteproducao.Text),
+                            impressãolotefaturamento:Text(Loteproducaofaturamento.Text),
                             impressãoquantidadedefardosnopallet:Fardosnopallet.Text,
                             impressãohoradeprodução:Text(Time(Hour(Now()),Minute(Now()),Second(Now())))
                         }
@@ -646,53 +696,4 @@ TelaProdução As screen:
             X: =652
             Y: =464
             ZIndex: =6
-
-    Loteproducao_1 As label:
-        Align: =Align.Center
-        BorderThickness: =2
-        Color: =RGBA(0, 0, 0, 1)
-        DisabledBorderColor: =RGBA(0, 0, 0, 0)
-        DisabledColor: =RGBA(166, 166, 166, 1)
-        Fill: =RGBA(202, 202, 202, 1)
-        FocusedBorderThickness: =4
-        Font: =Font.'Segoe UI'
-        FontWeight: =FontWeight.Semibold
-        Height: =134
-        Size: =25
-        Text: |-
-            =Text(
-                Replace(Text(Replace(Text(Replace(Text(Replace(Text(DateProd.SelectedDate),3,1,"")),5,1,"")),5,1,"")),5,1,"") & If(
-                    DropdownTurnoProd.Selected.Value = "Turno 1",
-                    "01"
-                ) & If(
-                    DropdownTurnoProd.Selected.Value = "Turno 2",
-                    "02"
-                ) & If(
-                    DropdownTurnoProd.Selected.Value = "Turno 3",
-                    "03"
-                )
-            )
-        Width: =213
-        X: =671
-        Y: =310
-        ZIndex: =20
-
-    Label3_3 As label:
-        Align: =Align.Center
-        BorderColor: =RGBA(0, 0, 0, 0)
-        BorderStyle: =BorderStyle.None
-        BorderThickness: =2
-        Color: =RGBA(51, 51, 51, 1)
-        DisabledBorderColor: =RGBA(0, 0, 0, 0)
-        DisabledColor: =RGBA(166, 166, 166, 1)
-        FocusedBorderThickness: =4
-        Font: =Font.'Segoe UI'
-        FontWeight: =FontWeight.Bold
-        Height: =41
-        Size: =15
-        Text: ="LOTE DO PALLET"
-        Width: =213
-        X: =671
-        Y: =310
-        ZIndex: =21
 

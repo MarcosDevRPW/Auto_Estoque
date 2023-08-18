@@ -293,7 +293,7 @@ TelaInicial As screen:
         DisabledFill: =RGBA(244, 244, 244, 1)
         Fill: =RGBA(0, 13, 75, 1)
         FocusedBorderColor: =ColorFade(Self.Fill, -75%)
-        Font: =Font.'Segoe UI'
+        Font: ="Zooja Pro"
         FontWeight: =FontWeight.Semibold
         Height: =100
         HoverBorderColor: =RGBA(0, 0, 0, 0)

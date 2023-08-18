@@ -615,26 +615,24 @@ TelaProdução As screen:
                             'Hora de Produção':Text(Time(Hour(Now()),Minute(Now()),Second(Now())))
                         }
                     );
-                
+                    Set(impressãocolaborador,User().FullName);
+                Set(impressãocolaborador,User().FullName);
+                Set(impressãodata,DateValue(DateProd.SelectedDate));
+                Set(impressãoturno,Text(DropdownTurnoProd.Selected.Value));
+                Set(impressãoturma,Text(DropdownTurmaProd.Selected.Value));
+                Set(impressãoproduto,Text(DropdownSelectProd.Selected.Value));
+                Set(impressãolotefaturamento,Text(Loteproducaofaturamento.Text));
+                Set(impressãoquantidadedefardosnopallet,Fardosnopallet.Text);
+                Set(impressãohoradeprodução,Text(Time(Hour(Now()),Minute(Now()),Second(Now()))));
                     Reset(DropdownTurnoProd);
                     Reset(DropdownTurmaProd);
                     Reset(DropdownSelectProd);
                     Reset(DateProd);
                     Reset(Fardosnopallet);
+                    Reset(Pallet);
                     Navigate(TelaImpressãoProdução, ScreenTransition.Fade);
-                    UpdateContext(
-                        {
-                            impressãocolaborador:User().FullName,
-                            impressãodata: DateValue(DateProd.SelectedDate),
-                            impressãoturno:Text(DropdownTurnoProd.Selected.Value),
-                            impressãoturma: Text(DropdownTurmaProd.Selected.Value),
-                            impressãoproduto: Text(DropdownSelectProd.Selected.Value),
-                            impressãolotefaturamento:Text(Loteproducaofaturamento.Text),
-                            impressãoquantidadedefardosnopallet:Fardosnopallet.Text,
-                            impressãohoradeprodução:Text(Time(Hour(Now()),Minute(Now()),Second(Now())))
-                        }
-                    )
                 );
+                
                 
                 
             PaddingRight: =3.79

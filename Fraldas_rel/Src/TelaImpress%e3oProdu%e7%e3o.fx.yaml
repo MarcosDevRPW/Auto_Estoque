@@ -54,7 +54,7 @@ TelaImpressãoProdução As screen:
         Text: |-
             ="PRODUTO DO PALLET: "& impressãoproduto
         Width: =495
-        Y: =240
+        Y: =205
         ZIndex: =5
 
     Label1_36 As label:
@@ -90,7 +90,7 @@ TelaImpressãoProdução As screen:
         Text: |-
             ="LOTE DO FATURAMENTO: "
         Width: =309
-        Y: =314
+        Y: =273
         ZIndex: =8
 
     Rectangle2_2 As rectangle:
@@ -109,7 +109,7 @@ TelaImpressãoProdução As screen:
         DisabledFill: =RGBA(244, 244, 244, 1)
         Height: =208
         Image: |-
-            ="https://chart.googleapis.com/chart?chs=150x150&cht=qr&chl=" & Label2_3.Text
+            ="https://chart.googleapis.com/chart?chs=150x150&cht=qr&chl=" & labellotepallet.Text
         ImagePosition: =ImagePosition.Fill
         Width: =269
         X: =787
@@ -152,7 +152,33 @@ TelaImpressãoProdução As screen:
         Y: =40
         ZIndex: =12
 
-    Label2_3 As label:
+    labellotepallet As label:
+        BorderColor: =RGBA(0, 18, 107, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        FontWeight: =FontWeight.Bold
+        Height: =56
+        Size: =18
+        Text: =impressãolotepallet
+        Width: =158
+        X: =224
+        Y: =352
+        ZIndex: =13
+
+    Label2_4 As label:
+        BorderColor: =RGBA(0, 18, 107, 1)
+        Color: =RGBA(0, 0, 0, 1)
+        DisabledColor: =RGBA(166, 166, 166, 1)
+        FontWeight: =FontWeight.Bold
+        Height: =56
+        Size: =18
+        Text: |-
+            ="LOTE DO PALLET: "
+        Width: =224
+        Y: =352
+        ZIndex: =14
+
+    Label2_5 As label:
         BorderColor: =RGBA(0, 18, 107, 1)
         Color: =RGBA(0, 0, 0, 1)
         DisabledColor: =RGBA(166, 166, 166, 1)
@@ -162,6 +188,6 @@ TelaImpressãoProdução As screen:
         Text: =impressãolotefaturamento
         Width: =158
         X: =317
-        Y: =314
-        ZIndex: =13
+        Y: =273
+        ZIndex: =15
 

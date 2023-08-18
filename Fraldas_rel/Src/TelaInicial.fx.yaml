@@ -265,8 +265,9 @@ TelaInicial As screen:
         HoverBorderColor: =RGBA(0, 0, 0, 0)
         HoverColor: =RGBA(255, 255, 255, 1)
         HoverFill: =ColorFade(RGBA(73, 130, 5, 1), -10%)
-        OnSelect: |
+        OnSelect: |-
             =Navigate(TelaProdução, ScreenTransition.Fade);
+            Refresh('Apontamento Produção (NOVO)');
         PaddingRight: =3.79
         PaddingTop: =3.79
         PressedBorderColor: =ColorFade(RGBA(73, 130, 5, 1), -50%)

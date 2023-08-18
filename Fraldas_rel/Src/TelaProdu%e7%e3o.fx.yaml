@@ -622,6 +622,7 @@ TelaProdução As screen:
                 Set(impressãoturma,Text(DropdownTurmaProd.Selected.Value));
                 Set(impressãoproduto,Text(DropdownSelectProd.Selected.Value));
                 Set(impressãolotefaturamento,Text(Loteproducaofaturamento.Text));
+                Set(impressãolotepallet,Text(Loteproducaopallet.Text));
                 Set(impressãoquantidadedefardosnopallet,Fardosnopallet.Text);
                 Set(impressãohoradeprodução,Text(Time(Hour(Now()),Minute(Now()),Second(Now()))));
                     Reset(DropdownTurnoProd);

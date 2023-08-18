@@ -337,7 +337,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Check_Column1",
-      "ParentIndex": 6,
+      "ParentIndex": 5,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -436,7 +436,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Data_Column5",
-      "ParentIndex": 1,
+      "ParentIndex": 7,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -1630,7 +1630,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Inspeção_Column2",
-      "ParentIndex": 4,
+      "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -2360,7 +2360,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Observação_Column1",
-      "ParentIndex": 7,
+      "ParentIndex": 6,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -2730,7 +2730,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Tipo de repartida_Column1",
-      "ParentIndex": 5,
+      "ParentIndex": 4,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -3132,7 +3132,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Turma_Column5",
-      "ParentIndex": 3,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -3231,7 +3231,7 @@
       "LayoutName": "",
       "MetaDataIDKey": "",
       "Name": "Turno_Column5",
-      "ParentIndex": 2,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {

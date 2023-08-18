@@ -58,7 +58,7 @@ TelaInicial As screen:
         DisabledColor: =RGBA(166, 166, 166, 1)
         DisplayMode: =DisplayMode.View
         FocusedBorderThickness: =4
-        Font: ="Zooja Pro"
+        Font: =Font.'Segoe UI'
         Height: =137
         PaddingRight: =3.79
         PaddingTop: =3.79
